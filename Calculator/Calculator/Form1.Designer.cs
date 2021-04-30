@@ -62,7 +62,7 @@ namespace Calculator
             this.historyLabel = new System.Windows.Forms.Label();
             this.memoryLabel = new System.Windows.Forms.Label();
             this.historyText = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.calcuOutput = new System.Windows.Forms.TextBox();
             this.historyTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -470,18 +470,18 @@ namespace Calculator
             this.historyText.Text = "There\'s no history yet";
             this.historyText.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // calcuOutput
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(11, 219);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(414, 57);
-            this.textBox1.TabIndex = 27;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.calcuOutput.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.calcuOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.calcuOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calcuOutput.Location = new System.Drawing.Point(11, 219);
+            this.calcuOutput.Multiline = true;
+            this.calcuOutput.Name = "calcuOutput";
+            this.calcuOutput.Size = new System.Drawing.Size(414, 57);
+            this.calcuOutput.TabIndex = 27;
+            this.calcuOutput.Text = "0";
+            this.calcuOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // historyTextBox
             // 
@@ -499,7 +499,7 @@ namespace Calculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 856);
             this.Controls.Add(this.historyTextBox);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.calcuOutput);
             this.Controls.Add(this.historyText);
             this.Controls.Add(this.memoryLabel);
             this.Controls.Add(this.historyLabel);
@@ -573,7 +573,7 @@ namespace Calculator
         private System.Windows.Forms.Label historyLabel;
         private System.Windows.Forms.Label memoryLabel;
         private System.Windows.Forms.Label historyText;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox calcuOutput;
         private System.Windows.Forms.RichTextBox historyTextBox;
     }
 }
