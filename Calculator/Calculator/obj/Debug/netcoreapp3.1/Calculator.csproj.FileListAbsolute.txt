@@ -1,0 +1,16 @@
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.exe
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.deps.json
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.json
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.dev.json
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.dll
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\bin\Debug\netcoreapp3.1\Calculator.pdb
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.Form1.resources
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.Properties.Resources.resources
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.GenerateResource.cache
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.CoreCompileInputs.cache
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache

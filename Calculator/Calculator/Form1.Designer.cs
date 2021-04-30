@@ -104,6 +104,7 @@ namespace Calculator
             this.sevenButton.TabIndex = 25;
             this.sevenButton.Text = "7";
             this.sevenButton.UseVisualStyleBackColor = false;
+            this.sevenButton.Click += new System.EventHandler(this.sevenButton_Click);
             // 
             // fourButton
             // 
@@ -117,6 +118,7 @@ namespace Calculator
             this.fourButton.TabIndex = 25;
             this.fourButton.Text = "4";
             this.fourButton.UseVisualStyleBackColor = false;
+            this.fourButton.Click += new System.EventHandler(this.fourButton_Click);
             // 
             // oneButton
             // 
@@ -183,6 +185,7 @@ namespace Calculator
             this.eightButton.TabIndex = 25;
             this.eightButton.Text = "8";
             this.eightButton.UseVisualStyleBackColor = false;
+            this.eightButton.Click += new System.EventHandler(this.eightButton_Click);
             // 
             // fiveButton
             // 
@@ -196,6 +199,7 @@ namespace Calculator
             this.fiveButton.TabIndex = 25;
             this.fiveButton.Text = "5";
             this.fiveButton.UseVisualStyleBackColor = false;
+            this.fiveButton.Click += new System.EventHandler(this.fiveButton_Click);
             // 
             // twoButton
             // 
@@ -209,6 +213,7 @@ namespace Calculator
             this.twoButton.TabIndex = 25;
             this.twoButton.Text = "2";
             this.twoButton.UseVisualStyleBackColor = false;
+            this.twoButton.Click += new System.EventHandler(this.twoButton_Click);
             // 
             // zeroButton
             // 
@@ -274,6 +279,7 @@ namespace Calculator
             this.nineButton.TabIndex = 25;
             this.nineButton.Text = "9";
             this.nineButton.UseVisualStyleBackColor = false;
+            this.nineButton.Click += new System.EventHandler(this.nineButton_Click);
             // 
             // sixButton
             // 
@@ -287,6 +293,7 @@ namespace Calculator
             this.sixButton.TabIndex = 25;
             this.sixButton.Text = "6";
             this.sixButton.UseVisualStyleBackColor = false;
+            this.sixButton.Click += new System.EventHandler(this.sixButton_Click);
             // 
             // threeButton
             // 
@@ -300,6 +307,7 @@ namespace Calculator
             this.threeButton.TabIndex = 25;
             this.threeButton.Text = "3";
             this.threeButton.UseVisualStyleBackColor = false;
+            this.threeButton.Click += new System.EventHandler(this.threeButton_Click);
             // 
             // periodButton
             // 
