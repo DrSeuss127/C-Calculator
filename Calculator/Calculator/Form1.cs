@@ -17,54 +17,54 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void oneButton_Click(object sender, EventArgs e)
+        private void oneNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "1";
         }
 
-        private void twoButton_Click(object sender, EventArgs e)
+        private void twoNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "2";
         }
 
-        private void threeButton_Click(object sender, EventArgs e)
+        private void threeNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "3";
         }
 
-        private void fourButton_Click(object sender, EventArgs e)
+        private void fourNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "4";
         }
 
-        private void fiveButton_Click(object sender, EventArgs e)
+        private void fiveNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "5";
         }
 
-        private void sixButton_Click(object sender, EventArgs e)
+        private void sixNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "6";
         }
 
-        private void sevenButton_Click(object sender, EventArgs e)
+        private void sevenNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "7";
         }
 
-        private void eightButton_Click(object sender, EventArgs e)
+        private void eightNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "8";
         }
 
-        private void nineButton_Click(object sender, EventArgs e)
+        private void nineNumBtn_Click(object sender, EventArgs e)
         {
             calcuOutput.Text = calcuOutput.Text + "9";
+        }
+
+        private void clrAllBtn_Click(object sender, EventArgs e)
+        {
+            calcuOutput.Text = "0";
         }
     }
 }
