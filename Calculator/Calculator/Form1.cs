@@ -30,6 +30,7 @@ namespace Calculator
             InitializeComponent();
         }
 
+
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
             //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
