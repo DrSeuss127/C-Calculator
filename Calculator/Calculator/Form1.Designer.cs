@@ -64,280 +64,354 @@ namespace Calculator
             // 
             // percentBtn
             // 
+            this.percentBtn.BackColor = System.Drawing.SystemColors.Info;
             this.percentBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("percentBtn.BackgroundImage")));
             this.percentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.percentBtn.FlatAppearance.BorderSize = 0;
+            this.percentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.percentBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.percentBtn.Location = new System.Drawing.Point(11, 252);
             this.percentBtn.Name = "percentBtn";
             this.percentBtn.Size = new System.Drawing.Size(92, 68);
             this.percentBtn.TabIndex = 0;
-            this.percentBtn.UseVisualStyleBackColor = true;
+            this.percentBtn.UseVisualStyleBackColor = false;
             // 
             // fractBtn
             // 
+            this.fractBtn.BackColor = System.Drawing.SystemColors.Info;
             this.fractBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fractBtn.FlatAppearance.BorderSize = 0;
+            this.fractBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fractBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fractBtn.Location = new System.Drawing.Point(11, 326);
+            this.fractBtn.Location = new System.Drawing.Point(11, 323);
             this.fractBtn.Name = "fractBtn";
             this.fractBtn.Size = new System.Drawing.Size(92, 68);
             this.fractBtn.TabIndex = 0;
             this.fractBtn.Text = "1/x";
-            this.fractBtn.UseVisualStyleBackColor = true;
+            this.fractBtn.UseVisualStyleBackColor = false;
             // 
             // sevenNumBtn
             // 
+            this.sevenNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.sevenNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.sevenNumBtn.FlatAppearance.BorderSize = 0;
+            this.sevenNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sevenNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sevenNumBtn.Location = new System.Drawing.Point(11, 400);
+            this.sevenNumBtn.Location = new System.Drawing.Point(11, 394);
             this.sevenNumBtn.Name = "sevenNumBtn";
             this.sevenNumBtn.Size = new System.Drawing.Size(92, 68);
             this.sevenNumBtn.TabIndex = 0;
             this.sevenNumBtn.Text = "7";
-            this.sevenNumBtn.UseVisualStyleBackColor = true;
+            this.sevenNumBtn.UseVisualStyleBackColor = false;
             this.sevenNumBtn.Click += new System.EventHandler(this.sevenNumBtn_Click);
             // 
             // fourNumBtn
             // 
+            this.fourNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.fourNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fourNumBtn.FlatAppearance.BorderSize = 0;
+            this.fourNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fourNumBtn.Location = new System.Drawing.Point(11, 474);
+            this.fourNumBtn.Location = new System.Drawing.Point(11, 465);
             this.fourNumBtn.Name = "fourNumBtn";
             this.fourNumBtn.Size = new System.Drawing.Size(92, 68);
             this.fourNumBtn.TabIndex = 0;
             this.fourNumBtn.Text = "4";
-            this.fourNumBtn.UseVisualStyleBackColor = true;
+            this.fourNumBtn.UseVisualStyleBackColor = false;
             this.fourNumBtn.Click += new System.EventHandler(this.fourNumBtn_Click);
             // 
             // oneNumBtn
             // 
+            this.oneNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.oneNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.oneNumBtn.FlatAppearance.BorderSize = 0;
+            this.oneNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.oneNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.oneNumBtn.Location = new System.Drawing.Point(11, 548);
+            this.oneNumBtn.Location = new System.Drawing.Point(11, 536);
             this.oneNumBtn.Name = "oneNumBtn";
             this.oneNumBtn.Size = new System.Drawing.Size(92, 68);
             this.oneNumBtn.TabIndex = 0;
             this.oneNumBtn.Text = "1";
-            this.oneNumBtn.UseVisualStyleBackColor = true;
+            this.oneNumBtn.UseVisualStyleBackColor = false;
             this.oneNumBtn.Click += new System.EventHandler(this.oneNumBtn_Click);
             // 
             // plusMinusBtn
             // 
+            this.plusMinusBtn.BackColor = System.Drawing.SystemColors.Info;
             this.plusMinusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plusMinusBtn.BackgroundImage")));
             this.plusMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.plusMinusBtn.FlatAppearance.BorderSize = 0;
+            this.plusMinusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plusMinusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.plusMinusBtn.Location = new System.Drawing.Point(11, 622);
+            this.plusMinusBtn.Location = new System.Drawing.Point(11, 606);
             this.plusMinusBtn.Name = "plusMinusBtn";
             this.plusMinusBtn.Size = new System.Drawing.Size(92, 68);
             this.plusMinusBtn.TabIndex = 0;
-            this.plusMinusBtn.UseVisualStyleBackColor = true;
+            this.plusMinusBtn.UseVisualStyleBackColor = false;
             // 
             // clrRecentBtn
             // 
+            this.clrRecentBtn.BackColor = System.Drawing.SystemColors.Info;
             this.clrRecentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.clrRecentBtn.FlatAppearance.BorderSize = 0;
+            this.clrRecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clrRecentBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clrRecentBtn.Location = new System.Drawing.Point(109, 252);
+            this.clrRecentBtn.Location = new System.Drawing.Point(106, 252);
             this.clrRecentBtn.Name = "clrRecentBtn";
             this.clrRecentBtn.Size = new System.Drawing.Size(92, 68);
             this.clrRecentBtn.TabIndex = 0;
             this.clrRecentBtn.Text = "CE";
-            this.clrRecentBtn.UseVisualStyleBackColor = true;
+            this.clrRecentBtn.UseVisualStyleBackColor = false;
             // 
             // sqrBtn
             // 
+            this.sqrBtn.BackColor = System.Drawing.SystemColors.Info;
             this.sqrBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sqrBtn.BackgroundImage")));
             this.sqrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.sqrBtn.FlatAppearance.BorderSize = 0;
+            this.sqrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sqrBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sqrBtn.Location = new System.Drawing.Point(109, 326);
+            this.sqrBtn.Location = new System.Drawing.Point(106, 323);
             this.sqrBtn.Name = "sqrBtn";
             this.sqrBtn.Size = new System.Drawing.Size(92, 68);
             this.sqrBtn.TabIndex = 0;
-            this.sqrBtn.UseVisualStyleBackColor = true;
+            this.sqrBtn.UseVisualStyleBackColor = false;
             // 
             // eightNumBtn
             // 
+            this.eightNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.eightNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.eightNumBtn.FlatAppearance.BorderSize = 0;
+            this.eightNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eightNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.eightNumBtn.Location = new System.Drawing.Point(109, 400);
+            this.eightNumBtn.Location = new System.Drawing.Point(106, 394);
             this.eightNumBtn.Name = "eightNumBtn";
             this.eightNumBtn.Size = new System.Drawing.Size(92, 68);
             this.eightNumBtn.TabIndex = 0;
             this.eightNumBtn.Text = "8";
-            this.eightNumBtn.UseVisualStyleBackColor = true;
+            this.eightNumBtn.UseVisualStyleBackColor = false;
             this.eightNumBtn.Click += new System.EventHandler(this.eightNumBtn_Click);
             // 
             // fiveNumBtn
             // 
+            this.fiveNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.fiveNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fiveNumBtn.FlatAppearance.BorderSize = 0;
+            this.fiveNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fiveNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fiveNumBtn.Location = new System.Drawing.Point(109, 474);
+            this.fiveNumBtn.Location = new System.Drawing.Point(106, 465);
             this.fiveNumBtn.Name = "fiveNumBtn";
             this.fiveNumBtn.Size = new System.Drawing.Size(92, 68);
             this.fiveNumBtn.TabIndex = 0;
             this.fiveNumBtn.Text = "5";
-            this.fiveNumBtn.UseVisualStyleBackColor = true;
+            this.fiveNumBtn.UseVisualStyleBackColor = false;
             this.fiveNumBtn.Click += new System.EventHandler(this.fiveNumBtn_Click);
             // 
             // twoNumBtn
             // 
+            this.twoNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.twoNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.twoNumBtn.FlatAppearance.BorderSize = 0;
+            this.twoNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.twoNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.twoNumBtn.Location = new System.Drawing.Point(109, 548);
+            this.twoNumBtn.Location = new System.Drawing.Point(106, 536);
             this.twoNumBtn.Name = "twoNumBtn";
             this.twoNumBtn.Size = new System.Drawing.Size(92, 68);
             this.twoNumBtn.TabIndex = 0;
             this.twoNumBtn.Text = "2";
-            this.twoNumBtn.UseVisualStyleBackColor = true;
+            this.twoNumBtn.UseVisualStyleBackColor = false;
             this.twoNumBtn.Click += new System.EventHandler(this.twoNumBtn_Click);
             // 
             // zeroNumBtn
             // 
+            this.zeroNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.zeroNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.zeroNumBtn.FlatAppearance.BorderSize = 0;
+            this.zeroNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zeroNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.zeroNumBtn.Location = new System.Drawing.Point(109, 623);
+            this.zeroNumBtn.Location = new System.Drawing.Point(106, 607);
             this.zeroNumBtn.Name = "zeroNumBtn";
             this.zeroNumBtn.Size = new System.Drawing.Size(92, 68);
             this.zeroNumBtn.TabIndex = 0;
             this.zeroNumBtn.Text = "0";
-            this.zeroNumBtn.UseVisualStyleBackColor = true;
+            this.zeroNumBtn.UseVisualStyleBackColor = false;
             // 
             // clrAllBtn
             // 
+            this.clrAllBtn.BackColor = System.Drawing.SystemColors.Info;
             this.clrAllBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.clrAllBtn.FlatAppearance.BorderSize = 0;
+            this.clrAllBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clrAllBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clrAllBtn.Location = new System.Drawing.Point(207, 252);
+            this.clrAllBtn.Location = new System.Drawing.Point(201, 252);
             this.clrAllBtn.Name = "clrAllBtn";
             this.clrAllBtn.Size = new System.Drawing.Size(92, 68);
             this.clrAllBtn.TabIndex = 0;
             this.clrAllBtn.Text = "C";
-            this.clrAllBtn.UseVisualStyleBackColor = true;
+            this.clrAllBtn.UseVisualStyleBackColor = false;
             this.clrAllBtn.Click += new System.EventHandler(this.clrAllBtn_Click);
             // 
             // sqrtBtn
             // 
+            this.sqrtBtn.BackColor = System.Drawing.SystemColors.Info;
             this.sqrtBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sqrtBtn.BackgroundImage")));
             this.sqrtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.sqrtBtn.FlatAppearance.BorderSize = 0;
+            this.sqrtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sqrtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sqrtBtn.Location = new System.Drawing.Point(207, 326);
+            this.sqrtBtn.Location = new System.Drawing.Point(201, 323);
             this.sqrtBtn.Name = "sqrtBtn";
             this.sqrtBtn.Size = new System.Drawing.Size(92, 68);
             this.sqrtBtn.TabIndex = 0;
-            this.sqrtBtn.UseVisualStyleBackColor = true;
+            this.sqrtBtn.UseVisualStyleBackColor = false;
             // 
             // nineNumBtn
             // 
+            this.nineNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.nineNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.nineNumBtn.FlatAppearance.BorderSize = 0;
+            this.nineNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nineNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nineNumBtn.Location = new System.Drawing.Point(207, 400);
+            this.nineNumBtn.Location = new System.Drawing.Point(201, 394);
             this.nineNumBtn.Name = "nineNumBtn";
             this.nineNumBtn.Size = new System.Drawing.Size(92, 68);
             this.nineNumBtn.TabIndex = 0;
             this.nineNumBtn.Text = "9";
-            this.nineNumBtn.UseVisualStyleBackColor = true;
+            this.nineNumBtn.UseVisualStyleBackColor = false;
             this.nineNumBtn.Click += new System.EventHandler(this.nineNumBtn_Click);
             // 
             // sixNumBtn
             // 
+            this.sixNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.sixNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.sixNumBtn.FlatAppearance.BorderSize = 0;
+            this.sixNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sixNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sixNumBtn.Location = new System.Drawing.Point(207, 474);
+            this.sixNumBtn.Location = new System.Drawing.Point(201, 465);
             this.sixNumBtn.Name = "sixNumBtn";
             this.sixNumBtn.Size = new System.Drawing.Size(92, 68);
             this.sixNumBtn.TabIndex = 0;
             this.sixNumBtn.Text = "6";
-            this.sixNumBtn.UseVisualStyleBackColor = true;
+            this.sixNumBtn.UseVisualStyleBackColor = false;
             this.sixNumBtn.Click += new System.EventHandler(this.sixNumBtn_Click);
             // 
             // threeNumBtn
             // 
+            this.threeNumBtn.BackColor = System.Drawing.SystemColors.Info;
             this.threeNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.threeNumBtn.FlatAppearance.BorderSize = 0;
+            this.threeNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.threeNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.threeNumBtn.Location = new System.Drawing.Point(207, 548);
+            this.threeNumBtn.Location = new System.Drawing.Point(201, 536);
             this.threeNumBtn.Name = "threeNumBtn";
             this.threeNumBtn.Size = new System.Drawing.Size(92, 68);
             this.threeNumBtn.TabIndex = 0;
             this.threeNumBtn.Text = "3";
-            this.threeNumBtn.UseVisualStyleBackColor = true;
+            this.threeNumBtn.UseVisualStyleBackColor = false;
             this.threeNumBtn.Click += new System.EventHandler(this.threeNumBtn_Click);
             // 
             // decBtn
             // 
+            this.decBtn.BackColor = System.Drawing.SystemColors.Info;
             this.decBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.decBtn.FlatAppearance.BorderSize = 0;
+            this.decBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.decBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.decBtn.Location = new System.Drawing.Point(207, 623);
+            this.decBtn.Location = new System.Drawing.Point(201, 607);
             this.decBtn.Name = "decBtn";
             this.decBtn.Size = new System.Drawing.Size(92, 68);
             this.decBtn.TabIndex = 0;
             this.decBtn.Text = ".";
-            this.decBtn.UseVisualStyleBackColor = true;
+            this.decBtn.UseVisualStyleBackColor = false;
             // 
             // delBtn
             // 
+            this.delBtn.BackColor = System.Drawing.SystemColors.Info;
             this.delBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delBtn.BackgroundImage")));
             this.delBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.delBtn.FlatAppearance.BorderSize = 0;
+            this.delBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.delBtn.Location = new System.Drawing.Point(305, 252);
+            this.delBtn.Location = new System.Drawing.Point(296, 252);
             this.delBtn.Name = "delBtn";
             this.delBtn.Size = new System.Drawing.Size(92, 68);
             this.delBtn.TabIndex = 0;
-            this.delBtn.UseVisualStyleBackColor = true;
+            this.delBtn.UseVisualStyleBackColor = false;
             // 
             // divideBtn
             // 
+            this.divideBtn.BackColor = System.Drawing.SystemColors.Info;
             this.divideBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("divideBtn.BackgroundImage")));
             this.divideBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.divideBtn.FlatAppearance.BorderSize = 0;
+            this.divideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.divideBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.divideBtn.Location = new System.Drawing.Point(305, 326);
+            this.divideBtn.Location = new System.Drawing.Point(296, 323);
             this.divideBtn.Name = "divideBtn";
             this.divideBtn.Size = new System.Drawing.Size(92, 68);
             this.divideBtn.TabIndex = 0;
-            this.divideBtn.UseVisualStyleBackColor = true;
+            this.divideBtn.UseVisualStyleBackColor = false;
             // 
             // multBtn
             // 
+            this.multBtn.BackColor = System.Drawing.SystemColors.Info;
             this.multBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("multBtn.BackgroundImage")));
             this.multBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.multBtn.FlatAppearance.BorderSize = 0;
+            this.multBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.multBtn.Location = new System.Drawing.Point(305, 400);
+            this.multBtn.Location = new System.Drawing.Point(296, 394);
             this.multBtn.Name = "multBtn";
             this.multBtn.Size = new System.Drawing.Size(92, 68);
             this.multBtn.TabIndex = 0;
-            this.multBtn.UseVisualStyleBackColor = true;
+            this.multBtn.UseVisualStyleBackColor = false;
             // 
             // minusBtn
             // 
+            this.minusBtn.BackColor = System.Drawing.SystemColors.Info;
             this.minusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minusBtn.BackgroundImage")));
             this.minusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.minusBtn.FlatAppearance.BorderSize = 0;
+            this.minusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.minusBtn.Location = new System.Drawing.Point(305, 474);
+            this.minusBtn.Location = new System.Drawing.Point(296, 465);
             this.minusBtn.Name = "minusBtn";
             this.minusBtn.Size = new System.Drawing.Size(92, 68);
             this.minusBtn.TabIndex = 0;
-            this.minusBtn.UseVisualStyleBackColor = true;
+            this.minusBtn.UseVisualStyleBackColor = false;
             // 
             // plusBtn
             // 
+            this.plusBtn.BackColor = System.Drawing.SystemColors.Info;
             this.plusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plusBtn.BackgroundImage")));
             this.plusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.plusBtn.FlatAppearance.BorderSize = 0;
+            this.plusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.plusBtn.Location = new System.Drawing.Point(305, 548);
+            this.plusBtn.Location = new System.Drawing.Point(296, 536);
             this.plusBtn.Name = "plusBtn";
             this.plusBtn.Size = new System.Drawing.Size(92, 68);
             this.plusBtn.TabIndex = 0;
-            this.plusBtn.UseVisualStyleBackColor = true;
+            this.plusBtn.UseVisualStyleBackColor = false;
             // 
             // equalsBtn
             // 
+            this.equalsBtn.BackColor = System.Drawing.Color.DarkOrange;
             this.equalsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equalsBtn.BackgroundImage")));
             this.equalsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.equalsBtn.FlatAppearance.BorderSize = 0;
+            this.equalsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.equalsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.equalsBtn.Location = new System.Drawing.Point(305, 622);
+            this.equalsBtn.Location = new System.Drawing.Point(296, 607);
             this.equalsBtn.Name = "equalsBtn";
             this.equalsBtn.Size = new System.Drawing.Size(92, 68);
             this.equalsBtn.TabIndex = 0;
-            this.equalsBtn.UseVisualStyleBackColor = true;
+            this.equalsBtn.UseVisualStyleBackColor = false;
             // 
             // calcuOutput
             // 
+            this.calcuOutput.BackColor = System.Drawing.Color.BurlyWood;
+            this.calcuOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.calcuOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.calcuOutput.Location = new System.Drawing.Point(11, 159);
             this.calcuOutput.Multiline = true;
@@ -349,14 +423,14 @@ namespace Calculator
             // 
             // menuBtn
             // 
-            this.menuBtn.BackColor = System.Drawing.Color.Transparent;
+            this.menuBtn.BackColor = System.Drawing.SystemColors.Info;
             this.menuBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuBtn.BackgroundImage")));
             this.menuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.menuBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.menuBtn.FlatAppearance.BorderSize = 0;
             this.menuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuBtn.Location = new System.Drawing.Point(11, 12);
+            this.menuBtn.Location = new System.Drawing.Point(0, 0);
             this.menuBtn.Name = "menuBtn";
             this.menuBtn.Size = new System.Drawing.Size(39, 34);
             this.menuBtn.TabIndex = 0;
@@ -366,7 +440,7 @@ namespace Calculator
             // 
             this.modeLabel.AutoSize = true;
             this.modeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.modeLabel.Location = new System.Drawing.Point(56, 17);
+            this.modeLabel.Location = new System.Drawing.Point(45, 5);
             this.modeLabel.Name = "modeLabel";
             this.modeLabel.Size = new System.Drawing.Size(110, 29);
             this.modeLabel.TabIndex = 2;
@@ -376,7 +450,7 @@ namespace Calculator
             // 
             this.memLabel.AutoSize = true;
             this.memLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memLabel.Location = new System.Drawing.Point(658, 18);
+            this.memLabel.Location = new System.Drawing.Point(645, 5);
             this.memLabel.Name = "memLabel";
             this.memLabel.Size = new System.Drawing.Size(100, 29);
             this.memLabel.TabIndex = 2;
@@ -386,7 +460,7 @@ namespace Calculator
             // 
             this.historyLabel.AutoSize = true;
             this.historyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.historyLabel.Location = new System.Drawing.Point(425, 18);
+            this.historyLabel.Location = new System.Drawing.Point(425, 6);
             this.historyLabel.Name = "historyLabel";
             this.historyLabel.Size = new System.Drawing.Size(87, 29);
             this.historyLabel.TabIndex = 2;
@@ -396,7 +470,7 @@ namespace Calculator
             // 
             this.historyContLabel.AutoSize = true;
             this.historyContLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.historyContLabel.Location = new System.Drawing.Point(425, 88);
+            this.historyContLabel.Location = new System.Drawing.Point(425, 75);
             this.historyContLabel.Name = "historyContLabel";
             this.historyContLabel.Size = new System.Drawing.Size(189, 24);
             this.historyContLabel.TabIndex = 2;
@@ -406,6 +480,7 @@ namespace Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(757, 703);
             this.Controls.Add(this.historyContLabel);
             this.Controls.Add(this.historyLabel);
