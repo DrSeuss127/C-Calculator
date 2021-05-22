@@ -235,6 +235,7 @@ namespace Calculator
             this.zeroNumBtn.TabIndex = 0;
             this.zeroNumBtn.Text = "0";
             this.zeroNumBtn.UseVisualStyleBackColor = false;
+            this.zeroNumBtn.Click += new System.EventHandler(this.zeroNumBtn_Click);
             // 
             // clrAllBtn
             // 
