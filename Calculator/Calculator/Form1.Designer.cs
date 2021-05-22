@@ -416,7 +416,7 @@ namespace Calculator
             this.calcuOutput.Location = new System.Drawing.Point(11, 159);
             this.calcuOutput.Multiline = true;
             this.calcuOutput.Name = "calcuOutput";
-            this.calcuOutput.Size = new System.Drawing.Size(386, 64);
+            this.calcuOutput.Size = new System.Drawing.Size(377, 64);
             this.calcuOutput.TabIndex = 1;
             this.calcuOutput.Text = "0";
             this.calcuOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
