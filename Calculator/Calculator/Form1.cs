@@ -195,10 +195,12 @@ namespace Calculator
 
         private void clrAllBtn_Click(object sender, EventArgs e)
         {
+            //Clears the value of all variables, therefore there is nothing to parse or convert to the double n1, n2, and result. Also clears the output on the calculator.
             input = "";
             num1 = "";
             num2 = "";
             fn = "";
+            this.calcuOutput.Text = "0";
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
@@ -231,6 +233,56 @@ namespace Calculator
             input = "0";
             this.calcuOutput.Text = num1 + "÷";
             fn = "/";
+        }
+
+        private void equalsBtn_Click(object sender, EventArgs e)
+        {
+            num2 = input;
+            if (fn != string.Empty)
+            {
+                double n1, n2, result;
+
+                try
+                {
+                    double.TryParse(num1, out n1);
+                    double.TryParse(num2, out n2);
+
+                    switch (fn)
+                    {
+                        case "+":
+                            this.calcuOutput.Text = "+";
+                            result = n1 + n2;
+                            this.calcuOutput.Text = result.ToString();
+                            break;
+
+                        case "-":
+                            this.calcuOutput.Text = "-";
+                            result = n1 - n2;
+                            this.calcuOutput.Text = result.ToString();
+                            break;
+
+                        case "*":
+                            this.calcuOutput.Text = "x";
+                            result = n1 * n2;
+                            this.calcuOutput.Text = result.ToString();
+                            break;
+
+                        case "/":
+                            this.calcuOutput.Text = "÷";
+                            result = n1 / n2;
+                            this.calcuOutput.Text = result.ToString();
+                            break;
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Math Error!");
+                    input = "";
+                    num1 = "";
+                    num2 = "";
+                    fn = "";
+                }
+            }
         }
     }
 }

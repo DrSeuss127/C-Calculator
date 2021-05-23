@@ -412,6 +412,7 @@ namespace Calculator
             this.equalsBtn.Size = new System.Drawing.Size(92, 68);
             this.equalsBtn.TabIndex = 0;
             this.equalsBtn.UseVisualStyleBackColor = false;
+            this.equalsBtn.Click += new System.EventHandler(this.equalsBtn_Click);
             // 
             // calcuOutput
             // 
