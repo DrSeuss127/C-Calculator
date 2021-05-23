@@ -487,7 +487,7 @@ namespace Calculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(757, 703);
+            this.ClientSize = new System.Drawing.Size(757, 684);
             this.Controls.Add(this.historyContLabel);
             this.Controls.Add(this.historyLabel);
             this.Controls.Add(this.memLabel);

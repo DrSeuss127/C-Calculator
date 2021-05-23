@@ -237,6 +237,7 @@ namespace Calculator
 
         private void equalsBtn_Click(object sender, EventArgs e)
         {
+            //Checks if function is not an empty string, if function is not an empty string, performs the try catch below.
             num2 = input;
             if (fn != string.Empty)
             {
@@ -247,26 +248,31 @@ namespace Calculator
                     double.TryParse(num1, out n1);
                     double.TryParse(num2, out n2);
 
+                    //Compares the value stored inside the "fn" (short for function) variable to each case, then executes the code contained inside the chosen case.
                     switch (fn)
                     {
+                        //Case for the addition operation
                         case "+":
                             this.calcuOutput.Text = "+";
                             result = n1 + n2;
                             this.calcuOutput.Text = result.ToString();
                             break;
 
+                        //Case for the subtraction operation
                         case "-":
                             this.calcuOutput.Text = "-";
                             result = n1 - n2;
                             this.calcuOutput.Text = result.ToString();
                             break;
-
+                        
+                        //Case for the multiplication operation
                         case "*":
                             this.calcuOutput.Text = "x";
                             result = n1 * n2;
                             this.calcuOutput.Text = result.ToString();
                             break;
-
+                        
+                        //Case for the division operation
                         case "/":
                             this.calcuOutput.Text = "÷";
                             result = n1 / n2;
