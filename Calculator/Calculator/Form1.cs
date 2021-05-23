@@ -201,6 +201,36 @@ namespace Calculator
             fn = "";
         }
 
-        
+        private void plusBtn_Click(object sender, EventArgs e)
+        {
+            num1 = input;
+            input = "0";
+            this.calcuOutput.Text = num1 + "+";
+            fn = "+";
+        }
+
+        private void minusBtn_Click(object sender, EventArgs e)
+        {
+            num1 = input;
+            input = "0";
+            this.calcuOutput.Text = num1 + "-";
+            fn = "-";
+        }
+
+        private void multBtn_Click(object sender, EventArgs e)
+        {
+            num1 = input;
+            input = "0";
+            this.calcuOutput.Text = num1 + "x";
+            fn = "*";
+        }
+
+        private void divideBtn_Click(object sender, EventArgs e)
+        {
+            num1 = input;
+            input = "0";
+            this.calcuOutput.Text = num1 + "÷";
+            fn = "/";
+        }
     }
 }

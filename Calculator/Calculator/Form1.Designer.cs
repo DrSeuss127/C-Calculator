@@ -352,6 +352,7 @@ namespace Calculator
             this.divideBtn.Size = new System.Drawing.Size(92, 68);
             this.divideBtn.TabIndex = 0;
             this.divideBtn.UseVisualStyleBackColor = false;
+            this.divideBtn.Click += new System.EventHandler(this.divideBtn_Click);
             // 
             // multBtn
             // 
@@ -366,6 +367,7 @@ namespace Calculator
             this.multBtn.Size = new System.Drawing.Size(92, 68);
             this.multBtn.TabIndex = 0;
             this.multBtn.UseVisualStyleBackColor = false;
+            this.multBtn.Click += new System.EventHandler(this.multBtn_Click);
             // 
             // minusBtn
             // 
@@ -380,6 +382,7 @@ namespace Calculator
             this.minusBtn.Size = new System.Drawing.Size(92, 68);
             this.minusBtn.TabIndex = 0;
             this.minusBtn.UseVisualStyleBackColor = false;
+            this.minusBtn.Click += new System.EventHandler(this.minusBtn_Click);
             // 
             // plusBtn
             // 
@@ -394,6 +397,7 @@ namespace Calculator
             this.plusBtn.Size = new System.Drawing.Size(92, 68);
             this.plusBtn.TabIndex = 0;
             this.plusBtn.UseVisualStyleBackColor = false;
+            this.plusBtn.Click += new System.EventHandler(this.plusBtn_Click);
             // 
             // equalsBtn
             // 
