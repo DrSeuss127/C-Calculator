@@ -60,6 +60,7 @@ namespace Calculator
             this.memLabel = new System.Windows.Forms.Label();
             this.historyLabel = new System.Windows.Forms.Label();
             this.historyContLabel = new System.Windows.Forms.Label();
+            this.showOps = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // percentBtn
@@ -482,12 +483,22 @@ namespace Calculator
             this.historyContLabel.TabIndex = 2;
             this.historyContLabel.Text = "There\'s no history yet";
             // 
+            // showOps
+            // 
+            this.showOps.AutoSize = true;
+            this.showOps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.showOps.Location = new System.Drawing.Point(310, 141);
+            this.showOps.Name = "showOps";
+            this.showOps.Size = new System.Drawing.Size(0, 20);
+            this.showOps.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(757, 684);
+            this.Controls.Add(this.showOps);
             this.Controls.Add(this.historyContLabel);
             this.Controls.Add(this.historyLabel);
             this.Controls.Add(this.memLabel);
@@ -558,6 +569,7 @@ namespace Calculator
         private System.Windows.Forms.Label historyContentLabel;
         private System.Windows.Forms.Label historyLabel;
         private System.Windows.Forms.Label historyContLabel;
+        private System.Windows.Forms.Label showOps;
     }
 }
 

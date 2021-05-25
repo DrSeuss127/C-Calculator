@@ -201,13 +201,15 @@ namespace Calculator
             num2 = "";
             fn = "";
             this.calcuOutput.Text = "0";
+            this.showOps.Text = "";
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
         {
             num1 = input;
             input = "0";
-            this.calcuOutput.Text = num1 + "+";
+            this.calcuOutput.Text = "";
+            this.showOps.Text = num1 + " + ";
             fn = "+";
         }
 
@@ -215,7 +217,8 @@ namespace Calculator
         {
             num1 = input;
             input = "0";
-            this.calcuOutput.Text = num1 + "-";
+            this.calcuOutput.Text = "";
+            this.showOps.Text = num1 + " - ";
             fn = "-";
         }
 
@@ -223,7 +226,8 @@ namespace Calculator
         {
             num1 = input;
             input = "0";
-            this.calcuOutput.Text = num1 + "x";
+            this.calcuOutput.Text = "";
+            this.showOps.Text = num1 + " x ";
             fn = "*";
         }
 
@@ -231,7 +235,8 @@ namespace Calculator
         {
             num1 = input;
             input = "0";
-            this.calcuOutput.Text = num1 + "÷";
+            this.calcuOutput.Text = "";
+            this.showOps.Text = num1 + " ÷ ";
             fn = "/";
         }
 
@@ -255,6 +260,7 @@ namespace Calculator
                         case "+":
                             this.calcuOutput.Text = "+";
                             result = n1 + n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
 
@@ -262,6 +268,7 @@ namespace Calculator
                         case "-":
                             this.calcuOutput.Text = "-";
                             result = n1 - n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
                         
@@ -269,6 +276,7 @@ namespace Calculator
                         case "*":
                             this.calcuOutput.Text = "x";
                             result = n1 * n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
                         
@@ -276,6 +284,7 @@ namespace Calculator
                         case "/":
                             this.calcuOutput.Text = "÷";
                             result = n1 / n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
                     }
@@ -283,6 +292,7 @@ namespace Calculator
                 catch
                 {
                     MessageBox.Show("Math Error!");
+                    showOps.Text = "";
                     input = "";
                     num1 = "";
                     num2 = "";
