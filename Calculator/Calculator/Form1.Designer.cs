@@ -60,7 +60,7 @@ namespace Calculator
             this.memLabel = new System.Windows.Forms.Label();
             this.historyLabel = new System.Windows.Forms.Label();
             this.historyContLabel = new System.Windows.Forms.Label();
-            this.showOps = new System.Windows.Forms.Label();
+            this.showOps = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // percentBtn
@@ -488,12 +488,15 @@ namespace Calculator
             // 
             // showOps
             // 
-            this.showOps.AutoSize = true;
+            this.showOps.BackColor = System.Drawing.Color.BurlyWood;
+            this.showOps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showOps.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.showOps.Location = new System.Drawing.Point(310, 141);
+            this.showOps.Location = new System.Drawing.Point(12, 123);
+            this.showOps.Multiline = true;
             this.showOps.Name = "showOps";
-            this.showOps.Size = new System.Drawing.Size(0, 18);
-            this.showOps.TabIndex = 3;
+            this.showOps.Size = new System.Drawing.Size(377, 20);
+            this.showOps.TabIndex = 1;
+            this.showOps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -501,11 +504,11 @@ namespace Calculator
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(757, 684);
-            this.Controls.Add(this.showOps);
             this.Controls.Add(this.historyContLabel);
             this.Controls.Add(this.historyLabel);
             this.Controls.Add(this.memLabel);
             this.Controls.Add(this.modeLabel);
+            this.Controls.Add(this.showOps);
             this.Controls.Add(this.calcuOutput);
             this.Controls.Add(this.decBtn);
             this.Controls.Add(this.zeroNumBtn);
@@ -573,7 +576,7 @@ namespace Calculator
         private System.Windows.Forms.Label historyContentLabel;
         private System.Windows.Forms.Label historyLabel;
         private System.Windows.Forms.Label historyContLabel;
-        private System.Windows.Forms.Label showOps;
+        private System.Windows.Forms.TextBox showOps;
     }
 }
 
