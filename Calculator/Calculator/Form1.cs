@@ -24,7 +24,7 @@ namespace Calculator
 
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += oneNumBtn.Text;
@@ -38,7 +38,7 @@ namespace Calculator
 
         private void twoNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += twoNumBtn.Text;
@@ -52,7 +52,7 @@ namespace Calculator
 
         private void threeNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += threeNumBtn.Text;
@@ -66,7 +66,7 @@ namespace Calculator
 
         private void fourNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += fourNumBtn.Text;
@@ -80,7 +80,7 @@ namespace Calculator
 
         private void fiveNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += fiveNumBtn.Text;
@@ -94,7 +94,7 @@ namespace Calculator
 
         private void sixNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += sixNumBtn.Text;
@@ -108,7 +108,7 @@ namespace Calculator
 
         private void sevenNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += sevenNumBtn.Text;
@@ -122,7 +122,7 @@ namespace Calculator
 
         private void eightNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += eightNumBtn.Text;
@@ -136,7 +136,7 @@ namespace Calculator
 
         private void nineNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += nineNumBtn.Text;
@@ -149,7 +149,7 @@ namespace Calculator
         }
         private void zeroNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if first condition is true, appends the number, else, the number replaces 0
+            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
             if (calcuOutput.Text != "0")
             {
                 calcuOutput.Text += zeroNumBtn.Text;
@@ -207,20 +207,13 @@ namespace Calculator
         }
         private void sqrtBtn_Click(object sender, EventArgs e)
         {
-            //Gets value from calculator output display, assigns operation as √, then displays to showOps label
+            //Gets value from calculator output display, assigns operation as √, then displays to showOps label and calculator output text
             result = double.Parse(calcuOutput.Text) ;
             operation = "√";
-            calcuOutput.Text = "";
-
-            if (result == 0)
-            {
-                operation = "";
-                showOps.Text = "";
-            }
-            else
-            {
-                showOps.Text = $"{operation}{result}";
-            }
+        
+            showOps.Text = $"{operation}{result}";                          //Displays the operation
+            calcuOutput.Text = (Math.Sqrt(result)).ToString();
+            
             
         }
 
@@ -262,11 +255,7 @@ namespace Calculator
                         case "÷":
                             calcuOutput.Text = (result / double.Parse(calcuOutput.Text)).ToString();
                             break;
-
-                        //Case for square root operation
-                        case "√":
-                            calcuOutput.Text = (Math.Sqrt(result)).ToString();
-                            break;
+                        
                     }
                     result = double.Parse(calcuOutput.Text);
                     operation = "";
