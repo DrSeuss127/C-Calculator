@@ -266,6 +266,7 @@ namespace Calculator
             this.sqrtBtn.Size = new System.Drawing.Size(92, 68);
             this.sqrtBtn.TabIndex = 0;
             this.sqrtBtn.UseVisualStyleBackColor = false;
+            this.sqrtBtn.Click += new System.EventHandler(this.sqrtBtn_Click);
             // 
             // nineNumBtn
             // 

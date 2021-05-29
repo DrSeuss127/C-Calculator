@@ -34,9 +34,6 @@ namespace Calculator
             {
                 calcuOutput.Text = oneNumBtn.Text;
             }
-            
-            
-            
         }
 
         private void twoNumBtn_Click(object sender, EventArgs e)
@@ -208,6 +205,24 @@ namespace Calculator
             calcuOutput.Text = "";
             showOps.Text = $"{result} {operation}";
         }
+        private void sqrtBtn_Click(object sender, EventArgs e)
+        {
+            //Gets value from calculator output display, assigns operation as √, then displays to showOps label
+            result = double.Parse(calcuOutput.Text) ;
+            operation = "√";
+            calcuOutput.Text = "";
+
+            if (result == 0)
+            {
+                operation = "";
+                showOps.Text = "";
+            }
+            else
+            {
+                showOps.Text = $"{operation}{result}";
+            }
+            
+        }
 
         private void decBtn_Click(object sender, EventArgs e)
         {
@@ -247,6 +262,11 @@ namespace Calculator
                         case "÷":
                             calcuOutput.Text = (result / double.Parse(calcuOutput.Text)).ToString();
                             break;
+
+                        //Case for square root operation
+                        case "√":
+                            calcuOutput.Text = (Math.Sqrt(result)).ToString();
+                            break;
                     }
                     result = double.Parse(calcuOutput.Text);
                     operation = "";
@@ -260,7 +280,5 @@ namespace Calculator
                 }
             }
         }
-
-        
     }
 }
