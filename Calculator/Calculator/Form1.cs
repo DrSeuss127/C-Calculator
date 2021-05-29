@@ -208,13 +208,22 @@ namespace Calculator
         private void sqrtBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as √, then displays to showOps label and calculator output text
-            result = double.Parse(calcuOutput.Text) ;
+            result = double.Parse(calcuOutput.Text);
             operation = "√";
         
             showOps.Text = $"{operation}{result}";                          //Displays the operation
-            calcuOutput.Text = (Math.Sqrt(result)).ToString();
+            calcuOutput.Text = (Math.Sqrt(result)).ToString();              //Displays result directly to calcu output text when sqrt button is clicked
             
-            
+        }
+
+        private void sqrBtn_Click(object sender, EventArgs e)
+        {
+            //Gets value from calculator output display, assigns operation as n², then displays to showOps label and calculator output text
+            result = double.Parse(calcuOutput.Text);
+            operation = "sqr";
+
+            showOps.Text = $"{operation}({result})";
+            calcuOutput.Text = (Math.Pow(result, 2)).ToString();
         }
 
         private void decBtn_Click(object sender, EventArgs e)

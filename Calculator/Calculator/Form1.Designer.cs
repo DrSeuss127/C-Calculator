@@ -177,6 +177,7 @@ namespace Calculator
             this.sqrBtn.Size = new System.Drawing.Size(92, 68);
             this.sqrBtn.TabIndex = 0;
             this.sqrBtn.UseVisualStyleBackColor = false;
+            this.sqrBtn.Click += new System.EventHandler(this.sqrBtn_Click);
             // 
             // eightNumBtn
             // 
