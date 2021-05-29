@@ -13,8 +13,17 @@ namespace Calculator
     public partial class Form1 : Form
     {
 
-        double result = 0;
-        string operation = "";
+        //Variable that stores the current number being entered
+        string input = "0";
+
+        //Variable that stores the first number 
+        string num1 = "0";
+
+        //Variable that stores the second number
+        string num2 = "0";
+
+        //Variable that stores the operations
+        string fn = string.Empty;
 
         public Form1()
         {
@@ -24,177 +33,258 @@ namespace Calculator
 
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the one button to result as a double
-            result = double.Parse(oneNumBtn.Text);
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "1"; //can be input += "1";
+            }
+            else
+            {
+                input = "1";
+            }
 
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
             
             
         }
 
         private void twoNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the two button to result as a double
-            result = double.Parse(twoNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "2"; // can be input += "2";
+            }
+            else
+            {
+                input = "2";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void threeNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the three button to result as a double
-            result = double.Parse(threeNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "3";
+            }
+            else
+            {
+                input = "3";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void fourNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the four button to result as a double
-            result = double.Parse(fourNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "4";
+            }
+            else
+            {
+                input = "4";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void fiveNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the five button to result as a double
-            result = double.Parse(fiveNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "5";
+            }
+            else
+            {
+                input = "5";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void sixNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the six button to result as a double
-            result = double.Parse(sixNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "6";
+            }
+            else
+            {
+                input = "6";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void sevenNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the seven button to result as a double
-            result = double.Parse(sevenNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "7";
+            }
+            else
+            {
+                input = "7";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void eightNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the eight button to result as a double
-            result = double.Parse(eightNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "8";
+            }
+            else
+            {
+                input = "8";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void nineNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the nine button to result as a double
-            result = double.Parse(nineNumBtn.Text);
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "9";
+            }
+            else
+            {
+                input = "9";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
         private void zeroNumBtn_Click(object sender, EventArgs e)
         {
-            //Stores the input number in the zero button to result as a double
-            result = double.Parse(zeroNumBtn.Text);
-
+            //Checks if the input is not equal to zero. If it is not equal to zero, adds the same number next to the entered number. Otherwise, the input will only be equal to the number.
+            if (input != "0")
+            {
+                input = input + "0";
+            }
+            else
+            {
+                input = "0";
+            }
             //Clears the text box, then appends the input number.
             this.calcuOutput.Text = "";
-            this.calcuOutput.Text += result;
+            this.calcuOutput.Text += input;
         }
 
         private void clrAllBtn_Click(object sender, EventArgs e)
         {
-            //Clears the value of all variables, therefore there is nothing to parse or convert to the double result. Also clears the output on the calculator.
-            result = 0;
-            operation = "";
+            //Clears the value of all variables, therefore there is nothing to parse or convert to the double n1, n2, and result. Also clears the output on the calculator.
+            input = "";
+            num1 = "";
+            num2 = "";
+            fn = "";
             this.calcuOutput.Text = "0";
             this.showOps.Text = "";
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
         {
-            //Displays number and operation used in the showOps label
-            operation = "+";
+            num1 = input;
+            input = "0";
             this.calcuOutput.Text = "";
-            this.showOps.Text = $"{result} {operation}";
+            this.showOps.Text = num1 + " + ";
+            fn = "+";
         }
 
         private void minusBtn_Click(object sender, EventArgs e)
         {
-            //Displays number and operation used in the showOps label
-            operation = "-";
+            num1 = input;
+            input = "0";
             this.calcuOutput.Text = "";
-            this.showOps.Text = $"{result} {operation}";
-            
+            this.showOps.Text = num1 + " - ";
+            fn = "-";
         }
 
         private void multBtn_Click(object sender, EventArgs e)
         {
-            //Displays number and operation used in the showOps label
-            operation = "x";
+            num1 = input;
+            input = "0";
             this.calcuOutput.Text = "";
-            this.showOps.Text = $"{result} {operation}";
+            this.showOps.Text = num1 + " x ";
+            fn = "*";
         }
 
         private void divideBtn_Click(object sender, EventArgs e)
         {
-            //Displays number and operation used in the showOps label
-            operation = "÷";
+            num1 = input;
+            input = "0";
             this.calcuOutput.Text = "";
-            this.showOps.Text = $"{result} {operation}";
+            this.showOps.Text = num1 + " ÷ ";
+            fn = "/";
         }
 
         private void equalsBtn_Click(object sender, EventArgs e)
         {
-            if (operation != string.Empty)
+            //Checks if function is not an empty string, if function is not an empty string, performs the try catch below.
+            num2 = input;
+            if (fn != string.Empty)
             {
+                double n1, n2, result;
 
                 try
                 {
+                    double.TryParse(num1, out n1);
+                    double.TryParse(num2, out n2);
+
                     //Compares the value stored inside the "fn" (short for function) variable to each case, then executes the code contained inside the chosen case.
-                    switch (operation)
+                    switch (fn)
                     {
                         //Case for the addition operation
                         case "+":
-                            result = result + double.Parse(calcuOutput.Text);
+                            this.calcuOutput.Text = "+";
+                            result = n1 + n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
 
                         //Case for the subtraction operation
                         case "-":
-                            result = result - double.Parse(calcuOutput.Text);
+                            this.calcuOutput.Text = "-";
+                            result = n1 - n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
                         
                         //Case for the multiplication operation
-                        case "x":
-                            result = result * double.Parse(calcuOutput.Text);
+                        case "*":
+                            this.calcuOutput.Text = "x";
+                            result = n1 * n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
                         
                         //Case for the division operation
-                        case "÷":
-                            result = result / double.Parse(calcuOutput.Text);
+                        case "/":
+                            this.calcuOutput.Text = "÷";
+                            result = n1 / n2;
+                            this.showOps.Text += num2 + " = " + result;
                             this.calcuOutput.Text = result.ToString();
                             break;
                     }
@@ -203,9 +293,10 @@ namespace Calculator
                 {
                     MessageBox.Show("Math Error!");
                     showOps.Text = "";
-                    calcuOutput.Text = "0";
-                    result = 0;
-                    operation = "";
+                    input = "";
+                    num1 = "";
+                    num2 = "";
+                    fn = "";
                 }
             }
         }
