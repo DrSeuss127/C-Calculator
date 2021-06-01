@@ -77,6 +77,7 @@ namespace Calculator
             this.percentBtn.Size = new System.Drawing.Size(92, 68);
             this.percentBtn.TabIndex = 0;
             this.percentBtn.UseVisualStyleBackColor = false;
+            this.percentBtn.Click += new System.EventHandler(this.percentBtn_Click);
             // 
             // fractBtn
             // 
@@ -91,6 +92,7 @@ namespace Calculator
             this.fractBtn.TabIndex = 0;
             this.fractBtn.Text = "1/x";
             this.fractBtn.UseVisualStyleBackColor = false;
+            this.fractBtn.Click += new System.EventHandler(this.fractBtn_Click);
             // 
             // sevenNumBtn
             // 
@@ -150,6 +152,7 @@ namespace Calculator
             this.plusMinusBtn.Size = new System.Drawing.Size(92, 68);
             this.plusMinusBtn.TabIndex = 0;
             this.plusMinusBtn.UseVisualStyleBackColor = false;
+            this.plusMinusBtn.Click += new System.EventHandler(this.plusMinusBtn_Click);
             // 
             // clrRecentBtn
             // 
