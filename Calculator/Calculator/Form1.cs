@@ -15,10 +15,12 @@ namespace Calculator
 
         double result = 0;
         string operation = "";
+        string num1, num2;
 
         public Form1()
         {
             InitializeComponent();
+            clearHistory.Visible = false;
         }
 
 
@@ -170,6 +172,14 @@ namespace Calculator
             showOps.Text = "";
         }
 
+        private void clrRecentBtn_Click(object sender, EventArgs e)
+        {
+            operation = "";
+            result = 0;
+            calcuOutput.Text = "0";
+            showOps.Text = "";
+        }
+
         private void plusBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as +, then displays to showOps label
@@ -177,6 +187,7 @@ namespace Calculator
             operation = "+";
             calcuOutput.Text = "";
             showOps.Text = $"{result} {operation}";
+            num1 = showOps.Text;
         }
 
         private void minusBtn_Click(object sender, EventArgs e)
@@ -186,6 +197,7 @@ namespace Calculator
             operation = "-";
             calcuOutput.Text = "";
             showOps.Text = $"{result} {operation}";
+            num1 = showOps.Text;
         }
 
         private void multBtn_Click(object sender, EventArgs e)
@@ -195,6 +207,7 @@ namespace Calculator
             operation = "x";
             calcuOutput.Text = "";
             showOps.Text = $"{result} {operation}";
+            num1 = showOps.Text;
         }
 
         private void divideBtn_Click(object sender, EventArgs e)
@@ -204,6 +217,7 @@ namespace Calculator
             operation = "÷";
             calcuOutput.Text = "";
             showOps.Text = $"{result} {operation}";
+            num1 = showOps.Text;
         }
         private void sqrtBtn_Click(object sender, EventArgs e)
         {
@@ -213,7 +227,7 @@ namespace Calculator
         
             showOps.Text = $"{operation}{result}";                          //Displays the operation
             calcuOutput.Text = (Math.Sqrt(result)).ToString();              //Displays result directly to calcu output text when sqrt button is clicked
-            
+            num1 = showOps.Text;
         }
 
         private void sqrBtn_Click(object sender, EventArgs e)
@@ -224,6 +238,7 @@ namespace Calculator
 
             showOps.Text = $"{operation}({result})";
             calcuOutput.Text = (Math.Pow(result, 2)).ToString();
+            num1 = showOps.Text;
         }
 
         private void decBtn_Click(object sender, EventArgs e)
@@ -234,6 +249,29 @@ namespace Calculator
             }
         }
 
+        private void delBtn_Click(object sender, EventArgs e)
+        {
+            if (calcuOutput.Text.Length > 0)                                                  //Checks for text lenght, if greater than 0, removes text by 1 per click
+            {
+                calcuOutput.Text = calcuOutput.Text.Remove(calcuOutput.Text.Length -1, 1);
+            }
+
+            if (calcuOutput.Text == "")
+            {
+                calcuOutput.Text = "0";
+            }
+        }
+
+        private void clearHistory_Click(object sender, EventArgs e)
+        {
+            if (historyContLabel.Text == "")
+            {
+                historyContLabel.Text = "There's no history yet";
+                historyDisp.Text = "";
+                clearHistory.Visible = false;
+            }
+        }
+
         private void equalsBtn_Click(object sender, EventArgs e)
         {
             if (operation != string.Empty)
@@ -241,6 +279,7 @@ namespace Calculator
 
                 try
                 {
+                    num2 = calcuOutput.Text;
                     showOps.Text = "";
                     //Compares the value stored inside the "fn" (short for function) variable to each case, then executes the code contained inside the chosen case.
                     switch (operation)
@@ -248,26 +287,68 @@ namespace Calculator
                         //Case for the addition operation
                         case "+":
                             calcuOutput.Text = (result + double.Parse(calcuOutput.Text)).ToString();
+
+                            //Memory or history display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + " " + num2 + " = " + "\n");      //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText("\n\t" + calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
                             break;
 
                         //Case for the subtraction operation
                         case "-":
                             calcuOutput.Text = (result - double.Parse(calcuOutput.Text)).ToString();
+
+                            //Memory or history display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + " " + num2 + " = " + "\n");      //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText("\n\t" + calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
                             break;
                         
                         //Case for the multiplication operation
                         case "x":
                             calcuOutput.Text = (result * double.Parse(calcuOutput.Text)).ToString();
+
+                            //Memory or history display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + " " + num2 + " = " + "\n");      //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText("\n\t" + calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
                             break;
                         
                         //Case for the division operation
                         case "÷":
                             calcuOutput.Text = (result / double.Parse(calcuOutput.Text)).ToString();
+
+                            //Memory or history display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + " " + num2 + " = " + "\n");      //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText("\n\t" + calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
                             break;
-                        
+
+                        case "sqr":
+                            //Memory or history display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + " = " + "\n");      //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText("\n\t" + calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
+                            break;
+
+                        case "√":
+                            //Memory or history display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + " = " + "\n");      //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText("\n\t" + calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
+                            break;
+
                     }
                     result = double.Parse(calcuOutput.Text);
                     operation = "";
+
+                    
                 }
                 catch
                 {

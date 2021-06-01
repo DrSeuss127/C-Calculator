@@ -57,10 +57,11 @@ namespace Calculator
             this.calcuOutput = new System.Windows.Forms.TextBox();
             this.menuBtn = new System.Windows.Forms.Button();
             this.modeLabel = new System.Windows.Forms.Label();
-            this.memLabel = new System.Windows.Forms.Label();
             this.historyLabel = new System.Windows.Forms.Label();
             this.historyContLabel = new System.Windows.Forms.Label();
             this.showOps = new System.Windows.Forms.TextBox();
+            this.historyDisp = new System.Windows.Forms.RichTextBox();
+            this.clearHistory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // percentBtn
@@ -163,6 +164,7 @@ namespace Calculator
             this.clrRecentBtn.TabIndex = 0;
             this.clrRecentBtn.Text = "CE";
             this.clrRecentBtn.UseVisualStyleBackColor = false;
+            this.clrRecentBtn.Click += new System.EventHandler(this.clrRecentBtn_Click);
             // 
             // sqrBtn
             // 
@@ -342,6 +344,7 @@ namespace Calculator
             this.delBtn.Size = new System.Drawing.Size(92, 68);
             this.delBtn.TabIndex = 0;
             this.delBtn.UseVisualStyleBackColor = false;
+            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
             // 
             // divideBtn
             // 
@@ -456,16 +459,6 @@ namespace Calculator
             this.modeLabel.TabIndex = 2;
             this.modeLabel.Text = "Standard";
             // 
-            // memLabel
-            // 
-            this.memLabel.AutoSize = true;
-            this.memLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memLabel.Location = new System.Drawing.Point(645, 5);
-            this.memLabel.Name = "memLabel";
-            this.memLabel.Size = new System.Drawing.Size(105, 28);
-            this.memLabel.TabIndex = 2;
-            this.memLabel.Text = "Memory";
-            // 
             // historyLabel
             // 
             this.historyLabel.AutoSize = true;
@@ -480,7 +473,7 @@ namespace Calculator
             // 
             this.historyContLabel.AutoSize = true;
             this.historyContLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.historyContLabel.Location = new System.Drawing.Point(425, 75);
+            this.historyContLabel.Location = new System.Drawing.Point(426, 67);
             this.historyContLabel.Name = "historyContLabel";
             this.historyContLabel.Size = new System.Drawing.Size(205, 22);
             this.historyContLabel.TabIndex = 2;
@@ -498,15 +491,40 @@ namespace Calculator
             this.showOps.TabIndex = 1;
             this.showOps.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // historyDisp
+            // 
+            this.historyDisp.BackColor = System.Drawing.Color.BurlyWood;
+            this.historyDisp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.historyDisp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.historyDisp.Location = new System.Drawing.Point(627, 67);
+            this.historyDisp.Name = "historyDisp";
+            this.historyDisp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.historyDisp.Size = new System.Drawing.Size(123, 556);
+            this.historyDisp.TabIndex = 3;
+            this.historyDisp.Text = "";
+            // 
+            // clearHistory
+            // 
+            this.clearHistory.BackColor = System.Drawing.Color.BurlyWood;
+            this.clearHistory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("clearHistory.BackgroundImage")));
+            this.clearHistory.FlatAppearance.BorderSize = 0;
+            this.clearHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearHistory.Location = new System.Drawing.Point(704, 629);
+            this.clearHistory.Name = "clearHistory";
+            this.clearHistory.Size = new System.Drawing.Size(47, 47);
+            this.clearHistory.TabIndex = 4;
+            this.clearHistory.UseVisualStyleBackColor = false;
+            this.clearHistory.Click += new System.EventHandler(this.clearHistory_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(757, 684);
+            this.Controls.Add(this.clearHistory);
             this.Controls.Add(this.historyContLabel);
             this.Controls.Add(this.historyLabel);
-            this.Controls.Add(this.memLabel);
             this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.showOps);
             this.Controls.Add(this.calcuOutput);
@@ -535,6 +553,7 @@ namespace Calculator
             this.Controls.Add(this.clrAllBtn);
             this.Controls.Add(this.clrRecentBtn);
             this.Controls.Add(this.percentBtn);
+            this.Controls.Add(this.historyDisp);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculator";
@@ -572,11 +591,12 @@ namespace Calculator
         private System.Windows.Forms.TextBox calcuOutput;
         private System.Windows.Forms.Button menuBtn;
         private System.Windows.Forms.Label modeLabel;
-        private System.Windows.Forms.Label memLabel;
         private System.Windows.Forms.Label historyContentLabel;
         private System.Windows.Forms.Label historyLabel;
         private System.Windows.Forms.Label historyContLabel;
         private System.Windows.Forms.TextBox showOps;
+        private System.Windows.Forms.RichTextBox historyDisp;
+        private System.Windows.Forms.Button clearHistory;
     }
 }
 
