@@ -24,6 +24,269 @@ namespace Calculator
             clearHistory.Visible = false;
         }
 
+        private void operationsChecker()
+        {
+            if (operation != string.Empty)
+            {
+
+                try
+                {
+                    double result2 = double.Parse(calcuOutput.Text);
+                    num2 = calcuOutput.Text;
+
+                    //Compares the value stored inside the operation variable to each case, then executes the code contained inside the chosen case.
+                    switch (operation)
+                    {
+                        //Case for the addition operation
+                        case "+":
+                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
+                            {
+
+                                calcuOutput.Text = (result + result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                                    //Makes the button for clearing the history visible
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");     //Appends the text from the showOps label to the history display
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+                            else
+                            {
+                                calcuOutput.Text = (result + result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                                    
+                                historyDisp.AppendText($"{num1} {num2} = ");                    
+                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                                historyContLabel.Text = "";
+
+                                //Operations display
+                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                            }
+
+                            if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result + result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                                    
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+                            break;
+
+                        //Case for the subtraction operation
+                        case "-":
+                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
+                            {
+
+                                calcuOutput.Text = (result - result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                                   
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+                            else
+                            {
+                                calcuOutput.Text = (result - result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                                    
+                                historyDisp.AppendText($"{num1} {num2} = ");                    
+                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                                historyContLabel.Text = "";
+
+                                //Operations display
+                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                            }
+
+                            if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result - result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+                            break;
+
+                        //Case for the multiplication operation
+                        case "x":
+                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
+                            {
+
+                                calcuOutput.Text = (result * result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+
+                            else
+                            {
+                                calcuOutput.Text = (result * result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} {num2} = ");      
+                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                                historyContLabel.Text = "";
+
+                                //Operations display
+                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                            }
+
+                            if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result * result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+                            break;
+
+                        //Case for the division operation
+                        case "÷":
+                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
+                            {
+
+                                calcuOutput.Text = (result / result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+
+                            else
+                            {
+                                calcuOutput.Text = (result / result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} {num2} = ");      
+                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                                historyContLabel.Text = "";
+
+                                //Operations display
+                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                            }
+                            if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result / result2).ToString();
+
+                                //History display
+                                clearHistory.Visible = true;                            
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                            }
+                            break;
+
+
+                    }
+                    result = double.Parse(calcuOutput.Text);
+                    operation = "";
+
+
+                }
+                catch
+                {
+                    MessageBox.Show("Math Error!");
+                    showOps.Text = "";
+                    result = 0;
+                    operation = "";
+                }
+
+
+            }
+            else if (operation2 != string.Empty)
+            {
+                try
+                {
+                    //Checks the value of operation2 for operations that are complex
+                    switch (operation2)
+                    {
+                        //Case for square root
+                        case "√":
+
+                            //History display
+                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.AppendText(num1 + "   =   ");               //Appends the text from the showOps label to the history display
+                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
+
+                            //Operations display
+                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            break;
+
+                        //Case for x² 
+                        case "sqr":
+
+                            //History display
+                            clearHistory.Visible = true;
+                            historyDisp.AppendText(num1 + "   =   ");
+                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";
+
+                            //Operations display
+                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            break;
+
+                        //Case for 1/x
+                        case "1/":
+
+                            //History display
+                            clearHistory.Visible = true;
+                            historyDisp.AppendText(num1 + "   =   ");
+                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";
+
+                            //Operations display
+                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            break;
+
+                        //Case for %
+                        case "%":
+                            //History display
+                            clearHistory.Visible = true;
+                            historyDisp.AppendText(num1 + "   =   ");
+                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
+                            historyContLabel.Text = "";
+
+                            //Operations display
+                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            break;
+                    }
+                    result = double.Parse(calcuOutput.Text);
+                    operation2 = "";
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+        }
 
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
@@ -228,7 +491,7 @@ namespace Calculator
             operation2 = "√";
         
             showOps.Text += $" {operation2}{sqrtNum}";                          //Displays the operation
-            calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();              //Displays result directly to calcu output text when sqrt button is clicked
+            calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();                 //Displays result directly to calcu output text when sqrt button is clicked
             num1 = showOps.Text;
         }
 
@@ -256,7 +519,8 @@ namespace Calculator
 
         private void percentBtn_Click(object sender, EventArgs e)
         {
-
+            //Gets value from calculator output display, assigns operation as n/100, then displays to showOps label and calculator output text
+            double sqrNum = double.Parse(calcuOutput.Text);
             double percentNum = double.Parse(calcuOutput.Text);
             operation2 = "%";
 
@@ -279,8 +543,8 @@ namespace Calculator
             {
                 calcuOutput.Text = calcuOutput.Text.Substring(1);                                           //Strips negative sign (-) to make the number positive
             }
-            else if (!string.IsNullOrEmpty(calcuOutput.Text) && decimal.Parse(calcuOutput.Text) != 0)       //Checks if the string is null or empty, and if the decimal value
-            {                                                                                               //of the output is not equal to 0
+            else if (!string.IsNullOrEmpty(calcuOutput.Text) && decimal.Parse(calcuOutput.Text) != 0)       //Checks if the string is not null or empty, and if the decimal value
+            {                                                                                               //of the output display of the calculator is not equal to 0
                 calcuOutput.Text = "-" + calcuOutput.Text;                                                  //Adds negative sign (-) if conditions are met
             }
         }
@@ -302,6 +566,8 @@ namespace Calculator
 
         private void clearHistory_Click(object sender, EventArgs e)
         {
+            //If no text is on the label for the history, changes the text to "There's no history yet" and clears the history
+            //Hides clear history button after use
             if (historyContLabel.Text == "")
             {
                 historyContLabel.Text = "There's no history yet";
@@ -312,266 +578,8 @@ namespace Calculator
 
         private void equalsBtn_Click(object sender, EventArgs e)
         {
-            if (operation != string.Empty)
-            {
-
-                try
-                {
-                    double result2 = double.Parse(calcuOutput.Text);
-                    num2 = calcuOutput.Text;
-
-                    //Compares the value stored inside the operation variable to each case, then executes the code contained inside the chosen case.
-                    switch (operation)
-                    {
-                        //Case for the addition operation
-                        case "+":
-                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
-                            {
-            
-                                calcuOutput.Text = (result + result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            else
-                            {
-                                calcuOutput.Text = (result + result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} {num2} = ");      //Appends the text from the showOps label to the history display
-                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                                historyContLabel.Text = "";
-
-                                //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
-                            }
-                            
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result + result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            break;
-
-                        //Case for the subtraction operation
-                        case "-":
-                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
-                            {
-
-                                calcuOutput.Text = (result - result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            else
-                            {
-                                calcuOutput.Text = (result - result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} {num2} = ");      //Appends the text from the showOps label to the history display
-                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                                historyContLabel.Text = "";
-
-                                //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
-                            }
-                            
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result - result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            break;
-                        
-                        //Case for the multiplication operation
-                        case "x":
-                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
-                            {
-
-                                calcuOutput.Text = (result * result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            
-                            else
-                            {
-                                calcuOutput.Text = (result * result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} {num2} = ");      //Appends the text from the showOps label to the history display
-                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                                historyContLabel.Text = "";
-
-                                //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
-                            }
-
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result * result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            break;
-                        
-                        //Case for the division operation
-                        case "÷":
-                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
-                            {
-
-                                calcuOutput.Text = (result / result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                               
-                            else
-                            {
-                                calcuOutput.Text = (result / result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} {num2} = ");      //Appends the text from the showOps label to the history display
-                                historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                                historyContLabel.Text = "";
-
-                                //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
-                            }
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result / result2).ToString();
-
-                                //Memory or history display
-                                clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
-                            }
-                            break;
-                            
-
-                    }
-                    result = double.Parse(calcuOutput.Text);
-                    operation = "";
-
-                    
-                }
-                catch
-                {
-                    MessageBox.Show("Math Error!");
-                    showOps.Text = "";
-                    result = 0;
-                    operation = "";
-                }
-
-
-            }
-            else if (operation2 != string.Empty)
-            {
-                try
-                {
-                    //Checks the value of operation2 for operations that are complex
-                    switch (operation2)
-                    {
-                        //Case for square root
-                        case "√":
-
-                            //Memory or history display
-                            clearHistory.Visible = true;                            //Makes the button for clearing the history visible
-                            historyDisp.AppendText(num1 + "   =   ");               //Appends the text from the showOps label to the history display
-                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                            historyContLabel.Text = "";                             //Removes the text "There's no history yet"
-
-                            //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
-                            break;
-
-                        //Case for x² 
-                        case "sqr":
-
-                            //Memory or history display
-                            clearHistory.Visible = true;                            
-                            historyDisp.AppendText(num1 + "   =   ");      
-                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                            historyContLabel.Text = "";                             
-
-                            //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
-                            break;
-                        
-                        //Case for 1/x
-                        case "1/":
-
-                            //Memory or history display
-                            clearHistory.Visible = true;                            
-                            historyDisp.AppendText(num1 + "   =   ");      
-                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                            historyContLabel.Text = "";                             
-
-                            //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
-                            break;
-
-                        //Case for %
-                        case "%":
-                            //Memory or history display
-                            clearHistory.Visible = true;                            
-                            historyDisp.AppendText(num1 + "   =   ");      
-                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                            historyContLabel.Text = "";                             
-
-                            //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
-                            break;
-                    }
-                    result = double.Parse(calcuOutput.Text);
-                    operation2 = "";
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-            }
+            //Method for checking and performing of operations
+            operationsChecker();
         }
     }
 }

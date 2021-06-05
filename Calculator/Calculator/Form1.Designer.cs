@@ -499,10 +499,10 @@ namespace Calculator
             this.historyDisp.BackColor = System.Drawing.Color.BurlyWood;
             this.historyDisp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.historyDisp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.historyDisp.Location = new System.Drawing.Point(627, 67);
+            this.historyDisp.Location = new System.Drawing.Point(426, 67);
             this.historyDisp.Name = "historyDisp";
             this.historyDisp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.historyDisp.Size = new System.Drawing.Size(123, 556);
+            this.historyDisp.Size = new System.Drawing.Size(324, 556);
             this.historyDisp.TabIndex = 3;
             this.historyDisp.Text = "";
             // 
