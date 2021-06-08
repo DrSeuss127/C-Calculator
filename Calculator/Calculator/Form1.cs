@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,10 @@ namespace Calculator
 
                                 calcuOutput.Text = (result + result2).ToString();
 
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
+
                                 //History display
                                 clearHistory.Visible = true;                                    //Makes the button for clearing the history visible
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");     //Appends the text from the showOps label to the history display
@@ -54,6 +59,10 @@ namespace Calculator
                             else
                             {
                                 calcuOutput.Text = (result + result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                                    
@@ -68,6 +77,10 @@ namespace Calculator
                             if (operation2 == "%")
                             {
                                 calcuOutput.Text = (result + result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                                    
@@ -85,6 +98,10 @@ namespace Calculator
 
                                 calcuOutput.Text = (result - result2).ToString();
 
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
+
                                 //History display
                                 clearHistory.Visible = true;                                   
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
@@ -95,6 +112,10 @@ namespace Calculator
                             else
                             {
                                 calcuOutput.Text = (result - result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                                    
@@ -109,6 +130,10 @@ namespace Calculator
                             if (operation2 == "%")
                             {
                                 calcuOutput.Text = (result - result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -126,6 +151,10 @@ namespace Calculator
 
                                 calcuOutput.Text = (result * result2).ToString();
 
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
+
                                 //History display
                                 clearHistory.Visible = true;                            
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
@@ -137,6 +166,10 @@ namespace Calculator
                             else
                             {
                                 calcuOutput.Text = (result * result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -151,6 +184,10 @@ namespace Calculator
                             if (operation2 == "%")
                             {
                                 calcuOutput.Text = (result * result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -168,6 +205,10 @@ namespace Calculator
 
                                 calcuOutput.Text = (result / result2).ToString();
 
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
+
                                 //History display
                                 clearHistory.Visible = true;                            
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
@@ -179,6 +220,10 @@ namespace Calculator
                             else
                             {
                                 calcuOutput.Text = (result / result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -192,6 +237,10 @@ namespace Calculator
                             if (operation2 == "%")
                             {
                                 calcuOutput.Text = (result / result2).ToString();
+
+                                //Thousands separator for click button
+                                double num = double.Parse(calcuOutput.Text);
+                                calcuOutput.Text = string.Format("{0:N0}", num);
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -300,6 +349,9 @@ namespace Calculator
             {
                 calcuOutput.Text = oneNumBtn.Text;
             }
+
+            double number1 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number1);
         }
 
         private void twoNumBtn_Click(object sender, EventArgs e)
@@ -314,6 +366,9 @@ namespace Calculator
             {
                 calcuOutput.Text = twoNumBtn.Text;
             }
+
+            double number2 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number2);
         }
 
         private void threeNumBtn_Click(object sender, EventArgs e)
@@ -328,6 +383,9 @@ namespace Calculator
             {
                 calcuOutput.Text = threeNumBtn.Text;
             }
+
+            double number3 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number3);
         }
 
         private void fourNumBtn_Click(object sender, EventArgs e)
@@ -342,6 +400,9 @@ namespace Calculator
             {
                 calcuOutput.Text = fourNumBtn.Text;
             }
+
+            double number4 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number4);
         }
 
         private void fiveNumBtn_Click(object sender, EventArgs e)
@@ -356,6 +417,9 @@ namespace Calculator
             {
                 calcuOutput.Text = fiveNumBtn.Text;
             }
+
+            double number5 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number5);
         }
 
         private void sixNumBtn_Click(object sender, EventArgs e)
@@ -370,6 +434,9 @@ namespace Calculator
             {
                 calcuOutput.Text = sixNumBtn.Text;
             }
+
+            double number6 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number6);
         }
 
         private void sevenNumBtn_Click(object sender, EventArgs e)
@@ -384,6 +451,9 @@ namespace Calculator
             {
                 calcuOutput.Text = sevenNumBtn.Text;
             }
+
+            double number7 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number7);
         }
 
         private void eightNumBtn_Click(object sender, EventArgs e)
@@ -398,6 +468,9 @@ namespace Calculator
             {
                 calcuOutput.Text = eightNumBtn.Text;
             }
+
+            double number8 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number8);
         }
 
         private void nineNumBtn_Click(object sender, EventArgs e)
@@ -412,6 +485,9 @@ namespace Calculator
             {
                 calcuOutput.Text = nineNumBtn.Text;
             }
+
+            double number9 = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number9);
         }
         private void zeroNumBtn_Click(object sender, EventArgs e)
         {
@@ -425,6 +501,9 @@ namespace Calculator
             {
                 calcuOutput.Text = zeroNumBtn.Text;
             }
+
+            double number = double.Parse(calcuOutput.Text);
+            calcuOutput.Text = string.Format("{0:N0}", number);
         }
 
         private void clrAllBtn_Click(object sender, EventArgs e)
@@ -451,7 +530,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "+";
             calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
+            showOps.Text = $"{string.Format("{0:N0}",result)} {operation}";
             num1 = showOps.Text;
         }
 
@@ -461,7 +540,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "-";
             calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
+            showOps.Text = $"{string.Format("{0:N0}", result)} {operation}";
             num1 = showOps.Text;
         }
 
@@ -471,7 +550,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "x";
             calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
+            showOps.Text = $"{string.Format("{0:N0}", result)} {operation}";
             num1 = showOps.Text;
         }
 
@@ -481,7 +560,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "÷";
             calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
+            showOps.Text = $"{string.Format("{0:N0}", result)} {operation}";
             num1 = showOps.Text;
         }
         private void sqrtBtn_Click(object sender, EventArgs e)
@@ -490,7 +569,7 @@ namespace Calculator
             double sqrtNum = double.Parse(calcuOutput.Text);
             operation2 = "√";
         
-            showOps.Text += $" {operation2}{sqrtNum}";                          //Displays the operation
+            showOps.Text += $" {operation2}{string.Format("{0:N0}", sqrtNum)}";                          //Displays the operation
             calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();                 //Displays result directly to calcu output text when sqrt button is clicked
             num1 = showOps.Text;
         }
@@ -501,7 +580,7 @@ namespace Calculator
             double sqrNum = double.Parse(calcuOutput.Text);
             operation2 = "sqr";
 
-            showOps.Text += $" {operation2}({sqrNum})";
+            showOps.Text += $" {operation2}({string.Format("{0:N0}", sqrNum)})";
             calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
             num1 = showOps.Text;
         }
@@ -512,7 +591,7 @@ namespace Calculator
             double fractNum = double.Parse(calcuOutput.Text);
             operation2 = "1/";
 
-            showOps.Text += $" {operation2}({fractNum})";
+            showOps.Text += $" {operation2}({string.Format("{0:N0}", fractNum)})";
             calcuOutput.Text = (1 / fractNum).ToString();
             num1 = showOps.Text;
         }
@@ -520,7 +599,6 @@ namespace Calculator
         private void percentBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as n/100, then displays to showOps label and calculator output text
-            double sqrNum = double.Parse(calcuOutput.Text);
             double percentNum = double.Parse(calcuOutput.Text);
             operation2 = "%";
 
