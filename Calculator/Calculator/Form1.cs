@@ -45,7 +45,7 @@ namespace Calculator
 
                                 calcuOutput.Text = (result + result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -60,7 +60,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result + result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -78,7 +78,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result + result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -98,7 +98,7 @@ namespace Calculator
 
                                 calcuOutput.Text = (result - result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -113,7 +113,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result - result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -131,7 +131,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result - result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -151,7 +151,7 @@ namespace Calculator
 
                                 calcuOutput.Text = (result * result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -167,7 +167,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result * result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -185,7 +185,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result * result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -205,7 +205,7 @@ namespace Calculator
 
                                 calcuOutput.Text = (result / result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -221,7 +221,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result / result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
@@ -238,7 +238,7 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result / result2).ToString();
 
-                                //Thousands separator for click button
+                                //Thousands separator for equals button
                                 double num = double.Parse(calcuOutput.Text);
                                 calcuOutput.Text = string.Format("{0:N0}", num);
 
