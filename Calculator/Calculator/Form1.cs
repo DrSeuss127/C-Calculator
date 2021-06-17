@@ -45,9 +45,19 @@ namespace Calculator
 
                                 calcuOutput.Text = (result + result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                                    //Makes the button for clearing the history visible
@@ -60,9 +70,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result + result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                                    
@@ -78,9 +98,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result + result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                                    
@@ -98,9 +128,19 @@ namespace Calculator
 
                                 calcuOutput.Text = (result - result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                                   
@@ -113,9 +153,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result - result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                                    
@@ -131,9 +181,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result - result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -151,9 +211,19 @@ namespace Calculator
 
                                 calcuOutput.Text = (result * result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -167,9 +237,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result * result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -185,9 +265,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result * result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -205,9 +295,19 @@ namespace Calculator
 
                                 calcuOutput.Text = (result / result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -221,9 +321,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result / result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -238,9 +348,19 @@ namespace Calculator
                             {
                                 calcuOutput.Text = (result / result2).ToString();
 
-                                //Thousands separator for equals button
-                                double num = double.Parse(calcuOutput.Text);
-                                calcuOutput.Text = string.Format("{0:N0}", num);
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
 
                                 //History display
                                 clearHistory.Visible = true;                            
@@ -337,6 +457,32 @@ namespace Calculator
             }
         }
 
+        private void decimalCheckerOutput()
+        {
+            double num = double.Parse(calcuOutput.Text);
+
+            //Checks if the output text contains a decimal, if it does, appends the number
+            int pos = 0;
+
+            if (calcuOutput.Text.Contains("."))
+            {
+                pos = calcuOutput.Text.Length - calcuOutput.Text.IndexOf(".");
+                if (pos == 1)
+                {
+                    return;
+                }
+
+                string formatDec = "{0:N" + (pos - 1) + "}";
+                calcuOutput.Text = string.Format(formatDec, num);
+            }
+
+            //Otherwise, proceeds to thousands separator-formatted number
+            else
+            {
+                calcuOutput.Text = string.Format("{0:N0}", num);
+            }
+        }
+
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
             //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
@@ -350,8 +496,7 @@ namespace Calculator
                 calcuOutput.Text = oneNumBtn.Text;
             }
 
-            double number1 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number1);
+            decimalCheckerOutput();
         }
 
         private void twoNumBtn_Click(object sender, EventArgs e)
@@ -367,8 +512,7 @@ namespace Calculator
                 calcuOutput.Text = twoNumBtn.Text;
             }
 
-            double number2 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number2);
+            decimalCheckerOutput();
         }
 
         private void threeNumBtn_Click(object sender, EventArgs e)
@@ -384,8 +528,7 @@ namespace Calculator
                 calcuOutput.Text = threeNumBtn.Text;
             }
 
-            double number3 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number3);
+            decimalCheckerOutput();
         }
 
         private void fourNumBtn_Click(object sender, EventArgs e)
@@ -401,8 +544,7 @@ namespace Calculator
                 calcuOutput.Text = fourNumBtn.Text;
             }
 
-            double number4 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number4);
+            decimalCheckerOutput();
         }
 
         private void fiveNumBtn_Click(object sender, EventArgs e)
@@ -418,8 +560,7 @@ namespace Calculator
                 calcuOutput.Text = fiveNumBtn.Text;
             }
 
-            double number5 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number5);
+            decimalCheckerOutput();
         }
 
         private void sixNumBtn_Click(object sender, EventArgs e)
@@ -435,8 +576,7 @@ namespace Calculator
                 calcuOutput.Text = sixNumBtn.Text;
             }
 
-            double number6 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number6);
+            decimalCheckerOutput();
         }
 
         private void sevenNumBtn_Click(object sender, EventArgs e)
@@ -452,8 +592,7 @@ namespace Calculator
                 calcuOutput.Text = sevenNumBtn.Text;
             }
 
-            double number7 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number7);
+            decimalCheckerOutput();
         }
 
         private void eightNumBtn_Click(object sender, EventArgs e)
@@ -469,8 +608,7 @@ namespace Calculator
                 calcuOutput.Text = eightNumBtn.Text;
             }
 
-            double number8 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number8);
+            decimalCheckerOutput();
         }
 
         private void nineNumBtn_Click(object sender, EventArgs e)
@@ -486,8 +624,7 @@ namespace Calculator
                 calcuOutput.Text = nineNumBtn.Text;
             }
 
-            double number9 = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number9);
+            decimalCheckerOutput();
         }
         private void zeroNumBtn_Click(object sender, EventArgs e)
         {
@@ -502,8 +639,7 @@ namespace Calculator
                 calcuOutput.Text = zeroNumBtn.Text;
             }
 
-            double number = double.Parse(calcuOutput.Text);
-            calcuOutput.Text = string.Format("{0:N0}", number);
+            decimalCheckerOutput();
         }
 
         private void clrAllBtn_Click(object sender, EventArgs e)
@@ -530,7 +666,8 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "+";
             calcuOutput.Text = "";
-            showOps.Text = $"{string.Format("{0:N0}",result)} {operation}";
+            showOps.Text = $"{result} {operation}";
+
             num1 = showOps.Text;
         }
 
@@ -540,7 +677,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "-";
             calcuOutput.Text = "";
-            showOps.Text = $"{string.Format("{0:N0}", result)} {operation}";
+            showOps.Text = $"{result} {operation}";
             num1 = showOps.Text;
         }
 
@@ -550,7 +687,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "x";
             calcuOutput.Text = "";
-            showOps.Text = $"{string.Format("{0:N0}", result)} {operation}";
+            showOps.Text = $"{result} {operation}";
             num1 = showOps.Text;
         }
 
@@ -560,7 +697,7 @@ namespace Calculator
             result = double.Parse(calcuOutput.Text);
             operation = "÷";
             calcuOutput.Text = "";
-            showOps.Text = $"{string.Format("{0:N0}", result)} {operation}";
+            showOps.Text = $"{result} {operation}";
             num1 = showOps.Text;
         }
         private void sqrtBtn_Click(object sender, EventArgs e)
@@ -569,7 +706,7 @@ namespace Calculator
             double sqrtNum = double.Parse(calcuOutput.Text);
             operation2 = "√";
         
-            showOps.Text += $" {operation2}{string.Format("{0:N0}", sqrtNum)}";                          //Displays the operation
+            showOps.Text += $" {operation2}{sqrtNum}";                          //Displays the operation
             calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();                 //Displays result directly to calcu output text when sqrt button is clicked
             num1 = showOps.Text;
         }
@@ -580,7 +717,7 @@ namespace Calculator
             double sqrNum = double.Parse(calcuOutput.Text);
             operation2 = "sqr";
 
-            showOps.Text += $" {operation2}({string.Format("{0:N0}", sqrNum)})";
+            showOps.Text += $" {operation2}({sqrNum})";
             calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
             num1 = showOps.Text;
         }
@@ -591,7 +728,7 @@ namespace Calculator
             double fractNum = double.Parse(calcuOutput.Text);
             operation2 = "1/";
 
-            showOps.Text += $" {operation2}({string.Format("{0:N0}", fractNum)})";
+            showOps.Text += $" {operation2}({fractNum})";
             calcuOutput.Text = (1 / fractNum).ToString();
             num1 = showOps.Text;
         }
@@ -613,6 +750,11 @@ namespace Calculator
             {                                                               //If not present, enters decimal point
                 calcuOutput.Text += decBtn.Text;
             }
+
+            else
+            {
+                return;
+            }
         }
 
         private void plusMinusBtn_Click(object sender, EventArgs e)
@@ -626,8 +768,6 @@ namespace Calculator
                 calcuOutput.Text = "-" + calcuOutput.Text;                                                  //Adds negative sign (-) if conditions are met
             }
         }
-
-        
 
         private void delBtn_Click(object sender, EventArgs e)
         {
