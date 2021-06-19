@@ -789,6 +789,11 @@ namespace Calculator
                 calcuOutput.Text = "0";
             }
         }
+        private void equalsBtn_Click(object sender, EventArgs e)
+        {
+            //Method for checking and performing of operations
+            operationsChecker();
+        }
 
         private void historyBtn_Click(object sender, EventArgs e)
         {
@@ -819,31 +824,28 @@ namespace Calculator
         {
             //If no text is in the history, changes the text to "There's no history yet" and clears the history
             //Hides clear history button after use
+
+            historyDisp.Text = "";
+            clearHistory.Visible = false;
             if (historyContLabel.Text == "")
             {
                 historyContLabel.Text = "There's no history yet";
-                historyDisp.Text = "";
-                clearHistory.Visible = false;
             }
         }
 
         private void clearMemory_Click(object sender, EventArgs e)
         {
             //If no text is in the memory, changes the text to "There's nothing saved in memory" and clears the memory
+            storedNum = 0;
+            memoryDisp.Text = "";
+            clearMemory.Visible = false;
+            btnMemClear.Enabled = false;
+            btnMemRecall.Enabled = false;
 
             if (memoryContLabel.Text == "")
             {
                 memoryContLabel.Text = "There's nothing saved in memory";
-                memoryDisp.Text = "";
-                clearMemory.Visible = false;
             }
-        }
-
-
-        private void equalsBtn_Click(object sender, EventArgs e)
-        {
-            //Method for checking and performing of operations
-            operationsChecker();
         }
 
         private void memoryBtn_Click(object sender, EventArgs e)
@@ -860,7 +862,7 @@ namespace Calculator
                 clearMemory.Visible = false;
             }
 
-            else if (memoryDisp.Text.Length > 0)
+            if (memoryDisp.Text.Length > 0)
             {
                 clearMemory.Visible = true;
             }
@@ -946,6 +948,10 @@ namespace Calculator
             storedNum = 0;
             btnMemClear.Enabled = false;
             btnMemRecall.Enabled = false;
+
+            memoryDisp.Text = "";
+            memoryContLabel.Text = "There's nothing saved in memory";
+            clearMemory.Visible = false;
         }
     }
 }

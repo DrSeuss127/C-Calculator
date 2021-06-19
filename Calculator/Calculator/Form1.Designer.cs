@@ -744,8 +744,8 @@ namespace Calculator
             this.Controls.Add(this.percentBtn);
             this.Controls.Add(this.memoryContLabel);
             this.Controls.Add(this.clearMemory);
-            this.Controls.Add(this.memoryDisp);
             this.Controls.Add(this.historyDisp);
+            this.Controls.Add(this.memoryDisp);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
