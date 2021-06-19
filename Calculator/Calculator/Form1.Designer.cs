@@ -57,11 +57,20 @@ namespace Calculator
             this.calcuOutput = new System.Windows.Forms.TextBox();
             this.menuBtn = new System.Windows.Forms.Button();
             this.modeLabel = new System.Windows.Forms.Label();
-            this.historyLabel = new System.Windows.Forms.Label();
             this.historyContLabel = new System.Windows.Forms.Label();
             this.showOps = new System.Windows.Forms.TextBox();
             this.historyDisp = new System.Windows.Forms.RichTextBox();
             this.clearHistory = new System.Windows.Forms.Button();
+            this.btnMemSave = new System.Windows.Forms.Button();
+            this.btnMemMinus = new System.Windows.Forms.Button();
+            this.btnMemPlus = new System.Windows.Forms.Button();
+            this.btnMemRecall = new System.Windows.Forms.Button();
+            this.btnMemClear = new System.Windows.Forms.Button();
+            this.memoryDisp = new System.Windows.Forms.RichTextBox();
+            this.historyBtn = new System.Windows.Forms.Button();
+            this.memoryContLabel = new System.Windows.Forms.Label();
+            this.memoryBtn = new System.Windows.Forms.Button();
+            this.clearMemory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // percentBtn
@@ -73,7 +82,7 @@ namespace Calculator
             this.percentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.percentBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.percentBtn.ForeColor = System.Drawing.Color.White;
-            this.percentBtn.Location = new System.Drawing.Point(0, 216);
+            this.percentBtn.Location = new System.Drawing.Point(1, 215);
             this.percentBtn.Name = "percentBtn";
             this.percentBtn.Size = new System.Drawing.Size(92, 79);
             this.percentBtn.TabIndex = 0;
@@ -88,7 +97,7 @@ namespace Calculator
             this.fractBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fractBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fractBtn.ForeColor = System.Drawing.Color.White;
-            this.fractBtn.Location = new System.Drawing.Point(0, 294);
+            this.fractBtn.Location = new System.Drawing.Point(1, 293);
             this.fractBtn.Name = "fractBtn";
             this.fractBtn.Size = new System.Drawing.Size(92, 79);
             this.fractBtn.TabIndex = 0;
@@ -104,7 +113,7 @@ namespace Calculator
             this.sevenNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sevenNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sevenNumBtn.ForeColor = System.Drawing.Color.White;
-            this.sevenNumBtn.Location = new System.Drawing.Point(0, 372);
+            this.sevenNumBtn.Location = new System.Drawing.Point(1, 371);
             this.sevenNumBtn.Name = "sevenNumBtn";
             this.sevenNumBtn.Size = new System.Drawing.Size(92, 79);
             this.sevenNumBtn.TabIndex = 0;
@@ -120,7 +129,7 @@ namespace Calculator
             this.fourNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fourNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fourNumBtn.ForeColor = System.Drawing.Color.White;
-            this.fourNumBtn.Location = new System.Drawing.Point(0, 449);
+            this.fourNumBtn.Location = new System.Drawing.Point(1, 448);
             this.fourNumBtn.Name = "fourNumBtn";
             this.fourNumBtn.Size = new System.Drawing.Size(92, 79);
             this.fourNumBtn.TabIndex = 0;
@@ -136,7 +145,7 @@ namespace Calculator
             this.oneNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.oneNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.oneNumBtn.ForeColor = System.Drawing.Color.White;
-            this.oneNumBtn.Location = new System.Drawing.Point(0, 527);
+            this.oneNumBtn.Location = new System.Drawing.Point(1, 526);
             this.oneNumBtn.Name = "oneNumBtn";
             this.oneNumBtn.Size = new System.Drawing.Size(92, 79);
             this.oneNumBtn.TabIndex = 0;
@@ -153,7 +162,7 @@ namespace Calculator
             this.plusMinusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plusMinusBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.plusMinusBtn.ForeColor = System.Drawing.Color.White;
-            this.plusMinusBtn.Location = new System.Drawing.Point(0, 605);
+            this.plusMinusBtn.Location = new System.Drawing.Point(1, 604);
             this.plusMinusBtn.Name = "plusMinusBtn";
             this.plusMinusBtn.Size = new System.Drawing.Size(92, 79);
             this.plusMinusBtn.TabIndex = 0;
@@ -168,7 +177,7 @@ namespace Calculator
             this.clrRecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clrRecentBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clrRecentBtn.ForeColor = System.Drawing.Color.White;
-            this.clrRecentBtn.Location = new System.Drawing.Point(91, 216);
+            this.clrRecentBtn.Location = new System.Drawing.Point(92, 215);
             this.clrRecentBtn.Name = "clrRecentBtn";
             this.clrRecentBtn.Size = new System.Drawing.Size(92, 79);
             this.clrRecentBtn.TabIndex = 0;
@@ -184,7 +193,7 @@ namespace Calculator
             this.sqrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sqrBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sqrBtn.ForeColor = System.Drawing.Color.White;
-            this.sqrBtn.Location = new System.Drawing.Point(91, 294);
+            this.sqrBtn.Location = new System.Drawing.Point(92, 293);
             this.sqrBtn.Name = "sqrBtn";
             this.sqrBtn.Size = new System.Drawing.Size(92, 79);
             this.sqrBtn.TabIndex = 0;
@@ -200,7 +209,7 @@ namespace Calculator
             this.eightNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eightNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.eightNumBtn.ForeColor = System.Drawing.Color.White;
-            this.eightNumBtn.Location = new System.Drawing.Point(91, 372);
+            this.eightNumBtn.Location = new System.Drawing.Point(92, 371);
             this.eightNumBtn.Name = "eightNumBtn";
             this.eightNumBtn.Size = new System.Drawing.Size(92, 79);
             this.eightNumBtn.TabIndex = 0;
@@ -216,7 +225,7 @@ namespace Calculator
             this.fiveNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fiveNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fiveNumBtn.ForeColor = System.Drawing.Color.White;
-            this.fiveNumBtn.Location = new System.Drawing.Point(91, 449);
+            this.fiveNumBtn.Location = new System.Drawing.Point(92, 448);
             this.fiveNumBtn.Name = "fiveNumBtn";
             this.fiveNumBtn.Size = new System.Drawing.Size(92, 79);
             this.fiveNumBtn.TabIndex = 0;
@@ -232,7 +241,7 @@ namespace Calculator
             this.twoNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.twoNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.twoNumBtn.ForeColor = System.Drawing.Color.White;
-            this.twoNumBtn.Location = new System.Drawing.Point(91, 527);
+            this.twoNumBtn.Location = new System.Drawing.Point(92, 526);
             this.twoNumBtn.Name = "twoNumBtn";
             this.twoNumBtn.Size = new System.Drawing.Size(92, 79);
             this.twoNumBtn.TabIndex = 0;
@@ -248,7 +257,7 @@ namespace Calculator
             this.zeroNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zeroNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.zeroNumBtn.ForeColor = System.Drawing.Color.White;
-            this.zeroNumBtn.Location = new System.Drawing.Point(91, 605);
+            this.zeroNumBtn.Location = new System.Drawing.Point(92, 604);
             this.zeroNumBtn.Name = "zeroNumBtn";
             this.zeroNumBtn.Size = new System.Drawing.Size(92, 79);
             this.zeroNumBtn.TabIndex = 0;
@@ -264,7 +273,7 @@ namespace Calculator
             this.clrAllBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clrAllBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.clrAllBtn.ForeColor = System.Drawing.Color.White;
-            this.clrAllBtn.Location = new System.Drawing.Point(183, 216);
+            this.clrAllBtn.Location = new System.Drawing.Point(184, 215);
             this.clrAllBtn.Name = "clrAllBtn";
             this.clrAllBtn.Size = new System.Drawing.Size(92, 79);
             this.clrAllBtn.TabIndex = 0;
@@ -281,7 +290,7 @@ namespace Calculator
             this.sqrtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sqrtBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sqrtBtn.ForeColor = System.Drawing.Color.White;
-            this.sqrtBtn.Location = new System.Drawing.Point(183, 294);
+            this.sqrtBtn.Location = new System.Drawing.Point(184, 293);
             this.sqrtBtn.Name = "sqrtBtn";
             this.sqrtBtn.Size = new System.Drawing.Size(92, 79);
             this.sqrtBtn.TabIndex = 0;
@@ -296,7 +305,7 @@ namespace Calculator
             this.nineNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nineNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nineNumBtn.ForeColor = System.Drawing.Color.White;
-            this.nineNumBtn.Location = new System.Drawing.Point(183, 372);
+            this.nineNumBtn.Location = new System.Drawing.Point(184, 371);
             this.nineNumBtn.Name = "nineNumBtn";
             this.nineNumBtn.Size = new System.Drawing.Size(92, 79);
             this.nineNumBtn.TabIndex = 0;
@@ -312,7 +321,7 @@ namespace Calculator
             this.sixNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sixNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sixNumBtn.ForeColor = System.Drawing.Color.White;
-            this.sixNumBtn.Location = new System.Drawing.Point(183, 449);
+            this.sixNumBtn.Location = new System.Drawing.Point(184, 448);
             this.sixNumBtn.Name = "sixNumBtn";
             this.sixNumBtn.Size = new System.Drawing.Size(92, 79);
             this.sixNumBtn.TabIndex = 0;
@@ -328,7 +337,7 @@ namespace Calculator
             this.threeNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.threeNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.threeNumBtn.ForeColor = System.Drawing.Color.White;
-            this.threeNumBtn.Location = new System.Drawing.Point(183, 527);
+            this.threeNumBtn.Location = new System.Drawing.Point(184, 526);
             this.threeNumBtn.Name = "threeNumBtn";
             this.threeNumBtn.Size = new System.Drawing.Size(92, 79);
             this.threeNumBtn.TabIndex = 0;
@@ -344,7 +353,7 @@ namespace Calculator
             this.decBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.decBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.decBtn.ForeColor = System.Drawing.Color.White;
-            this.decBtn.Location = new System.Drawing.Point(183, 605);
+            this.decBtn.Location = new System.Drawing.Point(184, 604);
             this.decBtn.Name = "decBtn";
             this.decBtn.Size = new System.Drawing.Size(92, 79);
             this.decBtn.TabIndex = 0;
@@ -361,7 +370,7 @@ namespace Calculator
             this.delBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delBtn.ForeColor = System.Drawing.Color.White;
-            this.delBtn.Location = new System.Drawing.Point(274, 216);
+            this.delBtn.Location = new System.Drawing.Point(276, 215);
             this.delBtn.Name = "delBtn";
             this.delBtn.Size = new System.Drawing.Size(92, 79);
             this.delBtn.TabIndex = 0;
@@ -377,7 +386,7 @@ namespace Calculator
             this.divideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.divideBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.divideBtn.ForeColor = System.Drawing.Color.White;
-            this.divideBtn.Location = new System.Drawing.Point(274, 294);
+            this.divideBtn.Location = new System.Drawing.Point(276, 293);
             this.divideBtn.Name = "divideBtn";
             this.divideBtn.Size = new System.Drawing.Size(92, 79);
             this.divideBtn.TabIndex = 0;
@@ -393,7 +402,7 @@ namespace Calculator
             this.multBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.multBtn.ForeColor = System.Drawing.Color.White;
-            this.multBtn.Location = new System.Drawing.Point(274, 372);
+            this.multBtn.Location = new System.Drawing.Point(276, 371);
             this.multBtn.Name = "multBtn";
             this.multBtn.Size = new System.Drawing.Size(92, 79);
             this.multBtn.TabIndex = 0;
@@ -409,7 +418,7 @@ namespace Calculator
             this.minusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minusBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.minusBtn.ForeColor = System.Drawing.Color.White;
-            this.minusBtn.Location = new System.Drawing.Point(274, 449);
+            this.minusBtn.Location = new System.Drawing.Point(276, 448);
             this.minusBtn.Name = "minusBtn";
             this.minusBtn.Size = new System.Drawing.Size(92, 79);
             this.minusBtn.TabIndex = 0;
@@ -425,7 +434,7 @@ namespace Calculator
             this.plusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plusBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.plusBtn.ForeColor = System.Drawing.Color.White;
-            this.plusBtn.Location = new System.Drawing.Point(274, 527);
+            this.plusBtn.Location = new System.Drawing.Point(276, 526);
             this.plusBtn.Name = "plusBtn";
             this.plusBtn.Size = new System.Drawing.Size(92, 79);
             this.plusBtn.TabIndex = 0;
@@ -441,7 +450,7 @@ namespace Calculator
             this.equalsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.equalsBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.equalsBtn.ForeColor = System.Drawing.Color.White;
-            this.equalsBtn.Location = new System.Drawing.Point(274, 605);
+            this.equalsBtn.Location = new System.Drawing.Point(276, 604);
             this.equalsBtn.Name = "equalsBtn";
             this.equalsBtn.Size = new System.Drawing.Size(92, 79);
             this.equalsBtn.TabIndex = 0;
@@ -454,7 +463,8 @@ namespace Calculator
             this.calcuOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.calcuOutput.Font = new System.Drawing.Font("Segoe UI", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.calcuOutput.ForeColor = System.Drawing.Color.White;
-            this.calcuOutput.Location = new System.Drawing.Point(0, 106);
+            this.calcuOutput.Location = new System.Drawing.Point(0, 98);
+            this.calcuOutput.MaxLength = 21;
             this.calcuOutput.Name = "calcuOutput";
             this.calcuOutput.Size = new System.Drawing.Size(366, 71);
             this.calcuOutput.TabIndex = 1;
@@ -487,17 +497,6 @@ namespace Calculator
             this.modeLabel.TabIndex = 2;
             this.modeLabel.Text = "Standard";
             // 
-            // historyLabel
-            // 
-            this.historyLabel.AutoSize = true;
-            this.historyLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.historyLabel.ForeColor = System.Drawing.Color.White;
-            this.historyLabel.Location = new System.Drawing.Point(380, 5);
-            this.historyLabel.Name = "historyLabel";
-            this.historyLabel.Size = new System.Drawing.Size(93, 32);
-            this.historyLabel.TabIndex = 2;
-            this.historyLabel.Text = "History";
-            // 
             // historyContLabel
             // 
             this.historyContLabel.AutoSize = true;
@@ -515,7 +514,7 @@ namespace Calculator
             this.showOps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showOps.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.showOps.ForeColor = System.Drawing.Color.White;
-            this.showOps.Location = new System.Drawing.Point(12, 71);
+            this.showOps.Location = new System.Drawing.Point(12, 63);
             this.showOps.Multiline = true;
             this.showOps.Name = "showOps";
             this.showOps.Size = new System.Drawing.Size(354, 20);
@@ -548,15 +547,168 @@ namespace Calculator
             this.clearHistory.UseVisualStyleBackColor = false;
             this.clearHistory.Click += new System.EventHandler(this.clearHistory_Click);
             // 
+            // btnMemSave
+            // 
+            this.btnMemSave.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMemSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMemSave.FlatAppearance.BorderSize = 0;
+            this.btnMemSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemSave.ForeColor = System.Drawing.Color.White;
+            this.btnMemSave.Location = new System.Drawing.Point(294, 170);
+            this.btnMemSave.Name = "btnMemSave";
+            this.btnMemSave.Size = new System.Drawing.Size(73, 45);
+            this.btnMemSave.TabIndex = 0;
+            this.btnMemSave.Text = "MS";
+            this.btnMemSave.UseVisualStyleBackColor = false;
+            this.btnMemSave.Click += new System.EventHandler(this.btnMemSave_Click);
+            // 
+            // btnMemMinus
+            // 
+            this.btnMemMinus.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMemMinus.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMemMinus.FlatAppearance.BorderSize = 0;
+            this.btnMemMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemMinus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemMinus.ForeColor = System.Drawing.Color.White;
+            this.btnMemMinus.Location = new System.Drawing.Point(221, 170);
+            this.btnMemMinus.Name = "btnMemMinus";
+            this.btnMemMinus.Size = new System.Drawing.Size(73, 45);
+            this.btnMemMinus.TabIndex = 0;
+            this.btnMemMinus.Text = "M-";
+            this.btnMemMinus.UseVisualStyleBackColor = false;
+            this.btnMemMinus.Click += new System.EventHandler(this.btnMemMinus_Click);
+            // 
+            // btnMemPlus
+            // 
+            this.btnMemPlus.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMemPlus.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMemPlus.FlatAppearance.BorderSize = 0;
+            this.btnMemPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemPlus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemPlus.ForeColor = System.Drawing.Color.White;
+            this.btnMemPlus.Location = new System.Drawing.Point(148, 170);
+            this.btnMemPlus.Name = "btnMemPlus";
+            this.btnMemPlus.Size = new System.Drawing.Size(73, 45);
+            this.btnMemPlus.TabIndex = 0;
+            this.btnMemPlus.Text = "M+";
+            this.btnMemPlus.UseVisualStyleBackColor = false;
+            this.btnMemPlus.Click += new System.EventHandler(this.btnMemPlus_Click);
+            // 
+            // btnMemRecall
+            // 
+            this.btnMemRecall.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemRecall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMemRecall.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMemRecall.FlatAppearance.BorderSize = 0;
+            this.btnMemRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemRecall.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemRecall.ForeColor = System.Drawing.Color.White;
+            this.btnMemRecall.Location = new System.Drawing.Point(75, 170);
+            this.btnMemRecall.Name = "btnMemRecall";
+            this.btnMemRecall.Size = new System.Drawing.Size(73, 45);
+            this.btnMemRecall.TabIndex = 0;
+            this.btnMemRecall.Text = "MR";
+            this.btnMemRecall.UseVisualStyleBackColor = false;
+            this.btnMemRecall.Click += new System.EventHandler(this.btnMemRecall_Click);
+            // 
+            // btnMemClear
+            // 
+            this.btnMemClear.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMemClear.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMemClear.FlatAppearance.BorderSize = 0;
+            this.btnMemClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMemClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemClear.ForeColor = System.Drawing.Color.White;
+            this.btnMemClear.Location = new System.Drawing.Point(2, 170);
+            this.btnMemClear.Name = "btnMemClear";
+            this.btnMemClear.Size = new System.Drawing.Size(73, 45);
+            this.btnMemClear.TabIndex = 0;
+            this.btnMemClear.Text = "MC";
+            this.btnMemClear.UseVisualStyleBackColor = false;
+            this.btnMemClear.Click += new System.EventHandler(this.btnMemClear_Click);
+            // 
+            // memoryDisp
+            // 
+            this.memoryDisp.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.memoryDisp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.memoryDisp.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.memoryDisp.ForeColor = System.Drawing.Color.White;
+            this.memoryDisp.Location = new System.Drawing.Point(381, 66);
+            this.memoryDisp.Name = "memoryDisp";
+            this.memoryDisp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.memoryDisp.Size = new System.Drawing.Size(324, 556);
+            this.memoryDisp.TabIndex = 5;
+            this.memoryDisp.Text = "";
+            this.memoryDisp.Visible = false;
+            // 
+            // historyBtn
+            // 
+            this.historyBtn.FlatAppearance.BorderSize = 0;
+            this.historyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.historyBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.historyBtn.ForeColor = System.Drawing.Color.White;
+            this.historyBtn.Location = new System.Drawing.Point(380, 5);
+            this.historyBtn.Name = "historyBtn";
+            this.historyBtn.Size = new System.Drawing.Size(104, 45);
+            this.historyBtn.TabIndex = 6;
+            this.historyBtn.Text = "History";
+            this.historyBtn.UseVisualStyleBackColor = true;
+            this.historyBtn.Click += new System.EventHandler(this.historyBtn_Click);
+            // 
+            // memoryContLabel
+            // 
+            this.memoryContLabel.AutoSize = true;
+            this.memoryContLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.memoryContLabel.ForeColor = System.Drawing.Color.White;
+            this.memoryContLabel.Location = new System.Drawing.Point(381, 66);
+            this.memoryContLabel.Name = "memoryContLabel";
+            this.memoryContLabel.Size = new System.Drawing.Size(296, 25);
+            this.memoryContLabel.TabIndex = 2;
+            this.memoryContLabel.Text = "There\'s nothing saved in memory";
+            this.memoryContLabel.Visible = false;
+            // 
+            // memoryBtn
+            // 
+            this.memoryBtn.FlatAppearance.BorderSize = 0;
+            this.memoryBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.memoryBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.memoryBtn.ForeColor = System.Drawing.Color.White;
+            this.memoryBtn.Location = new System.Drawing.Point(498, 5);
+            this.memoryBtn.Name = "memoryBtn";
+            this.memoryBtn.Size = new System.Drawing.Size(115, 45);
+            this.memoryBtn.TabIndex = 6;
+            this.memoryBtn.Text = "Memory";
+            this.memoryBtn.UseVisualStyleBackColor = true;
+            this.memoryBtn.Click += new System.EventHandler(this.memoryBtn_Click);
+            // 
+            // clearMemory
+            // 
+            this.clearMemory.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.clearMemory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("clearMemory.BackgroundImage")));
+            this.clearMemory.FlatAppearance.BorderSize = 0;
+            this.clearMemory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearMemory.Location = new System.Drawing.Point(671, 635);
+            this.clearMemory.Name = "clearMemory";
+            this.clearMemory.Size = new System.Drawing.Size(47, 47);
+            this.clearMemory.TabIndex = 7;
+            this.clearMemory.UseVisualStyleBackColor = false;
+            this.clearMemory.Click += new System.EventHandler(this.clearMemory_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(715, 684);
+            this.Controls.Add(this.memoryBtn);
+            this.Controls.Add(this.historyBtn);
             this.Controls.Add(this.clearHistory);
             this.Controls.Add(this.historyContLabel);
-            this.Controls.Add(this.historyLabel);
             this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.showOps);
             this.Controls.Add(this.calcuOutput);
@@ -581,10 +733,18 @@ namespace Calculator
             this.Controls.Add(this.sqrtBtn);
             this.Controls.Add(this.sqrBtn);
             this.Controls.Add(this.menuBtn);
+            this.Controls.Add(this.btnMemClear);
+            this.Controls.Add(this.btnMemRecall);
+            this.Controls.Add(this.btnMemPlus);
+            this.Controls.Add(this.btnMemMinus);
+            this.Controls.Add(this.btnMemSave);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.clrAllBtn);
             this.Controls.Add(this.clrRecentBtn);
             this.Controls.Add(this.percentBtn);
+            this.Controls.Add(this.memoryContLabel);
+            this.Controls.Add(this.clearMemory);
+            this.Controls.Add(this.memoryDisp);
             this.Controls.Add(this.historyDisp);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -625,11 +785,20 @@ namespace Calculator
         private System.Windows.Forms.Button menuBtn;
         private System.Windows.Forms.Label modeLabel;
         private System.Windows.Forms.Label historyContentLabel;
-        private System.Windows.Forms.Label historyLabel;
         private System.Windows.Forms.Label historyContLabel;
         private System.Windows.Forms.TextBox showOps;
         private System.Windows.Forms.RichTextBox historyDisp;
         private System.Windows.Forms.Button clearHistory;
+        private System.Windows.Forms.Button btnMemSave;
+        private System.Windows.Forms.Button btnMemMinus;
+        private System.Windows.Forms.Button btnMemPlus;
+        private System.Windows.Forms.Button btnMemRecall;
+        private System.Windows.Forms.Button btnMemClear;
+        private System.Windows.Forms.RichTextBox memoryDisp;
+        private System.Windows.Forms.Button historyBtn;
+        private System.Windows.Forms.Label memoryContLabel;
+        private System.Windows.Forms.Button memoryBtn;
+        private System.Windows.Forms.Button clearMemory;
     }
 }
 

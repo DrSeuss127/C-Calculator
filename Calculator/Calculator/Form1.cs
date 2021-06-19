@@ -15,6 +15,7 @@ namespace Calculator
     {
 
         double result = 0;
+        double storedNum;
         string operation = "";
         string operation2 = "";
         string num1, num2;
@@ -23,7 +24,9 @@ namespace Calculator
         {
             InitializeComponent();
             clearHistory.Visible = false;
-            calcuOutput.MaxLength = 21;
+            clearMemory.Visible = false;
+            btnMemClear.Enabled = false;
+            btnMemRecall.Enabled = false;
         }
 
         private void operationsChecker()
@@ -487,9 +490,7 @@ namespace Calculator
             {
                 calcuOutput.Text = string.Format("{0:N0}", num);
             }
-        }
-
-        
+        }      
 
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
@@ -675,7 +676,6 @@ namespace Calculator
             operation = "+";
             calcuOutput.Text = "";
             showOps.Text = $"{result} {operation}";
-
             num1 = showOps.Text;
         }
 
@@ -790,9 +790,34 @@ namespace Calculator
             }
         }
 
+        private void historyBtn_Click(object sender, EventArgs e)
+        {
+            memoryContLabel.Visible = false;
+            memoryDisp.Visible = false;
+
+            historyContLabel.Visible = true;
+            historyDisp.Visible = true;
+
+            if (historyDisp.Text.Length > 0)
+            {
+                clearHistory.Visible = true;
+            }
+
+            if (historyContLabel.Visible == true && historyDisp.Visible == true)
+            {
+                clearMemory.Visible = false;
+            }
+
+            else if (memoryDisp.Text.Length > 0)
+            {
+                clearMemory.Visible = true;
+            }
+
+        }
+
         private void clearHistory_Click(object sender, EventArgs e)
         {
-            //If no text is on the label for the history, changes the text to "There's no history yet" and clears the history
+            //If no text is in the history, changes the text to "There's no history yet" and clears the history
             //Hides clear history button after use
             if (historyContLabel.Text == "")
             {
@@ -802,10 +827,125 @@ namespace Calculator
             }
         }
 
+        private void clearMemory_Click(object sender, EventArgs e)
+        {
+            //If no text is in the memory, changes the text to "There's nothing saved in memory" and clears the memory
+
+            if (memoryContLabel.Text == "")
+            {
+                memoryContLabel.Text = "There's nothing saved in memory";
+                memoryDisp.Text = "";
+                clearMemory.Visible = false;
+            }
+        }
+
+
         private void equalsBtn_Click(object sender, EventArgs e)
         {
             //Method for checking and performing of operations
             operationsChecker();
+        }
+
+        private void memoryBtn_Click(object sender, EventArgs e)
+        {
+            historyContLabel.Visible = false;
+            historyDisp.Visible = false;
+            clearHistory.Visible = false;
+
+            memoryContLabel.Visible = true;
+            memoryDisp.Visible = true;
+
+            if (historyContLabel.Visible == true && historyDisp.Visible == true)
+            {
+                clearMemory.Visible = false;
+            }
+
+            else if (memoryDisp.Text.Length > 0)
+            {
+                clearMemory.Visible = true;
+            }
+        }
+
+        private void btnMemSave_Click(object sender, EventArgs e)
+        {
+            //Memory Save
+            storedNum = double.Parse(calcuOutput.Text);
+            btnMemClear.Enabled = true;
+            btnMemRecall.Enabled = true;
+
+            memoryContLabel.Text = "";
+            if (storedNum % 1 > 0)
+            {
+                memoryDisp.AppendText($"{string.Format("{0:N}", storedNum)}\n\n");
+            }
+            else
+            {
+                memoryDisp.AppendText($"{string.Format("{0:N0}", storedNum)}\n\n");
+            }
+
+            if (historyContLabel.Visible == true  && historyDisp.Visible == true)
+            {
+                clearMemory.Visible = false;
+            }
+
+            else
+            {
+                clearMemory.Visible = true;
+            }
+        }
+
+        private void btnMemMinus_Click(object sender, EventArgs e)
+        {
+            //Memory Minus
+            //Checks for decimal number, if decimal, rounds of to two decimal places & thousands separator
+            if ((storedNum % 1) > 0)
+            {
+                storedNum -= double.Parse(calcuOutput.Text);
+                calcuOutput.Text = string.Format("{0:N}", storedNum);
+            }
+            else
+            {
+                storedNum -= double.Parse(calcuOutput.Text);
+                calcuOutput.Text = string.Format("{0:N0}", storedNum);
+            }
+        }
+
+        private void btnMemPlus_Click(object sender, EventArgs e)
+        {
+            //Memory Plus
+            //Checks for decimal number, if decimal, rounds of to two decimal places & thousands separator
+            if ((storedNum % 1) > 0)
+            {
+                storedNum += double.Parse(calcuOutput.Text);
+                calcuOutput.Text = string.Format("{0:N}", storedNum);
+            }
+            else
+            {
+                storedNum += double.Parse(calcuOutput.Text);
+                calcuOutput.Text = string.Format("{0:N0}", storedNum);
+            }
+        }
+
+        private void btnMemRecall_Click(object sender, EventArgs e)
+        {
+            //Memory Recall
+            //Checks for decimal number, if decimal, rounds of to two decimal places & thousands separator
+            if ((storedNum % 1) > 0)
+            {
+                calcuOutput.Text = string.Format("{0:N}", storedNum);
+            }
+            else
+            {
+                calcuOutput.Text = string.Format("{0:N0}", storedNum);
+            }
+        }
+
+        private void btnMemClear_Click(object sender, EventArgs e)
+        {
+            //Clears Memory value and disables recall and clear buttons
+            storedNum = 0;
+            btnMemClear.Enabled = false;
+            btnMemRecall.Enabled = false;
         }
     }
 }
