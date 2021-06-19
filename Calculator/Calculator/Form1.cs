@@ -23,6 +23,7 @@ namespace Calculator
         {
             InitializeComponent();
             clearHistory.Visible = false;
+            calcuOutput.MaxLength = 21;
         }
 
         private void operationsChecker()
@@ -64,7 +65,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");     //Appends the text from the showOps label to the history display
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
                             else
                             {
@@ -91,7 +92,7 @@ namespace Calculator
                                 historyContLabel.Text = "";
 
                                 //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                                showOps.Text = $"{num1} {num2}   =";
                             }
 
                             if (operation2 == "%")
@@ -117,7 +118,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
                             break;
 
@@ -147,7 +148,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
                             else
                             {
@@ -174,7 +175,7 @@ namespace Calculator
                                 historyContLabel.Text = "";
 
                                 //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                                showOps.Text = $"{num1} {num2}   =";
                             }
 
                             if (operation2 == "%")
@@ -200,7 +201,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
                             break;
 
@@ -230,7 +231,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
 
                             else
@@ -258,7 +259,7 @@ namespace Calculator
                                 historyContLabel.Text = "";
 
                                 //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                                showOps.Text = $"{num1} {num2}   =";
                             }
 
                             if (operation2 == "%")
@@ -284,7 +285,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
                             break;
 
@@ -314,7 +315,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
 
                             else
@@ -342,7 +343,7 @@ namespace Calculator
                                 historyContLabel.Text = "";
 
                                 //Operations display
-                                showOps.Text = $"{num1} {num2}   =   {calcuOutput.Text}";
+                                showOps.Text = $"{num1} {num2}   =";
                             }
                             if (operation2 == "%")
                             {
@@ -367,7 +368,7 @@ namespace Calculator
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
-                                showOps.Text = $"{num1} = {calcuOutput.Text}";
+                                showOps.Text = $"{num1} =";
                             }
                             break;
 
@@ -405,7 +406,7 @@ namespace Calculator
                             historyContLabel.Text = "";                             //Removes the text "There's no history yet"
 
                             //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            showOps.Text = $"{num1}   =   ";
                             break;
 
                         //Case for x² 
@@ -418,7 +419,7 @@ namespace Calculator
                             historyContLabel.Text = "";
 
                             //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            showOps.Text = $"{num1}   =   ";
                             break;
 
                         //Case for 1/x
@@ -431,7 +432,7 @@ namespace Calculator
                             historyContLabel.Text = "";
 
                             //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            showOps.Text = $"{num1}   =   ";
                             break;
 
                         //Case for %
@@ -443,7 +444,7 @@ namespace Calculator
                             historyContLabel.Text = "";
 
                             //Operations display
-                            showOps.Text = num1 + "   =   " + calcuOutput.Text;
+                            showOps.Text = $"{num1}   =   ";
                             break;
                     }
                     result = double.Parse(calcuOutput.Text);
@@ -457,23 +458,28 @@ namespace Calculator
             }
         }
 
-        private void decimalCheckerOutput()
+        private void decimalChecker()
         {
             double num = double.Parse(calcuOutput.Text);
 
-            //Checks if the output text contains a decimal, if it does, appends the number
-            int pos = 0;
+            //Checks if the output text contains a decimal, if it does, appends the decimal according to the string format specifier {0:N}
+            //e.g. output text length (with decimal point) is 5, subtract to index of "." then subtract the current value to 1 again, then insert into {0:N(insert value here)} format specifier
+
+            int dotPos = 0;                                                                //Variable for the decimal position, initialized to 0
 
             if (calcuOutput.Text.Contains("."))
             {
-                pos = calcuOutput.Text.Length - calcuOutput.Text.IndexOf(".");
-                if (pos == 1)
-                {
+                dotPos = calcuOutput.Text.Length - calcuOutput.Text.IndexOf(".");         //Subtracts the text length of the output to the first position of the decimal
+
+                if (dotPos == 1)                                                          //Checks if, after subtraction from text length of output, dotPos is equal to 1
+                {                                                                         //This prevents dotPos from returning 0 which will affect the string format specifier
                     return;
                 }
 
-                string formatDec = "{0:N" + (pos - 1) + "}";
+                string formatDec = "{0:N" + (dotPos - 1) + "}";                           //{0:N0} = no decimal after number N, dotPos increments by 1 as long as text length increases
                 calcuOutput.Text = string.Format(formatDec, num);
+
+
             }
 
             //Otherwise, proceeds to thousands separator-formatted number
@@ -482,6 +488,8 @@ namespace Calculator
                 calcuOutput.Text = string.Format("{0:N0}", num);
             }
         }
+
+        
 
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
@@ -496,7 +504,7 @@ namespace Calculator
                 calcuOutput.Text = oneNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void twoNumBtn_Click(object sender, EventArgs e)
@@ -512,7 +520,7 @@ namespace Calculator
                 calcuOutput.Text = twoNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void threeNumBtn_Click(object sender, EventArgs e)
@@ -528,7 +536,7 @@ namespace Calculator
                 calcuOutput.Text = threeNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void fourNumBtn_Click(object sender, EventArgs e)
@@ -544,7 +552,7 @@ namespace Calculator
                 calcuOutput.Text = fourNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void fiveNumBtn_Click(object sender, EventArgs e)
@@ -560,7 +568,7 @@ namespace Calculator
                 calcuOutput.Text = fiveNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void sixNumBtn_Click(object sender, EventArgs e)
@@ -576,7 +584,7 @@ namespace Calculator
                 calcuOutput.Text = sixNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void sevenNumBtn_Click(object sender, EventArgs e)
@@ -592,7 +600,7 @@ namespace Calculator
                 calcuOutput.Text = sevenNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void eightNumBtn_Click(object sender, EventArgs e)
@@ -608,7 +616,7 @@ namespace Calculator
                 calcuOutput.Text = eightNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void nineNumBtn_Click(object sender, EventArgs e)
@@ -624,7 +632,7 @@ namespace Calculator
                 calcuOutput.Text = nineNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
         private void zeroNumBtn_Click(object sender, EventArgs e)
         {
@@ -639,7 +647,7 @@ namespace Calculator
                 calcuOutput.Text = zeroNumBtn.Text;
             }
 
-            decimalCheckerOutput();
+            decimalChecker();
         }
 
         private void clrAllBtn_Click(object sender, EventArgs e)
