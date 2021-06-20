@@ -107,7 +107,7 @@ namespace Calculator
             // 
             // sevenNumBtn
             // 
-            this.sevenNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.sevenNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.sevenNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sevenNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sevenNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -123,7 +123,7 @@ namespace Calculator
             // 
             // fourNumBtn
             // 
-            this.fourNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.fourNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.fourNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fourNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fourNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -139,7 +139,7 @@ namespace Calculator
             // 
             // oneNumBtn
             // 
-            this.oneNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.oneNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.oneNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.oneNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.oneNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -155,7 +155,7 @@ namespace Calculator
             // 
             // plusMinusBtn
             // 
-            this.plusMinusBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.plusMinusBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.plusMinusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plusMinusBtn.BackgroundImage")));
             this.plusMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.plusMinusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
@@ -203,7 +203,7 @@ namespace Calculator
             // 
             // eightNumBtn
             // 
-            this.eightNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.eightNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.eightNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.eightNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.eightNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -219,7 +219,7 @@ namespace Calculator
             // 
             // fiveNumBtn
             // 
-            this.fiveNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.fiveNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.fiveNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fiveNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fiveNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -235,7 +235,7 @@ namespace Calculator
             // 
             // twoNumBtn
             // 
-            this.twoNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.twoNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.twoNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.twoNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.twoNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,7 +251,7 @@ namespace Calculator
             // 
             // zeroNumBtn
             // 
-            this.zeroNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.zeroNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.zeroNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.zeroNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.zeroNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -299,7 +299,7 @@ namespace Calculator
             // 
             // nineNumBtn
             // 
-            this.nineNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.nineNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.nineNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.nineNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.nineNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -315,7 +315,7 @@ namespace Calculator
             // 
             // sixNumBtn
             // 
-            this.sixNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.sixNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.sixNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sixNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sixNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -331,7 +331,7 @@ namespace Calculator
             // 
             // threeNumBtn
             // 
-            this.threeNumBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.threeNumBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.threeNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.threeNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.threeNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -347,7 +347,7 @@ namespace Calculator
             // 
             // decBtn
             // 
-            this.decBtn.BackColor = System.Drawing.SystemColors.MenuText;
+            this.decBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.decBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.decBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.decBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -459,7 +459,7 @@ namespace Calculator
             // 
             // calcuOutput
             // 
-            this.calcuOutput.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.calcuOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.calcuOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.calcuOutput.Font = new System.Drawing.Font("Segoe UI", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.calcuOutput.ForeColor = System.Drawing.Color.White;
@@ -473,14 +473,14 @@ namespace Calculator
             // 
             // menuBtn
             // 
-            this.menuBtn.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.menuBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.menuBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuBtn.BackgroundImage")));
             this.menuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.menuBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.menuBtn.FlatAppearance.BorderSize = 0;
             this.menuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.menuBtn.Location = new System.Drawing.Point(4, 3);
+            this.menuBtn.Location = new System.Drawing.Point(0, 0);
             this.menuBtn.Name = "menuBtn";
             this.menuBtn.Size = new System.Drawing.Size(39, 34);
             this.menuBtn.TabIndex = 0;
@@ -491,7 +491,7 @@ namespace Calculator
             this.modeLabel.AutoSize = true;
             this.modeLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.modeLabel.ForeColor = System.Drawing.Color.White;
-            this.modeLabel.Location = new System.Drawing.Point(45, 5);
+            this.modeLabel.Location = new System.Drawing.Point(41, 0);
             this.modeLabel.Name = "modeLabel";
             this.modeLabel.Size = new System.Drawing.Size(112, 32);
             this.modeLabel.TabIndex = 2;
@@ -510,7 +510,7 @@ namespace Calculator
             // 
             // showOps
             // 
-            this.showOps.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.showOps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.showOps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showOps.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.showOps.ForeColor = System.Drawing.Color.White;
@@ -523,7 +523,7 @@ namespace Calculator
             // 
             // historyDisp
             // 
-            this.historyDisp.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.historyDisp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.historyDisp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.historyDisp.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.historyDisp.ForeColor = System.Drawing.Color.White;
@@ -536,7 +536,7 @@ namespace Calculator
             // 
             // clearHistory
             // 
-            this.clearHistory.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.clearHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.clearHistory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("clearHistory.BackgroundImage")));
             this.clearHistory.FlatAppearance.BorderSize = 0;
             this.clearHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -549,7 +549,7 @@ namespace Calculator
             // 
             // btnMemSave
             // 
-            this.btnMemSave.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.btnMemSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMemSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemSave.FlatAppearance.BorderSize = 0;
@@ -566,7 +566,7 @@ namespace Calculator
             // 
             // btnMemMinus
             // 
-            this.btnMemMinus.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.btnMemMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMemMinus.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemMinus.FlatAppearance.BorderSize = 0;
@@ -583,7 +583,7 @@ namespace Calculator
             // 
             // btnMemPlus
             // 
-            this.btnMemPlus.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.btnMemPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMemPlus.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemPlus.FlatAppearance.BorderSize = 0;
@@ -600,7 +600,7 @@ namespace Calculator
             // 
             // btnMemRecall
             // 
-            this.btnMemRecall.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemRecall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.btnMemRecall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMemRecall.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemRecall.FlatAppearance.BorderSize = 0;
@@ -617,7 +617,7 @@ namespace Calculator
             // 
             // btnMemClear
             // 
-            this.btnMemClear.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnMemClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.btnMemClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMemClear.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemClear.FlatAppearance.BorderSize = 0;
@@ -634,7 +634,7 @@ namespace Calculator
             // 
             // memoryDisp
             // 
-            this.memoryDisp.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.memoryDisp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.memoryDisp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.memoryDisp.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.memoryDisp.ForeColor = System.Drawing.Color.White;
@@ -688,7 +688,7 @@ namespace Calculator
             // 
             // clearMemory
             // 
-            this.clearMemory.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.clearMemory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.clearMemory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("clearMemory.BackgroundImage")));
             this.clearMemory.FlatAppearance.BorderSize = 0;
             this.clearMemory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -703,7 +703,7 @@ namespace Calculator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(715, 684);
             this.Controls.Add(this.memoryBtn);
             this.Controls.Add(this.historyBtn);

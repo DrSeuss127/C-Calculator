@@ -19,6 +19,7 @@ namespace Calculator
         string operation = "";
         string operation2 = "";
         string num1, num2;
+        bool enterNewValue = false;
 
         public Form1()
         {
@@ -65,6 +66,7 @@ namespace Calculator
 
                                 //History display
                                 clearHistory.Visible = true;                                    //Makes the button for clearing the history visible
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");     //Appends the text from the showOps label to the history display
                                 historyContLabel.Text = "";
 
@@ -89,7 +91,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                                    
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} {num2} = ");                    
                                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                                 historyContLabel.Text = "";
@@ -117,7 +120,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                                    
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -147,7 +151,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                                   
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -172,7 +177,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                                    
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} {num2} = ");                    
                                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                                 historyContLabel.Text = "";
@@ -200,7 +206,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -230,7 +237,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -256,7 +264,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} {num2} = ");      
                                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                                 historyContLabel.Text = "";
@@ -284,7 +293,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -314,7 +324,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -340,7 +351,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} {num2} = ");      
                                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                                 historyContLabel.Text = "";
@@ -367,7 +379,8 @@ namespace Calculator
                                 }
 
                                 //History display
-                                clearHistory.Visible = true;                            
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                                 historyContLabel.Text = "";
 
@@ -375,6 +388,8 @@ namespace Calculator
                             }
                             break;
 
+                        default:
+                            break;
 
                     }
                     result = double.Parse(calcuOutput.Text);
@@ -404,6 +419,7 @@ namespace Calculator
 
                             //History display
                             clearHistory.Visible = true;                            //Makes the button for clearing the history visible
+                            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                             historyDisp.AppendText(num1 + "   =   ");               //Appends the text from the showOps label to the history display
                             historyDisp.AppendText(calcuOutput.Text + "\n\n");
                             historyContLabel.Text = "";                             //Removes the text "There's no history yet"
@@ -417,6 +433,7 @@ namespace Calculator
 
                             //History display
                             clearHistory.Visible = true;
+                            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                             historyDisp.AppendText(num1 + "   =   ");
                             historyDisp.AppendText(calcuOutput.Text + "\n\n");
                             historyContLabel.Text = "";
@@ -430,6 +447,7 @@ namespace Calculator
 
                             //History display
                             clearHistory.Visible = true;
+                            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                             historyDisp.AppendText(num1 + "   =   ");
                             historyDisp.AppendText(calcuOutput.Text + "\n\n");
                             historyContLabel.Text = "";
@@ -442,12 +460,16 @@ namespace Calculator
                         case "%":
                             //History display
                             clearHistory.Visible = true;
+                            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                             historyDisp.AppendText(num1 + "   =   ");
                             historyDisp.AppendText(calcuOutput.Text + "\n\n");
                             historyContLabel.Text = "";
 
                             //Operations display
                             showOps.Text = $"{num1}   =   ";
+                            break;
+
+                        default:
                             break;
                     }
                     result = double.Parse(calcuOutput.Text);
@@ -494,15 +516,18 @@ namespace Calculator
 
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
-            {
-                calcuOutput.Text += oneNumBtn.Text;
-            }
-
-            else
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
                 calcuOutput.Text = oneNumBtn.Text;
+                enterNewValue = false;
+            }
+
+            else 
+            {
+                calcuOutput.Text += oneNumBtn.Text;
             }
 
             decimalChecker();
@@ -510,15 +535,18 @@ namespace Calculator
 
         private void twoNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += twoNumBtn.Text;
+                calcuOutput.Text = twoNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = twoNumBtn.Text;
+                calcuOutput.Text += twoNumBtn.Text;
             }
 
             decimalChecker();
@@ -526,15 +554,18 @@ namespace Calculator
 
         private void threeNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += threeNumBtn.Text;
+                calcuOutput.Text = threeNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = threeNumBtn.Text;
+                calcuOutput.Text += threeNumBtn.Text;
             }
 
             decimalChecker();
@@ -542,15 +573,18 @@ namespace Calculator
 
         private void fourNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += fourNumBtn.Text;
+                calcuOutput.Text = fourNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = fourNumBtn.Text;
+                calcuOutput.Text += fourNumBtn.Text;
             }
 
             decimalChecker();
@@ -558,15 +592,18 @@ namespace Calculator
 
         private void fiveNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += fiveNumBtn.Text;
+                calcuOutput.Text = fiveNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = fiveNumBtn.Text;
+                calcuOutput.Text += fiveNumBtn.Text;
             }
 
             decimalChecker();
@@ -574,15 +611,18 @@ namespace Calculator
 
         private void sixNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += sixNumBtn.Text;
+                calcuOutput.Text = sixNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = sixNumBtn.Text;
+                calcuOutput.Text += sixNumBtn.Text;
             }
 
             decimalChecker();
@@ -590,15 +630,18 @@ namespace Calculator
 
         private void sevenNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += sevenNumBtn.Text;
+                calcuOutput.Text = sevenNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = sevenNumBtn.Text;
+                calcuOutput.Text += sevenNumBtn.Text;
             }
 
             decimalChecker();
@@ -606,15 +649,18 @@ namespace Calculator
 
         private void eightNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += eightNumBtn.Text;
+                calcuOutput.Text = eightNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = eightNumBtn.Text;
+                calcuOutput.Text += eightNumBtn.Text;
             }
 
             decimalChecker();
@@ -622,30 +668,36 @@ namespace Calculator
 
         private void nineNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += nineNumBtn.Text;
+                calcuOutput.Text = nineNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = nineNumBtn.Text;
+                calcuOutput.Text += nineNumBtn.Text;
             }
 
             decimalChecker();
         }
         private void zeroNumBtn_Click(object sender, EventArgs e)
         {
-            //Checks if calculator output text is not equal to 0, if != 0, appends the number to existing number. Else, the number replaces 0
-            if (calcuOutput.Text != "0")
+            //Checks if output text is equal to 0 or if the boolean to enter a new value is true
+            //If true, sets the text to the number of the button clicked, else, appends the same number to the existing text
+            //Disables enter new value unless an operation is pressed that will enable the function again. (Used for adding multiple numbers in quick succession)
+            if (calcuOutput.Text == "0" || enterNewValue == true)
             {
-                calcuOutput.Text += zeroNumBtn.Text;
+                calcuOutput.Text = zeroNumBtn.Text;
+                enterNewValue = false;
             }
 
             else
             {
-                calcuOutput.Text = zeroNumBtn.Text;
+                calcuOutput.Text += zeroNumBtn.Text;
             }
 
             decimalChecker();
@@ -662,51 +714,101 @@ namespace Calculator
 
         private void clrRecentBtn_Click(object sender, EventArgs e)
         {
-            //Clears the value of all variables. Also clears the output on the calculator.
-            operation = "";
-            result = 0;
+            //Clears the value of the recent entry being typed in the calculator.
             calcuOutput.Text = "0";
-            showOps.Text = "";
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as +, then displays to showOps label
-            result = double.Parse(calcuOutput.Text);
-            operation = "+";
-            calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
-            num1 = showOps.Text;
+            //Allows addition of multiple values in succession
+            if (result != 0)
+            {
+                enterNewValue = true;
+                equalsBtn.PerformClick();
+                operation = "+";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
+
+            else
+            {
+                //Gets value from calculator output display, assigns operation as +, then displays to showOps label
+                result = double.Parse(calcuOutput.Text);
+                operation = "+";
+                calcuOutput.Text = "";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
         }
 
         private void minusBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as -, then displays to showOps label
-            result = double.Parse(calcuOutput.Text);
-            operation = "-";
-            calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
-            num1 = showOps.Text;
+            //Allows subtraction of multiple values in succession
+            if (result != 0)
+            {
+                enterNewValue = true;
+                equalsBtn.PerformClick();
+                operation = "-";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
+
+            else
+            {
+                result = double.Parse(calcuOutput.Text);
+                operation = "-";
+                calcuOutput.Text = "";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
         }
 
         private void multBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as x, then displays to showOps label
-            result = double.Parse(calcuOutput.Text);
-            operation = "x";
-            calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
-            num1 = showOps.Text;
+            //Allows multiplication of multiple values in succession
+            if (result != 0)
+            {
+                enterNewValue = true;
+                equalsBtn.PerformClick();
+                operation = "x";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
+
+            else
+            {
+                result = double.Parse(calcuOutput.Text);
+                operation = "x";
+                calcuOutput.Text = "";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
         }
 
         private void divideBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as ÷, then displays to showOps label
-            result = double.Parse(calcuOutput.Text);
-            operation = "÷";
-            calcuOutput.Text = "";
-            showOps.Text = $"{result} {operation}";
-            num1 = showOps.Text;
+            //Allows division of multiple values in succession
+            if (result != 0)
+            {
+                enterNewValue = true;
+                equalsBtn.PerformClick();
+                operation = "÷";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
+
+            else
+            {
+                result = double.Parse(calcuOutput.Text);
+                operation = "÷";
+                calcuOutput.Text = "";
+                showOps.Text = $"{result} {operation}";
+                num1 = showOps.Text;
+            }
         }
         private void sqrtBtn_Click(object sender, EventArgs e)
         {

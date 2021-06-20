@@ -29,3 +29,4 @@ E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Prog
 E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
 E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
 E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache
+E:\Clint's Files\College\PUP\BSCOE 1st Year\Second Semester\Object-Oriented Programming\C# Repos and Projects\C# Calculator\Calculator\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.AssemblyReference.cache
