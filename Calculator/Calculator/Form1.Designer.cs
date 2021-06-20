@@ -30,6 +30,33 @@ namespace Calculator
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Standard");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Scientific");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Graphing");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Programmer");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Date Calculation");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Currency");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Volume");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Length");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Weight and Mass");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Temperature");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Energy");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Area");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Speed");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Time");
             this.percentBtn = new System.Windows.Forms.Button();
             this.fractBtn = new System.Windows.Forms.Button();
             this.sevenNumBtn = new System.Windows.Forms.Button();
@@ -71,6 +98,7 @@ namespace Calculator
             this.memoryContLabel = new System.Windows.Forms.Label();
             this.memoryBtn = new System.Windows.Forms.Button();
             this.clearMemory = new System.Windows.Forms.Button();
+            this.calcuMenu = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // percentBtn
@@ -485,6 +513,7 @@ namespace Calculator
             this.menuBtn.Size = new System.Drawing.Size(39, 34);
             this.menuBtn.TabIndex = 0;
             this.menuBtn.UseVisualStyleBackColor = false;
+            this.menuBtn.Click += new System.EventHandler(this.menuBtn_Click);
             // 
             // modeLabel
             // 
@@ -699,12 +728,109 @@ namespace Calculator
             this.clearMemory.UseVisualStyleBackColor = false;
             this.clearMemory.Click += new System.EventHandler(this.clearMemory_Click);
             // 
+            // calcuMenu
+            // 
+            this.calcuMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.calcuMenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.calcuMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.calcuMenu.ForeColor = System.Drawing.Color.White;
+            this.calcuMenu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.calcuMenu.Location = new System.Drawing.Point(0, 35);
+            this.calcuMenu.Name = "calcuMenu";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Standard";
+            treeNode2.Name = "Node1";
+            treeNode2.Text = "";
+            treeNode3.Name = "Node2";
+            treeNode3.Text = "Scientific";
+            treeNode4.Name = "Node3";
+            treeNode4.Text = "";
+            treeNode5.Name = "Node4";
+            treeNode5.Text = "Graphing";
+            treeNode6.Name = "Node5";
+            treeNode6.Text = "";
+            treeNode7.Name = "Node6";
+            treeNode7.Text = "Programmer";
+            treeNode8.Name = "Node7";
+            treeNode8.Text = "";
+            treeNode9.Name = "Node8";
+            treeNode9.Text = "Date Calculation";
+            treeNode10.Name = "Node9";
+            treeNode10.Text = "";
+            treeNode11.Name = "Node10";
+            treeNode11.Text = "Currency";
+            treeNode12.Name = "Node11";
+            treeNode12.Text = "";
+            treeNode13.Name = "Node12";
+            treeNode13.Text = "Volume";
+            treeNode14.Name = "Node13";
+            treeNode14.Text = "";
+            treeNode15.Name = "Node14";
+            treeNode15.Text = "Length";
+            treeNode16.Name = "Node15";
+            treeNode16.Text = "";
+            treeNode17.Name = "Node16";
+            treeNode17.Text = "Weight and Mass";
+            treeNode18.Name = "Node17";
+            treeNode18.Text = "";
+            treeNode19.Name = "Node18";
+            treeNode19.Text = "Temperature";
+            treeNode20.Name = "Node19";
+            treeNode20.Text = "";
+            treeNode21.Name = "Node20";
+            treeNode21.Text = "Energy";
+            treeNode22.Name = "Node21";
+            treeNode22.Text = "";
+            treeNode23.Name = "Node22";
+            treeNode23.Text = "Area";
+            treeNode24.Name = "Node23";
+            treeNode24.Text = "";
+            treeNode25.Name = "Node24";
+            treeNode25.Text = "Speed";
+            treeNode26.Name = "Node25";
+            treeNode26.Text = "";
+            treeNode27.Name = "Node26";
+            treeNode27.Text = "Time";
+            this.calcuMenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14,
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22,
+            treeNode23,
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27});
+            this.calcuMenu.Size = new System.Drawing.Size(276, 647);
+            this.calcuMenu.TabIndex = 8;
+            this.calcuMenu.Visible = false;
+            this.calcuMenu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.calcuMenu_AfterSelect);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(715, 684);
+            this.Controls.Add(this.calcuMenu);
             this.Controls.Add(this.memoryBtn);
             this.Controls.Add(this.historyBtn);
             this.Controls.Add(this.clearHistory);
@@ -799,6 +925,7 @@ namespace Calculator
         private System.Windows.Forms.Label memoryContLabel;
         private System.Windows.Forms.Button memoryBtn;
         private System.Windows.Forms.Button clearMemory;
+        private System.Windows.Forms.TreeView calcuMenu;
     }
 }
 

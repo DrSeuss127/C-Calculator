@@ -1055,5 +1055,97 @@ namespace Calculator
             memoryContLabel.Text = "There's nothing saved in memory";
             clearMemory.Visible = false;
         }
+
+        private void menuBtn_Click(object sender, EventArgs e)
+        {
+            calcuMenu.Visible = true;
+        }
+
+        private void calcuMenu_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node.Name == "Node0")
+            {
+                modeLabel.Text = "Standard";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node2")
+            {
+                modeLabel.Text = "Scientific";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node4")
+            {
+                modeLabel.Text = "Graphing";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node6")
+            {
+                modeLabel.Text = "Programmer";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node8")
+            {
+                modeLabel.Text = "Date Calculation";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node10")
+            {
+                modeLabel.Text = "Currency";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node12")
+            {
+                modeLabel.Text = "Volume";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node14")
+            {
+                modeLabel.Text = "Length";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node16")
+            {
+                modeLabel.Text = "Weight and Mass";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node18")
+            {
+                modeLabel.Text = "Temperature";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node20")
+            {
+                modeLabel.Text = "Energy";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node22")
+            {
+                modeLabel.Text = "Area";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node24")
+            {
+                modeLabel.Text = "Speed";
+                calcuMenu.Visible = false;
+            }
+
+            else if (e.Node.Name == "Node26")
+            {
+                modeLabel.Text = "Time";
+                calcuMenu.Visible = false;
+            }
+        }
     }
 }
