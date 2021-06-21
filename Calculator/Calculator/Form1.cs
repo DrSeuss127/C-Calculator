@@ -42,6 +42,15 @@ namespace Calculator
                 showOps.Text = "0 =";
             }
 
+            else if(operation == string.Empty)
+            {
+                clearHistory.Visible = true;
+                historyContLabel.Text = "";
+                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
+                historyDisp.AppendText($"{calcuOutput.Text}   =   {calcuOutput.Text}\n\n");
+                showOps.Text = $"{calcuOutput.Text} =";
+            }
+
             else if (operation != string.Empty)
             {
 
