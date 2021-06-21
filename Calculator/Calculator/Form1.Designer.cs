@@ -30,33 +30,33 @@ namespace Calculator
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Standard");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Scientific");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Graphing");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Programmer");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Date Calculation");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Currency");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Volume");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Length");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Weight and Mass");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Temperature");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Energy");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Area");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Speed");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Time");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Standard");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Scientific");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Graphing");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Programmer");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Date Calculation");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Currency");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Volume");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Length");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Weight and Mass");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Temperature");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Energy");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Area");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Speed");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Time");
             this.percentBtn = new System.Windows.Forms.Button();
             this.fractBtn = new System.Windows.Forms.Button();
             this.sevenNumBtn = new System.Windows.Forms.Button();
@@ -108,7 +108,7 @@ namespace Calculator
             this.percentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.percentBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.percentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.percentBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.percentBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.percentBtn.ForeColor = System.Drawing.Color.White;
             this.percentBtn.Location = new System.Drawing.Point(1, 215);
             this.percentBtn.Name = "percentBtn";
@@ -124,13 +124,13 @@ namespace Calculator
             this.fractBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fractBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fractBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fractBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fractBtn.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fractBtn.ForeColor = System.Drawing.Color.White;
             this.fractBtn.Location = new System.Drawing.Point(1, 293);
             this.fractBtn.Name = "fractBtn";
             this.fractBtn.Size = new System.Drawing.Size(92, 79);
             this.fractBtn.TabIndex = 0;
-            this.fractBtn.Text = "1/x";
+            this.fractBtn.Text = "1/𝑥";
             this.fractBtn.UseVisualStyleBackColor = false;
             this.fractBtn.Click += new System.EventHandler(this.fractBtn_Click);
             // 
@@ -140,7 +140,7 @@ namespace Calculator
             this.sevenNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sevenNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sevenNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sevenNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sevenNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sevenNumBtn.ForeColor = System.Drawing.Color.White;
             this.sevenNumBtn.Location = new System.Drawing.Point(1, 371);
             this.sevenNumBtn.Name = "sevenNumBtn";
@@ -156,7 +156,7 @@ namespace Calculator
             this.fourNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fourNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fourNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fourNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fourNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fourNumBtn.ForeColor = System.Drawing.Color.White;
             this.fourNumBtn.Location = new System.Drawing.Point(1, 448);
             this.fourNumBtn.Name = "fourNumBtn";
@@ -172,7 +172,7 @@ namespace Calculator
             this.oneNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.oneNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.oneNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oneNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.oneNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.oneNumBtn.ForeColor = System.Drawing.Color.White;
             this.oneNumBtn.Location = new System.Drawing.Point(1, 526);
             this.oneNumBtn.Name = "oneNumBtn";
@@ -188,7 +188,7 @@ namespace Calculator
             this.plusMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.plusMinusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.plusMinusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.plusMinusBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plusMinusBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.plusMinusBtn.ForeColor = System.Drawing.Color.White;
             this.plusMinusBtn.Location = new System.Drawing.Point(1, 604);
             this.plusMinusBtn.Name = "plusMinusBtn";
@@ -204,7 +204,7 @@ namespace Calculator
             this.clrRecentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.clrRecentBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.clrRecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clrRecentBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clrRecentBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.clrRecentBtn.ForeColor = System.Drawing.Color.White;
             this.clrRecentBtn.Location = new System.Drawing.Point(92, 215);
             this.clrRecentBtn.Name = "clrRecentBtn";
@@ -220,13 +220,13 @@ namespace Calculator
             this.sqrBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sqrBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sqrBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sqrBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sqrBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sqrBtn.ForeColor = System.Drawing.Color.White;
             this.sqrBtn.Location = new System.Drawing.Point(92, 293);
             this.sqrBtn.Name = "sqrBtn";
             this.sqrBtn.Size = new System.Drawing.Size(92, 79);
             this.sqrBtn.TabIndex = 0;
-            this.sqrBtn.Text = "x²";
+            this.sqrBtn.Text = "𝑥²";
             this.sqrBtn.UseVisualStyleBackColor = false;
             this.sqrBtn.Click += new System.EventHandler(this.sqrBtn_Click);
             // 
@@ -236,7 +236,7 @@ namespace Calculator
             this.eightNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.eightNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.eightNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eightNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.eightNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.eightNumBtn.ForeColor = System.Drawing.Color.White;
             this.eightNumBtn.Location = new System.Drawing.Point(92, 371);
             this.eightNumBtn.Name = "eightNumBtn";
@@ -252,7 +252,7 @@ namespace Calculator
             this.fiveNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fiveNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fiveNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fiveNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fiveNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fiveNumBtn.ForeColor = System.Drawing.Color.White;
             this.fiveNumBtn.Location = new System.Drawing.Point(92, 448);
             this.fiveNumBtn.Name = "fiveNumBtn";
@@ -268,7 +268,7 @@ namespace Calculator
             this.twoNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.twoNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.twoNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.twoNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.twoNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.twoNumBtn.ForeColor = System.Drawing.Color.White;
             this.twoNumBtn.Location = new System.Drawing.Point(92, 526);
             this.twoNumBtn.Name = "twoNumBtn";
@@ -284,7 +284,7 @@ namespace Calculator
             this.zeroNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.zeroNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.zeroNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.zeroNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.zeroNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.zeroNumBtn.ForeColor = System.Drawing.Color.White;
             this.zeroNumBtn.Location = new System.Drawing.Point(92, 604);
             this.zeroNumBtn.Name = "zeroNumBtn";
@@ -300,7 +300,7 @@ namespace Calculator
             this.clrAllBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.clrAllBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.clrAllBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clrAllBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clrAllBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.clrAllBtn.ForeColor = System.Drawing.Color.White;
             this.clrAllBtn.Location = new System.Drawing.Point(184, 215);
             this.clrAllBtn.Name = "clrAllBtn";
@@ -316,7 +316,7 @@ namespace Calculator
             this.sqrtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sqrtBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sqrtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sqrtBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sqrtBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sqrtBtn.ForeColor = System.Drawing.Color.White;
             this.sqrtBtn.Location = new System.Drawing.Point(184, 293);
             this.sqrtBtn.Name = "sqrtBtn";
@@ -332,7 +332,7 @@ namespace Calculator
             this.nineNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.nineNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.nineNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nineNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nineNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nineNumBtn.ForeColor = System.Drawing.Color.White;
             this.nineNumBtn.Location = new System.Drawing.Point(184, 371);
             this.nineNumBtn.Name = "nineNumBtn";
@@ -348,7 +348,7 @@ namespace Calculator
             this.sixNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sixNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sixNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sixNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sixNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sixNumBtn.ForeColor = System.Drawing.Color.White;
             this.sixNumBtn.Location = new System.Drawing.Point(184, 448);
             this.sixNumBtn.Name = "sixNumBtn";
@@ -364,7 +364,7 @@ namespace Calculator
             this.threeNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.threeNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.threeNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.threeNumBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.threeNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.threeNumBtn.ForeColor = System.Drawing.Color.White;
             this.threeNumBtn.Location = new System.Drawing.Point(184, 526);
             this.threeNumBtn.Name = "threeNumBtn";
@@ -380,7 +380,7 @@ namespace Calculator
             this.decBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.decBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.decBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.decBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.decBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.decBtn.ForeColor = System.Drawing.Color.White;
             this.decBtn.Location = new System.Drawing.Point(184, 604);
             this.decBtn.Name = "decBtn";
@@ -412,7 +412,7 @@ namespace Calculator
             this.divideBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.divideBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.divideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.divideBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.divideBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.divideBtn.ForeColor = System.Drawing.Color.White;
             this.divideBtn.Location = new System.Drawing.Point(276, 293);
             this.divideBtn.Name = "divideBtn";
@@ -428,13 +428,13 @@ namespace Calculator
             this.multBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.multBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.multBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.multBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.multBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.multBtn.ForeColor = System.Drawing.Color.White;
             this.multBtn.Location = new System.Drawing.Point(276, 371);
             this.multBtn.Name = "multBtn";
             this.multBtn.Size = new System.Drawing.Size(92, 79);
             this.multBtn.TabIndex = 0;
-            this.multBtn.Text = "x";
+            this.multBtn.Text = "×";
             this.multBtn.UseVisualStyleBackColor = false;
             this.multBtn.Click += new System.EventHandler(this.multBtn_Click);
             // 
@@ -444,7 +444,7 @@ namespace Calculator
             this.minusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.minusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.minusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minusBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.minusBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.minusBtn.ForeColor = System.Drawing.Color.White;
             this.minusBtn.Location = new System.Drawing.Point(276, 448);
             this.minusBtn.Name = "minusBtn";
@@ -460,7 +460,7 @@ namespace Calculator
             this.plusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.plusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.plusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.plusBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plusBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.plusBtn.ForeColor = System.Drawing.Color.White;
             this.plusBtn.Location = new System.Drawing.Point(276, 526);
             this.plusBtn.Name = "plusBtn";
@@ -476,7 +476,7 @@ namespace Calculator
             this.equalsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.equalsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.equalsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.equalsBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.equalsBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.equalsBtn.ForeColor = System.Drawing.Color.White;
             this.equalsBtn.Location = new System.Drawing.Point(276, 604);
             this.equalsBtn.Name = "equalsBtn";
@@ -531,11 +531,11 @@ namespace Calculator
             // historyContLabel
             // 
             this.historyContLabel.AutoSize = true;
-            this.historyContLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.historyContLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.historyContLabel.ForeColor = System.Drawing.Color.White;
             this.historyContLabel.Location = new System.Drawing.Point(381, 66);
             this.historyContLabel.Name = "historyContLabel";
-            this.historyContLabel.Size = new System.Drawing.Size(195, 25);
+            this.historyContLabel.Size = new System.Drawing.Size(191, 25);
             this.historyContLabel.TabIndex = 2;
             this.historyContLabel.Text = "There\'s no history yet";
             // 
@@ -587,7 +587,7 @@ namespace Calculator
             this.btnMemSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemSave.FlatAppearance.BorderSize = 0;
             this.btnMemSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMemSave.ForeColor = System.Drawing.Color.White;
             this.btnMemSave.Location = new System.Drawing.Point(294, 170);
             this.btnMemSave.Name = "btnMemSave";
@@ -604,7 +604,7 @@ namespace Calculator
             this.btnMemMinus.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemMinus.FlatAppearance.BorderSize = 0;
             this.btnMemMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemMinus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemMinus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMemMinus.ForeColor = System.Drawing.Color.White;
             this.btnMemMinus.Location = new System.Drawing.Point(221, 170);
             this.btnMemMinus.Name = "btnMemMinus";
@@ -621,7 +621,7 @@ namespace Calculator
             this.btnMemPlus.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemPlus.FlatAppearance.BorderSize = 0;
             this.btnMemPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemPlus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemPlus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMemPlus.ForeColor = System.Drawing.Color.White;
             this.btnMemPlus.Location = new System.Drawing.Point(148, 170);
             this.btnMemPlus.Name = "btnMemPlus";
@@ -638,7 +638,7 @@ namespace Calculator
             this.btnMemRecall.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemRecall.FlatAppearance.BorderSize = 0;
             this.btnMemRecall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemRecall.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemRecall.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMemRecall.ForeColor = System.Drawing.Color.White;
             this.btnMemRecall.Location = new System.Drawing.Point(75, 170);
             this.btnMemRecall.Name = "btnMemRecall";
@@ -655,7 +655,7 @@ namespace Calculator
             this.btnMemClear.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMemClear.FlatAppearance.BorderSize = 0;
             this.btnMemClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMemClear.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMemClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMemClear.ForeColor = System.Drawing.Color.White;
             this.btnMemClear.Location = new System.Drawing.Point(2, 170);
             this.btnMemClear.Name = "btnMemClear";
@@ -697,11 +697,11 @@ namespace Calculator
             // memoryContLabel
             // 
             this.memoryContLabel.AutoSize = true;
-            this.memoryContLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.memoryContLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.memoryContLabel.ForeColor = System.Drawing.Color.White;
             this.memoryContLabel.Location = new System.Drawing.Point(381, 66);
             this.memoryContLabel.Name = "memoryContLabel";
-            this.memoryContLabel.Size = new System.Drawing.Size(296, 25);
+            this.memoryContLabel.Size = new System.Drawing.Size(291, 25);
             this.memoryContLabel.TabIndex = 2;
             this.memoryContLabel.Text = "There\'s nothing saved in memory";
             this.memoryContLabel.Visible = false;
@@ -740,90 +740,90 @@ namespace Calculator
             this.calcuMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.calcuMenu.ForeColor = System.Drawing.Color.White;
             this.calcuMenu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
-            this.calcuMenu.Location = new System.Drawing.Point(0, 35);
+            this.calcuMenu.Location = new System.Drawing.Point(0, 36);
             this.calcuMenu.Name = "calcuMenu";
-            treeNode1.Name = "Node0";
-            treeNode1.Text = "Standard";
-            treeNode2.Name = "Node1";
-            treeNode2.Text = "";
-            treeNode3.Name = "Node2";
-            treeNode3.Text = "Scientific";
-            treeNode4.Name = "Node3";
-            treeNode4.Text = "";
-            treeNode5.Name = "Node4";
-            treeNode5.Text = "Graphing";
-            treeNode6.Name = "Node5";
-            treeNode6.Text = "";
-            treeNode7.Name = "Node6";
-            treeNode7.Text = "Programmer";
-            treeNode8.Name = "Node7";
-            treeNode8.Text = "";
-            treeNode9.Name = "Node8";
-            treeNode9.Text = "Date Calculation";
-            treeNode10.Name = "Node9";
-            treeNode10.Text = "";
-            treeNode11.Name = "Node10";
-            treeNode11.Text = "Currency";
-            treeNode12.Name = "Node11";
-            treeNode12.Text = "";
-            treeNode13.Name = "Node12";
-            treeNode13.Text = "Volume";
-            treeNode14.Name = "Node13";
-            treeNode14.Text = "";
-            treeNode15.Name = "Node14";
-            treeNode15.Text = "Length";
-            treeNode16.Name = "Node15";
-            treeNode16.Text = "";
-            treeNode17.Name = "Node16";
-            treeNode17.Text = "Weight and Mass";
-            treeNode18.Name = "Node17";
-            treeNode18.Text = "";
-            treeNode19.Name = "Node18";
-            treeNode19.Text = "Temperature";
-            treeNode20.Name = "Node19";
-            treeNode20.Text = "";
-            treeNode21.Name = "Node20";
-            treeNode21.Text = "Energy";
-            treeNode22.Name = "Node21";
-            treeNode22.Text = "";
-            treeNode23.Name = "Node22";
-            treeNode23.Text = "Area";
-            treeNode24.Name = "Node23";
-            treeNode24.Text = "";
-            treeNode25.Name = "Node24";
-            treeNode25.Text = "Speed";
-            treeNode26.Name = "Node25";
-            treeNode26.Text = "";
-            treeNode27.Name = "Node26";
-            treeNode27.Text = "Time";
+            treeNode28.Name = "Node0";
+            treeNode28.Text = "Standard";
+            treeNode29.Name = "Node1";
+            treeNode29.Text = "";
+            treeNode30.Name = "Node2";
+            treeNode30.Text = "Scientific";
+            treeNode31.Name = "Node3";
+            treeNode31.Text = "";
+            treeNode32.Name = "Node4";
+            treeNode32.Text = "Graphing";
+            treeNode33.Name = "Node5";
+            treeNode33.Text = "";
+            treeNode34.Name = "Node6";
+            treeNode34.Text = "Programmer";
+            treeNode35.Name = "Node7";
+            treeNode35.Text = "";
+            treeNode36.Name = "Node8";
+            treeNode36.Text = "Date Calculation";
+            treeNode37.Name = "Node9";
+            treeNode37.Text = "";
+            treeNode38.Name = "Node10";
+            treeNode38.Text = "Currency";
+            treeNode39.Name = "Node11";
+            treeNode39.Text = "";
+            treeNode40.Name = "Node12";
+            treeNode40.Text = "Volume";
+            treeNode41.Name = "Node13";
+            treeNode41.Text = "";
+            treeNode42.Name = "Node14";
+            treeNode42.Text = "Length";
+            treeNode43.Name = "Node15";
+            treeNode43.Text = "";
+            treeNode44.Name = "Node16";
+            treeNode44.Text = "Weight and Mass";
+            treeNode45.Name = "Node17";
+            treeNode45.Text = "";
+            treeNode46.Name = "Node18";
+            treeNode46.Text = "Temperature";
+            treeNode47.Name = "Node19";
+            treeNode47.Text = "";
+            treeNode48.Name = "Node20";
+            treeNode48.Text = "Energy";
+            treeNode49.Name = "Node21";
+            treeNode49.Text = "";
+            treeNode50.Name = "Node22";
+            treeNode50.Text = "Area";
+            treeNode51.Name = "Node23";
+            treeNode51.Text = "";
+            treeNode52.Name = "Node24";
+            treeNode52.Text = "Speed";
+            treeNode53.Name = "Node25";
+            treeNode53.Text = "";
+            treeNode54.Name = "Node26";
+            treeNode54.Text = "Time";
             this.calcuMenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26,
-            treeNode27});
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31,
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36,
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45,
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49,
+            treeNode50,
+            treeNode51,
+            treeNode52,
+            treeNode53,
+            treeNode54});
             this.calcuMenu.Size = new System.Drawing.Size(276, 647);
             this.calcuMenu.TabIndex = 8;
             this.calcuMenu.Visible = false;
