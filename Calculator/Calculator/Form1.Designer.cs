@@ -30,33 +30,33 @@ namespace Calculator
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Standard");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Scientific");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Graphing");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Programmer");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Date Calculation");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Currency");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Volume");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Length");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Weight and Mass");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Temperature");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Energy");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Area");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Speed");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Time");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Standard");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Scientific");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Graphing");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Programmer");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Date Calculation");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Currency");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Volume");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Length");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Weight and Mass");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Temperature");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Energy");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Area");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Speed");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Time");
             this.percentBtn = new System.Windows.Forms.Button();
             this.fractBtn = new System.Windows.Forms.Button();
             this.sevenNumBtn = new System.Windows.Forms.Button();
@@ -99,6 +99,7 @@ namespace Calculator
             this.memoryBtn = new System.Windows.Forms.Button();
             this.clearMemory = new System.Windows.Forms.Button();
             this.calcuMenu = new System.Windows.Forms.TreeView();
+            this.divideZero = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // percentBtn
@@ -494,6 +495,7 @@ namespace Calculator
             this.calcuOutput.Location = new System.Drawing.Point(0, 98);
             this.calcuOutput.MaxLength = 21;
             this.calcuOutput.Name = "calcuOutput";
+            this.calcuOutput.ReadOnly = true;
             this.calcuOutput.Size = new System.Drawing.Size(366, 71);
             this.calcuOutput.TabIndex = 1;
             this.calcuOutput.Text = "0";
@@ -558,8 +560,9 @@ namespace Calculator
             this.historyDisp.ForeColor = System.Drawing.Color.White;
             this.historyDisp.Location = new System.Drawing.Point(381, 66);
             this.historyDisp.Name = "historyDisp";
+            this.historyDisp.ReadOnly = true;
             this.historyDisp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.historyDisp.Size = new System.Drawing.Size(324, 556);
+            this.historyDisp.Size = new System.Drawing.Size(324, 563);
             this.historyDisp.TabIndex = 3;
             this.historyDisp.Text = "";
             // 
@@ -669,8 +672,9 @@ namespace Calculator
             this.memoryDisp.ForeColor = System.Drawing.Color.White;
             this.memoryDisp.Location = new System.Drawing.Point(381, 66);
             this.memoryDisp.Name = "memoryDisp";
+            this.memoryDisp.ReadOnly = true;
             this.memoryDisp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.memoryDisp.Size = new System.Drawing.Size(324, 556);
+            this.memoryDisp.Size = new System.Drawing.Size(324, 563);
             this.memoryDisp.TabIndex = 5;
             this.memoryDisp.Text = "";
             this.memoryDisp.Visible = false;
@@ -737,92 +741,109 @@ namespace Calculator
             this.calcuMenu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.calcuMenu.Location = new System.Drawing.Point(0, 35);
             this.calcuMenu.Name = "calcuMenu";
-            treeNode1.Name = "Node0";
-            treeNode1.Text = "Standard";
-            treeNode2.Name = "Node1";
-            treeNode2.Text = "";
-            treeNode3.Name = "Node2";
-            treeNode3.Text = "Scientific";
-            treeNode4.Name = "Node3";
-            treeNode4.Text = "";
-            treeNode5.Name = "Node4";
-            treeNode5.Text = "Graphing";
-            treeNode6.Name = "Node5";
-            treeNode6.Text = "";
-            treeNode7.Name = "Node6";
-            treeNode7.Text = "Programmer";
-            treeNode8.Name = "Node7";
-            treeNode8.Text = "";
-            treeNode9.Name = "Node8";
-            treeNode9.Text = "Date Calculation";
-            treeNode10.Name = "Node9";
-            treeNode10.Text = "";
-            treeNode11.Name = "Node10";
-            treeNode11.Text = "Currency";
-            treeNode12.Name = "Node11";
-            treeNode12.Text = "";
-            treeNode13.Name = "Node12";
-            treeNode13.Text = "Volume";
-            treeNode14.Name = "Node13";
-            treeNode14.Text = "";
-            treeNode15.Name = "Node14";
-            treeNode15.Text = "Length";
-            treeNode16.Name = "Node15";
-            treeNode16.Text = "";
-            treeNode17.Name = "Node16";
-            treeNode17.Text = "Weight and Mass";
-            treeNode18.Name = "Node17";
-            treeNode18.Text = "";
-            treeNode19.Name = "Node18";
-            treeNode19.Text = "Temperature";
-            treeNode20.Name = "Node19";
-            treeNode20.Text = "";
-            treeNode21.Name = "Node20";
-            treeNode21.Text = "Energy";
-            treeNode22.Name = "Node21";
-            treeNode22.Text = "";
-            treeNode23.Name = "Node22";
-            treeNode23.Text = "Area";
-            treeNode24.Name = "Node23";
-            treeNode24.Text = "";
-            treeNode25.Name = "Node24";
-            treeNode25.Text = "Speed";
-            treeNode26.Name = "Node25";
-            treeNode26.Text = "";
-            treeNode27.Name = "Node26";
-            treeNode27.Text = "Time";
+            treeNode28.Name = "Node0";
+            treeNode28.Text = "Standard";
+            treeNode29.Name = "Node1";
+            treeNode29.Text = "";
+            treeNode30.Name = "Node2";
+            treeNode30.Text = "Scientific";
+            treeNode31.Name = "Node3";
+            treeNode31.Text = "";
+            treeNode32.Name = "Node4";
+            treeNode32.Text = "Graphing";
+            treeNode33.Name = "Node5";
+            treeNode33.Text = "";
+            treeNode34.Name = "Node6";
+            treeNode34.Text = "Programmer";
+            treeNode35.Name = "Node7";
+            treeNode35.Text = "";
+            treeNode36.Name = "Node8";
+            treeNode36.Text = "Date Calculation";
+            treeNode37.Name = "Node9";
+            treeNode37.Text = "";
+            treeNode38.Name = "Node10";
+            treeNode38.Text = "Currency";
+            treeNode39.Name = "Node11";
+            treeNode39.Text = "";
+            treeNode40.Name = "Node12";
+            treeNode40.Text = "Volume";
+            treeNode41.Name = "Node13";
+            treeNode41.Text = "";
+            treeNode42.Name = "Node14";
+            treeNode42.Text = "Length";
+            treeNode43.Name = "Node15";
+            treeNode43.Text = "";
+            treeNode44.Name = "Node16";
+            treeNode44.Text = "Weight and Mass";
+            treeNode45.Name = "Node17";
+            treeNode45.Text = "";
+            treeNode46.Name = "Node18";
+            treeNode46.Text = "Temperature";
+            treeNode47.Name = "Node19";
+            treeNode47.Text = "";
+            treeNode48.Name = "Node20";
+            treeNode48.Text = "Energy";
+            treeNode49.Name = "Node21";
+            treeNode49.Text = "";
+            treeNode50.Name = "Node22";
+            treeNode50.Text = "Area";
+            treeNode51.Name = "Node23";
+            treeNode51.Text = "";
+            treeNode52.Name = "Node24";
+            treeNode52.Text = "Speed";
+            treeNode53.Name = "Node25";
+            treeNode53.Text = "";
+            treeNode54.Name = "Node26";
+            treeNode54.Text = "Time";
             this.calcuMenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26,
-            treeNode27});
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31,
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36,
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45,
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49,
+            treeNode50,
+            treeNode51,
+            treeNode52,
+            treeNode53,
+            treeNode54});
             this.calcuMenu.Size = new System.Drawing.Size(276, 647);
             this.calcuMenu.TabIndex = 8;
             this.calcuMenu.Visible = false;
             this.calcuMenu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.calcuMenu_AfterSelect);
+            // 
+            // divideZero
+            // 
+            this.divideZero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.divideZero.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.divideZero.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.divideZero.ForeColor = System.Drawing.Color.White;
+            this.divideZero.Location = new System.Drawing.Point(9, 98);
+            this.divideZero.MaxLength = 21;
+            this.divideZero.Multiline = true;
+            this.divideZero.Name = "divideZero";
+            this.divideZero.ReadOnly = true;
+            this.divideZero.Size = new System.Drawing.Size(366, 71);
+            this.divideZero.TabIndex = 1;
+            this.divideZero.Text = "Cannot Divide by zero";
+            this.divideZero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.divideZero.Visible = false;
             // 
             // Form1
             // 
@@ -830,14 +851,13 @@ namespace Calculator
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(715, 684);
+            this.Controls.Add(this.clearHistory);
             this.Controls.Add(this.calcuMenu);
             this.Controls.Add(this.memoryBtn);
             this.Controls.Add(this.historyBtn);
-            this.Controls.Add(this.clearHistory);
             this.Controls.Add(this.historyContLabel);
             this.Controls.Add(this.modeLabel);
             this.Controls.Add(this.showOps);
-            this.Controls.Add(this.calcuOutput);
             this.Controls.Add(this.decBtn);
             this.Controls.Add(this.zeroNumBtn);
             this.Controls.Add(this.plusMinusBtn);
@@ -872,6 +892,8 @@ namespace Calculator
             this.Controls.Add(this.clearMemory);
             this.Controls.Add(this.historyDisp);
             this.Controls.Add(this.memoryDisp);
+            this.Controls.Add(this.calcuOutput);
+            this.Controls.Add(this.divideZero);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -926,6 +948,7 @@ namespace Calculator
         private System.Windows.Forms.Button memoryBtn;
         private System.Windows.Forms.Button clearMemory;
         private System.Windows.Forms.TreeView calcuMenu;
+        private System.Windows.Forms.TextBox divideZero;
     }
 }
 

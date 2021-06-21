@@ -72,6 +72,34 @@ namespace Calculator
 
                                 showOps.Text = $"{num1} =";
                             }
+
+                            else if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result + result2).ToString();
+
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
+
+                                //History display
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} =";
+                            }
+
                             else
                             {
                                 calcuOutput.Text = (result + result2).ToString();
@@ -101,32 +129,6 @@ namespace Calculator
                                 showOps.Text = $"{num1} {num2}   =";
                             }
 
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result + result2).ToString();
-
-                                if (calcuOutput.Text.Contains("."))
-                                {
-                                    //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N}", num);
-                                }
-
-                                else
-                                {
-                                    //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N0}", num);
-                                }
-
-                                //History display
-                                clearHistory.Visible = true;
-                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} =";
-                            }
                             break;
 
                         //Case for the subtraction operation
@@ -158,6 +160,34 @@ namespace Calculator
 
                                 showOps.Text = $"{num1} =";
                             }
+
+                            else if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result - result2).ToString();
+
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
+
+                                //History display
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} =";
+                            }
+
                             else
                             {
                                 calcuOutput.Text = (result - result2).ToString();
@@ -187,32 +217,6 @@ namespace Calculator
                                 showOps.Text = $"{num1} {num2}   =";
                             }
 
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result - result2).ToString();
-
-                                if (calcuOutput.Text.Contains("."))
-                                {
-                                    //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N}", num);
-                                }
-
-                                else
-                                {
-                                    //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N0}", num);
-                                }
-
-                                //History display
-                                clearHistory.Visible = true;
-                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} =";
-                            }
                             break;
 
                         //Case for the multiplication operation
@@ -245,6 +249,33 @@ namespace Calculator
                                 showOps.Text = $"{num1} =";
                             }
 
+                            else if (operation2 == "%")
+                            {
+                                calcuOutput.Text = (result * result2).ToString();
+
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
+
+                                //History display
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} =";
+                            }
+
                             else
                             {
                                 calcuOutput.Text = (result * result2).ToString();
@@ -274,39 +305,46 @@ namespace Calculator
                                 showOps.Text = $"{num1} {num2}   =";
                             }
 
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result * result2).ToString();
-
-                                if (calcuOutput.Text.Contains("."))
-                                {
-                                    //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N}", num);
-                                }
-
-                                else
-                                {
-                                    //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N0}", num);
-                                }
-
-                                //History display
-                                clearHistory.Visible = true;
-                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} =";
-                            }
                             break;
 
                         //Case for the division operation
                         case "÷":
-                            if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
+                            if (result2 == 0)
+                            {
+                                divideZero.Visible = true;
+                                return;
+                            }
+
+                            else if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
                             {
 
+                                calcuOutput.Text = (result / result2).ToString();
+
+                                if (calcuOutput.Text.Contains("."))
+                                {
+                                    //Decimal format for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N}", num);
+                                }
+
+                                else
+                                {
+                                    //Thousands separator for the result
+                                    double num = double.Parse(calcuOutput.Text);
+                                    calcuOutput.Text = string.Format("{0:N0}", num);
+                                }
+
+                                //History display
+                                clearHistory.Visible = true;
+                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
+                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
+                                historyContLabel.Text = "";
+
+                                showOps.Text = $"{num1} =";
+                            }
+
+                            else if (operation2 == "%")
+                            {
                                 calcuOutput.Text = (result / result2).ToString();
 
                                 if (calcuOutput.Text.Contains("."))
@@ -360,32 +398,7 @@ namespace Calculator
                                 //Operations display
                                 showOps.Text = $"{num1} {num2}   =";
                             }
-                            if (operation2 == "%")
-                            {
-                                calcuOutput.Text = (result / result2).ToString();
 
-                                if (calcuOutput.Text.Contains("."))
-                                {
-                                    //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N}", num);
-                                }
-
-                                else
-                                {
-                                    //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
-                                    calcuOutput.Text = string.Format("{0:N0}", num);
-                                }
-
-                                //History display
-                                clearHistory.Visible = true;
-                                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
-                                historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
-                                historyContLabel.Text = "";
-
-                                showOps.Text = $"{num1} =";
-                            }
                             break;
 
                         default:
@@ -394,19 +407,23 @@ namespace Calculator
                     }
                     result = double.Parse(calcuOutput.Text);
                     operation = "";
-
+                    operation2 = "";
 
                 }
                 catch
                 {
                     MessageBox.Show("Math Error!");
+                    calcuOutput.Text = "0";
                     showOps.Text = "";
                     result = 0;
                     operation = "";
+                    operation2 = "";
+
                 }
 
 
             }
+            
             else if (operation2 != string.Empty)
             {
                 try
@@ -445,19 +462,6 @@ namespace Calculator
                         //Case for 1/x
                         case "1/":
 
-                            //History display
-                            clearHistory.Visible = true;
-                            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
-                            historyDisp.AppendText(num1 + "   =   ");
-                            historyDisp.AppendText(calcuOutput.Text + "\n\n");
-                            historyContLabel.Text = "";
-
-                            //Operations display
-                            showOps.Text = $"{num1}   =   ";
-                            break;
-
-                        //Case for %
-                        case "%":
                             //History display
                             clearHistory.Visible = true;
                             historyDisp.SelectionAlignment = HorizontalAlignment.Right;
@@ -710,12 +714,14 @@ namespace Calculator
             result = 0;
             calcuOutput.Text = "0";
             showOps.Text = "";
+            divideZero.Visible = false;
         }
 
         private void clrRecentBtn_Click(object sender, EventArgs e)
         {
             //Clears the value of the recent entry being typed in the calculator.
             calcuOutput.Text = "0";
+            divideZero.Visible = false;
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
@@ -845,13 +851,50 @@ namespace Calculator
 
         private void percentBtn_Click(object sender, EventArgs e)
         {
-            //Gets value from calculator output display, assigns operation as n/100, then displays to showOps label and calculator output text
+            //Gets value from calculator output display, assigns operation2 as %
+            //If user clicks any of the operators (+, -, x, ÷) beforehand, will multiply the first number to second number /100, then assigns the new value as the 2nd number
             double percentNum = double.Parse(calcuOutput.Text);
-            operation2 = "%";
+            if (operation == "x")
+            {
+                operation2 = "%";
 
-            calcuOutput.Text = (percentNum / 100).ToString();
-            showOps.Text += $" {calcuOutput.Text}";
-            num1 = showOps.Text;
+                calcuOutput.Text = (percentNum / 100).ToString();
+                showOps.Text += $" {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "+")
+            {
+                operation2 = "%";
+
+                calcuOutput.Text = (result * (percentNum / 100)).ToString();
+                showOps.Text += $" {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "-")
+            {
+                operation2 = "%";
+                calcuOutput.Text = (result *  (percentNum / 100)).ToString();
+                showOps.Text += $" {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+            else if (operation == "÷")
+            {
+                operation2 = "%";
+                calcuOutput.Text = (result * (percentNum / 100)).ToString();
+                showOps.Text += $" {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == string.Empty)
+            {
+                operation2 = "";
+                calcuOutput.Text = "0";
+                showOps.Text = "0";
+                num1 = showOps.Text;
+            }
+            
         }
 
         private void decBtn_Click(object sender, EventArgs e)
@@ -899,6 +942,7 @@ namespace Calculator
 
         private void historyBtn_Click(object sender, EventArgs e)
         {
+            //Switches to History tab, makes all Memory-related buttons and displays invisible
             memoryContLabel.Visible = false;
             memoryDisp.Visible = false;
 
@@ -938,6 +982,7 @@ namespace Calculator
         private void clearMemory_Click(object sender, EventArgs e)
         {
             //If no text is in the memory, changes the text to "There's nothing saved in memory" and clears the memory
+            //Hides clear memory button after use
             storedNum = 0;
             memoryDisp.Text = "";
             clearMemory.Visible = false;
@@ -952,6 +997,7 @@ namespace Calculator
 
         private void memoryBtn_Click(object sender, EventArgs e)
         {
+            //Switches to Memory tab, makes all History-related buttons and displays invisible
             historyContLabel.Visible = false;
             historyDisp.Visible = false;
             clearHistory.Visible = false;
@@ -1063,6 +1109,7 @@ namespace Calculator
 
         private void calcuMenu_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            //Menu for Calculator Mode
             if (e.Node.Name == "Node0")
             {
                 modeLabel.Text = "Standard";
