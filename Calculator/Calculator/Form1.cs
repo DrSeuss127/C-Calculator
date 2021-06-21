@@ -32,7 +32,17 @@ namespace Calculator
 
         private void operationsChecker()
         {
-            if (operation != string.Empty)
+            //Checks if no operation selected and current output is 0, appends "0 = 0" to history and appends "0 =" to operations display
+            if (operation == string.Empty && calcuOutput.Text == "0")
+            {
+                clearHistory.Visible = true;
+                historyContLabel.Text = "";
+                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
+                historyDisp.AppendText("0   =   0\n\n");
+                showOps.Text = "0 =";
+            }
+
+            else if (operation != string.Empty)
             {
 
                 try
@@ -309,10 +319,11 @@ namespace Calculator
 
                         //Case for the division operation
                         case "÷":
+
+                            //Checks if second number being divided to first number is 0, displays the message "Cannot divide by zero"
                             if (result2 == 0)
                             {
                                 divideZero.Visible = true;
-                                return;
                             }
 
                             else if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
@@ -410,7 +421,7 @@ namespace Calculator
                     operation2 = "";
 
                 }
-                catch
+                catch (Exception)
                 {
                     MessageBox.Show("Math Error!");
                     calcuOutput.Text = "0";
@@ -420,8 +431,6 @@ namespace Calculator
                     operation2 = "";
 
                 }
-
-
             }
             
             else if (operation2 != string.Empty)
@@ -818,78 +827,172 @@ namespace Calculator
         }
         private void sqrtBtn_Click(object sender, EventArgs e)
         {
-            //Gets value from calculator output display, assigns operation as √, then displays to showOps label and calculator output text;
+            //Gets value from calculator output display, assigns operation as √, then displays to showOps label and calculator output text
             double sqrtNum = double.Parse(calcuOutput.Text);
             operation2 = "√";
-        
-            showOps.Text += $" {operation2}{sqrtNum}";                          //Displays the operation
-            calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();                 //Displays result directly to calcu output text when sqrt button is clicked
-            num1 = showOps.Text;
-        }
 
-        private void sqrBtn_Click(object sender, EventArgs e)
-        {
-            //Gets value from calculator output display, assigns operation as n², then displays to showOps label and calculator output text
-            double sqrNum = double.Parse(calcuOutput.Text);
-            operation2 = "sqr";
-
-            showOps.Text += $" {operation2}({sqrNum})";
-            calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
-            num1 = showOps.Text;
-        }
-
-        private void fractBtn_Click(object sender, EventArgs e)
-        {
-            //Performs operation 1/(x), then shows the output on the calculator display
-            double fractNum = double.Parse(calcuOutput.Text);
-            operation2 = "1/";
-
-            showOps.Text += $" {operation2}({fractNum})";
-            calcuOutput.Text = (1 / fractNum).ToString();
-            num1 = showOps.Text;
-        }
-
-        private void percentBtn_Click(object sender, EventArgs e)
-        {
-            //Gets value from calculator output display, assigns operation2 as %
-            //If user clicks any of the operators (+, -, x, ÷) beforehand, will multiply the first number to second number /100, then assigns the new value as the 2nd number
-            double percentNum = double.Parse(calcuOutput.Text);
+            //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
             if (operation == "x")
             {
-                operation2 = "%";
-
-                calcuOutput.Text = (percentNum / 100).ToString();
-                showOps.Text += $" {calcuOutput.Text}";
+                calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({sqrtNum})";
                 num1 = showOps.Text;
             }
 
             else if (operation == "+")
             {
-                operation2 = "%";
-
-                calcuOutput.Text = (result * (percentNum / 100)).ToString();
-                showOps.Text += $" {calcuOutput.Text}";
+                calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({sqrtNum})";
                 num1 = showOps.Text;
             }
 
             else if (operation == "-")
             {
-                operation2 = "%";
-                calcuOutput.Text = (result *  (percentNum / 100)).ToString();
-                showOps.Text += $" {calcuOutput.Text}";
+                calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({sqrtNum})";
                 num1 = showOps.Text;
             }
+
             else if (operation == "÷")
             {
-                operation2 = "%";
-                calcuOutput.Text = (result * (percentNum / 100)).ToString();
-                showOps.Text += $" {calcuOutput.Text}";
+                calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({sqrtNum})";
                 num1 = showOps.Text;
             }
 
             else if (operation == string.Empty)
             {
-                operation2 = "";
+                showOps.Text = $" {operation2}{sqrtNum}";                          //Displays the operation
+                calcuOutput.Text = (Math.Sqrt(sqrtNum)).ToString();                 //Displays result directly to calcu output text when sqrt button is clicked
+                num1 = showOps.Text;
+            }
+            
+        }
+
+        private void sqrBtn_Click(object sender, EventArgs e)
+        {
+            //Gets the value of the number, assigns the operation as sqr, then displays to showOps label and calculator output text
+            double sqrNum = double.Parse(calcuOutput.Text);
+            operation2 = "sqr";
+
+            //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
+            if (operation == "x")
+            {
+                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "+")
+            {
+                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({sqrNum})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "-")
+            {
+                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "÷")
+            {
+                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == string.Empty)
+            {
+                showOps.Text = $" {operation2}({sqrNum})";
+                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
+                num1 = showOps.Text;
+            }
+            
+        }
+
+        private void fractBtn_Click(object sender, EventArgs e)
+        {
+            //Gets the value of the number, then places it on the denominator of 1/x, then displays to showOps label and Calculator output text
+            
+            double fractNum = double.Parse(calcuOutput.Text);
+            operation2 = "1/";
+
+            //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
+            if (operation == "x")
+            {
+                calcuOutput.Text = (1 / fractNum).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({fractNum})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "+")
+            {
+                calcuOutput.Text = (1 / fractNum).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({fractNum})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "-")
+            {
+                calcuOutput.Text = (1 / fractNum ).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({fractNum})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "÷")
+            {
+                calcuOutput.Text = (1 / fractNum).ToString();
+                showOps.Text = $"{result} {operation} {operation2}({fractNum})";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == string.Empty)
+            {
+                showOps.Text = $" {operation2}({fractNum})";
+                calcuOutput.Text = (1 / fractNum).ToString();
+                num1 = showOps.Text;
+            }
+        }
+
+        private void percentBtn_Click(object sender, EventArgs e)
+        {
+            //Gets value from calculator output display, assigns operation2 as %, then displays to showOps label and calculator output text
+            double percentNum = double.Parse(calcuOutput.Text);
+            operation2 = "%";
+
+            //If user clicks any of the operators (+, -, x, ÷) beforehand, will multiply the first number to (second number/100), then assigns the new value as the 2nd number
+            if (operation == "x")
+            {
+                calcuOutput.Text = (percentNum / 100).ToString();
+                showOps.Text = $"{result} {operation} {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "+")
+            {
+                calcuOutput.Text = (result * (percentNum / 100)).ToString();
+                showOps.Text = $"{result} {operation} {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == "-")
+            {
+                calcuOutput.Text = (result *  (percentNum / 100)).ToString();
+                showOps.Text = $"{result} {operation} {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+            else if (operation == "÷")
+            {
+                calcuOutput.Text = (result * (percentNum / 100)).ToString();
+                showOps.Text = $"{result} {operation} {calcuOutput.Text}";
+                num1 = showOps.Text;
+            }
+
+            else if (operation == string.Empty)
+            {
                 calcuOutput.Text = "0";
                 showOps.Text = "0";
                 num1 = showOps.Text;
