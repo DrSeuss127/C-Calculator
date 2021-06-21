@@ -105,7 +105,6 @@ namespace Calculator
             // percentBtn
             // 
             this.percentBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.percentBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("percentBtn.BackgroundImage")));
             this.percentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.percentBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.percentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -115,6 +114,7 @@ namespace Calculator
             this.percentBtn.Name = "percentBtn";
             this.percentBtn.Size = new System.Drawing.Size(92, 79);
             this.percentBtn.TabIndex = 0;
+            this.percentBtn.Text = "%";
             this.percentBtn.UseVisualStyleBackColor = false;
             this.percentBtn.Click += new System.EventHandler(this.percentBtn_Click);
             // 
@@ -185,7 +185,6 @@ namespace Calculator
             // plusMinusBtn
             // 
             this.plusMinusBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.plusMinusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plusMinusBtn.BackgroundImage")));
             this.plusMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.plusMinusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.plusMinusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -195,6 +194,7 @@ namespace Calculator
             this.plusMinusBtn.Name = "plusMinusBtn";
             this.plusMinusBtn.Size = new System.Drawing.Size(92, 79);
             this.plusMinusBtn.TabIndex = 0;
+            this.plusMinusBtn.Text = "+/−";
             this.plusMinusBtn.UseVisualStyleBackColor = false;
             this.plusMinusBtn.Click += new System.EventHandler(this.plusMinusBtn_Click);
             // 
@@ -313,7 +313,6 @@ namespace Calculator
             // sqrtBtn
             // 
             this.sqrtBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.sqrtBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sqrtBtn.BackgroundImage")));
             this.sqrtBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sqrtBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sqrtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -323,6 +322,7 @@ namespace Calculator
             this.sqrtBtn.Name = "sqrtBtn";
             this.sqrtBtn.Size = new System.Drawing.Size(92, 79);
             this.sqrtBtn.TabIndex = 0;
+            this.sqrtBtn.Text = "√";
             this.sqrtBtn.UseVisualStyleBackColor = false;
             this.sqrtBtn.Click += new System.EventHandler(this.sqrtBtn_Click);
             // 
@@ -409,80 +409,80 @@ namespace Calculator
             // divideBtn
             // 
             this.divideBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.divideBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("divideBtn.BackgroundImage")));
             this.divideBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.divideBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.divideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.divideBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.divideBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.divideBtn.ForeColor = System.Drawing.Color.White;
             this.divideBtn.Location = new System.Drawing.Point(276, 293);
             this.divideBtn.Name = "divideBtn";
             this.divideBtn.Size = new System.Drawing.Size(92, 79);
             this.divideBtn.TabIndex = 0;
+            this.divideBtn.Text = "÷";
             this.divideBtn.UseVisualStyleBackColor = false;
             this.divideBtn.Click += new System.EventHandler(this.divideBtn_Click);
             // 
             // multBtn
             // 
             this.multBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.multBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("multBtn.BackgroundImage")));
             this.multBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.multBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.multBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.multBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.multBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.multBtn.ForeColor = System.Drawing.Color.White;
             this.multBtn.Location = new System.Drawing.Point(276, 371);
             this.multBtn.Name = "multBtn";
             this.multBtn.Size = new System.Drawing.Size(92, 79);
             this.multBtn.TabIndex = 0;
+            this.multBtn.Text = "x";
             this.multBtn.UseVisualStyleBackColor = false;
             this.multBtn.Click += new System.EventHandler(this.multBtn_Click);
             // 
             // minusBtn
             // 
             this.minusBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.minusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minusBtn.BackgroundImage")));
             this.minusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.minusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.minusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minusBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.minusBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.minusBtn.ForeColor = System.Drawing.Color.White;
             this.minusBtn.Location = new System.Drawing.Point(276, 448);
             this.minusBtn.Name = "minusBtn";
             this.minusBtn.Size = new System.Drawing.Size(92, 79);
             this.minusBtn.TabIndex = 0;
+            this.minusBtn.Text = "−";
             this.minusBtn.UseVisualStyleBackColor = false;
             this.minusBtn.Click += new System.EventHandler(this.minusBtn_Click);
             // 
             // plusBtn
             // 
             this.plusBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.plusBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plusBtn.BackgroundImage")));
             this.plusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.plusBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.plusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.plusBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plusBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.plusBtn.ForeColor = System.Drawing.Color.White;
             this.plusBtn.Location = new System.Drawing.Point(276, 526);
             this.plusBtn.Name = "plusBtn";
             this.plusBtn.Size = new System.Drawing.Size(92, 79);
             this.plusBtn.TabIndex = 0;
+            this.plusBtn.Text = "+";
             this.plusBtn.UseVisualStyleBackColor = false;
             this.plusBtn.Click += new System.EventHandler(this.plusBtn_Click);
             // 
             // equalsBtn
             // 
             this.equalsBtn.BackColor = System.Drawing.Color.DarkOrange;
-            this.equalsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equalsBtn.BackgroundImage")));
             this.equalsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.equalsBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.equalsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.equalsBtn.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.equalsBtn.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.equalsBtn.ForeColor = System.Drawing.Color.White;
             this.equalsBtn.Location = new System.Drawing.Point(276, 604);
             this.equalsBtn.Name = "equalsBtn";
             this.equalsBtn.Size = new System.Drawing.Size(92, 79);
             this.equalsBtn.TabIndex = 0;
+            this.equalsBtn.Text = "=";
             this.equalsBtn.UseVisualStyleBackColor = false;
             this.equalsBtn.Click += new System.EventHandler(this.equalsBtn_Click);
             // 

@@ -44,6 +44,7 @@ namespace Calculator
 
             else if(operation == string.Empty)
             {
+                //Checks if no operation is selected, appends "num = num" to history and "num =" to operations display
                 clearHistory.Visible = true;
                 historyContLabel.Text = "";
                 historyDisp.SelectionAlignment = HorizontalAlignment.Right;
@@ -333,8 +334,26 @@ namespace Calculator
                             if (result2 == 0)
                             {
                                 divideZero.Visible = true;
+
+                                sqrtBtn.Enabled = false;
+                                sqrBtn.Enabled = false;
+                                percentBtn.Enabled = false;
+                                fractBtn.Enabled = false;
+                                plusBtn.Enabled = false;
+                                minusBtn.Enabled = false;
+                                multBtn.Enabled = false;
+                                divideBtn.Enabled = false;
+                                decBtn.Enabled = false;
+                                plusMinusBtn.Enabled = false;
+
+                                btnMemSave.Enabled = false;
+                                btnMemMinus.Enabled = false;
+                                btnMemPlus.Enabled = false;
+                                btnMemRecall.Enabled = false;
+                                btnMemClear.Enabled = false;
                             }
 
+                            //Checks if operations for square root, square, and 1/x buttons are present
                             else if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
                             {
 
@@ -733,6 +752,23 @@ namespace Calculator
             calcuOutput.Text = "0";
             showOps.Text = "";
             divideZero.Visible = false;
+
+            sqrtBtn.Enabled = true;
+            sqrBtn.Enabled = true;
+            percentBtn.Enabled = true;
+            fractBtn.Enabled = true;
+            plusBtn.Enabled = true;
+            minusBtn.Enabled = true;
+            multBtn.Enabled = true;
+            divideBtn.Enabled = true;
+            decBtn.Enabled = true;
+            plusMinusBtn.Enabled = true;
+
+            btnMemSave.Enabled = true;
+            btnMemMinus.Enabled = true;
+            btnMemPlus.Enabled = true;
+            btnMemRecall.Enabled = true;
+            btnMemClear.Enabled = true;
         }
 
         private void clrRecentBtn_Click(object sender, EventArgs e)
@@ -740,6 +776,23 @@ namespace Calculator
             //Clears the value of the recent entry being typed in the calculator.
             calcuOutput.Text = "0";
             divideZero.Visible = false;
+
+            sqrtBtn.Enabled = true;
+            sqrBtn.Enabled = true;
+            percentBtn.Enabled = true;
+            fractBtn.Enabled = true;
+            plusBtn.Enabled = true;
+            minusBtn.Enabled = true;
+            multBtn.Enabled = true;
+            divideBtn.Enabled = true;
+            decBtn.Enabled = true;
+            plusMinusBtn.Enabled = true;
+
+            btnMemSave.Enabled = true;
+            btnMemMinus.Enabled = true;
+            btnMemPlus.Enabled = true;
+            btnMemRecall.Enabled = true;
+            btnMemClear.Enabled = true;
         }
 
         private void plusBtn_Click(object sender, EventArgs e)
