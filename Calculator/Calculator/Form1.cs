@@ -349,8 +349,6 @@ namespace Calculator
                                 btnMemSave.Enabled = false;
                                 btnMemMinus.Enabled = false;
                                 btnMemPlus.Enabled = false;
-                                btnMemRecall.Enabled = false;
-                                btnMemClear.Enabled = false;
                             }
 
                             //Checks if operations for square root, square, and 1/x buttons are present
@@ -767,8 +765,6 @@ namespace Calculator
             btnMemSave.Enabled = true;
             btnMemMinus.Enabled = true;
             btnMemPlus.Enabled = true;
-            btnMemRecall.Enabled = true;
-            btnMemClear.Enabled = true;
         }
 
         private void clrRecentBtn_Click(object sender, EventArgs e)
@@ -791,8 +787,6 @@ namespace Calculator
             btnMemSave.Enabled = true;
             btnMemMinus.Enabled = true;
             btnMemPlus.Enabled = true;
-            btnMemRecall.Enabled = true;
-            btnMemClear.Enabled = true;
         }
 
         private void plusBtn_Click(object sender, EventArgs e)

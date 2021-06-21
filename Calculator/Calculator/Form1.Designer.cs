@@ -140,7 +140,7 @@ namespace Calculator
             this.sevenNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sevenNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sevenNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sevenNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sevenNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sevenNumBtn.ForeColor = System.Drawing.Color.White;
             this.sevenNumBtn.Location = new System.Drawing.Point(1, 371);
             this.sevenNumBtn.Name = "sevenNumBtn";
@@ -156,7 +156,7 @@ namespace Calculator
             this.fourNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fourNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fourNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fourNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fourNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fourNumBtn.ForeColor = System.Drawing.Color.White;
             this.fourNumBtn.Location = new System.Drawing.Point(1, 448);
             this.fourNumBtn.Name = "fourNumBtn";
@@ -172,7 +172,7 @@ namespace Calculator
             this.oneNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.oneNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.oneNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.oneNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.oneNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.oneNumBtn.ForeColor = System.Drawing.Color.White;
             this.oneNumBtn.Location = new System.Drawing.Point(1, 526);
             this.oneNumBtn.Name = "oneNumBtn";
@@ -236,7 +236,7 @@ namespace Calculator
             this.eightNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.eightNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.eightNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eightNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.eightNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.eightNumBtn.ForeColor = System.Drawing.Color.White;
             this.eightNumBtn.Location = new System.Drawing.Point(92, 371);
             this.eightNumBtn.Name = "eightNumBtn";
@@ -252,7 +252,7 @@ namespace Calculator
             this.fiveNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.fiveNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.fiveNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fiveNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fiveNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fiveNumBtn.ForeColor = System.Drawing.Color.White;
             this.fiveNumBtn.Location = new System.Drawing.Point(92, 448);
             this.fiveNumBtn.Name = "fiveNumBtn";
@@ -268,7 +268,7 @@ namespace Calculator
             this.twoNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.twoNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.twoNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.twoNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.twoNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.twoNumBtn.ForeColor = System.Drawing.Color.White;
             this.twoNumBtn.Location = new System.Drawing.Point(92, 526);
             this.twoNumBtn.Name = "twoNumBtn";
@@ -284,7 +284,7 @@ namespace Calculator
             this.zeroNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.zeroNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.zeroNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.zeroNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.zeroNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.zeroNumBtn.ForeColor = System.Drawing.Color.White;
             this.zeroNumBtn.Location = new System.Drawing.Point(92, 604);
             this.zeroNumBtn.Name = "zeroNumBtn";
@@ -332,7 +332,7 @@ namespace Calculator
             this.nineNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.nineNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.nineNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nineNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nineNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nineNumBtn.ForeColor = System.Drawing.Color.White;
             this.nineNumBtn.Location = new System.Drawing.Point(184, 371);
             this.nineNumBtn.Name = "nineNumBtn";
@@ -348,7 +348,7 @@ namespace Calculator
             this.sixNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sixNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.sixNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sixNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sixNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sixNumBtn.ForeColor = System.Drawing.Color.White;
             this.sixNumBtn.Location = new System.Drawing.Point(184, 448);
             this.sixNumBtn.Name = "sixNumBtn";
@@ -364,7 +364,7 @@ namespace Calculator
             this.threeNumBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.threeNumBtn.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.threeNumBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.threeNumBtn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.threeNumBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.threeNumBtn.ForeColor = System.Drawing.Color.White;
             this.threeNumBtn.Location = new System.Drawing.Point(184, 526);
             this.threeNumBtn.Name = "threeNumBtn";
@@ -740,7 +740,7 @@ namespace Calculator
             this.calcuMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.calcuMenu.ForeColor = System.Drawing.Color.White;
             this.calcuMenu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
-            this.calcuMenu.Location = new System.Drawing.Point(0, 36);
+            this.calcuMenu.Location = new System.Drawing.Point(0, 35);
             this.calcuMenu.Name = "calcuMenu";
             treeNode1.Name = "Node0";
             treeNode1.Text = "Standard";
