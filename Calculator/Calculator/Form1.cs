@@ -932,41 +932,84 @@ namespace Calculator
             operation2 = "sqr";
 
             //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
-            if (operation == "x")
+            if (sqrNum % 1 > 0)
             {
-                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
-                showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
-                num1 = showOps.Text;
-            }
+                if (operation == "x")
+                {
+                    calcuOutput.Text = string.Format("{0:N}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                    num1 = showOps.Text;
+                }
 
-            else if (operation == "+")
-            {
-                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
-                showOps.Text = $"{result} {operation} {operation2}({sqrNum})";
-                num1 = showOps.Text;
-            }
+                else if (operation == "+")
+                {
+                    calcuOutput.Text = string.Format("{0:N}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({sqrNum})";
+                    num1 = showOps.Text;
+                }
 
-            else if (operation == "-")
-            {
-                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
-                showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
-                num1 = showOps.Text;
-            }
+                else if (operation == "-")
+                {
+                    calcuOutput.Text = string.Format("{0:N}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                    num1 = showOps.Text;
+                }
 
-            else if (operation == "÷")
-            {
-                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
-                showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
-                num1 = showOps.Text;
-            }
+                else if (operation == "÷")
+                {
+                    calcuOutput.Text = string.Format("{0:N}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                    num1 = showOps.Text;
+                }
 
-            else if (operation == string.Empty)
-            {
-                showOps.Text = $" {operation2}({sqrNum})";
-                calcuOutput.Text = (Math.Pow(sqrNum, 2)).ToString();
-                num1 = showOps.Text;
+                else if (operation == string.Empty)
+                {
+                    showOps.Text = $" {operation2}({sqrNum})";
+                    calcuOutput.Text = string.Format("{0:N}", (Math.Pow(sqrNum, 2)));
+                    num1 = showOps.Text;
+                }
+
+                
             }
             
+            else
+            {
+                if (operation == "x")
+                {
+                    calcuOutput.Text = string.Format("{0:N0}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                    num1 = showOps.Text;
+                }
+
+                else if (operation == "+")
+                {
+                    calcuOutput.Text = string.Format("{0:N0}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({sqrNum})";
+                    num1 = showOps.Text;
+                }
+
+                else if (operation == "-")
+                {
+                    calcuOutput.Text = string.Format("{0:N0}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                    num1 = showOps.Text;
+                }
+
+                else if (operation == "÷")
+                {
+                    calcuOutput.Text = string.Format("{0:N0}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $"{result} {operation} {operation2}({calcuOutput.Text})";
+                    num1 = showOps.Text;
+                }
+
+                else if (operation == string.Empty)
+                {
+                    calcuOutput.Text = string.Format("{0:N0}", (Math.Pow(sqrNum, 2)));
+                    showOps.Text = $" {operation2}({sqrNum})";
+                    num1 = showOps.Text;
+                }
+            }
+
         }
 
         private void fractBtn_Click(object sender, EventArgs e)
