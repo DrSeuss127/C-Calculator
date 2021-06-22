@@ -14,8 +14,8 @@ namespace Calculator
     public partial class Form1 : Form
     {
 
-        double result = 0;
-        double storedNum;
+        float result = 0;
+        float storedNum;
         string operation = "";
         string operation2 = "";
         string num1, num2;
@@ -57,7 +57,7 @@ namespace Calculator
 
                 try
                 {
-                    double result2 = double.Parse(calcuOutput.Text);
+                    float result2 = float.Parse(calcuOutput.Text);
                     num2 = calcuOutput.Text;
 
                     //Compares the value stored inside the operation variable to each case, then executes the code contained inside the chosen case.
@@ -73,14 +73,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -100,14 +100,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -127,14 +127,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -161,14 +161,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -188,14 +188,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -215,14 +215,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -249,14 +249,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -276,14 +276,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -303,14 +303,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -360,14 +360,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -387,14 +387,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -414,14 +414,14 @@ namespace Calculator
                                 if (calcuOutput.Text.Contains("."))
                                 {
                                     //Decimal format for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N}", num);
                                 }
 
                                 else
                                 {
                                     //Thousands separator for the result
-                                    double num = double.Parse(calcuOutput.Text);
+                                    float num = float.Parse(calcuOutput.Text);
                                     calcuOutput.Text = string.Format("{0:N0}", num);
                                 }
 
@@ -442,7 +442,7 @@ namespace Calculator
                             break;
 
                     }
-                    result = double.Parse(calcuOutput.Text);
+                    result = float.Parse(calcuOutput.Text);
                     operation = "";
                     operation2 = "";
 
@@ -511,7 +511,7 @@ namespace Calculator
                         default:
                             break;
                     }
-                    result = double.Parse(calcuOutput.Text);
+                    result = float.Parse(calcuOutput.Text);
                     operation2 = "";
                 }
                 catch (Exception)
@@ -524,7 +524,7 @@ namespace Calculator
 
         private void decimalChecker()
         {
-            double num = double.Parse(calcuOutput.Text);
+            float num = float.Parse(calcuOutput.Text);
 
             //Checks if the output text contains a decimal, if it does, appends the decimal according to the string format specifier {0:N}
             //e.g. output text length (with decimal point) is 5, subtract to index of "." then subtract the current value to 1 again, then insert into {0:N(insert value here)} format specifier
@@ -805,7 +805,7 @@ namespace Calculator
             else
             {
                 //Gets value from calculator output display, assigns operation as +, then displays to showOps label
-                result = double.Parse(calcuOutput.Text);
+                result = float.Parse(calcuOutput.Text);
                 operation = "+";
                 calcuOutput.Text = "";
                 showOps.Text = $"{result} {operation}";
@@ -828,7 +828,7 @@ namespace Calculator
 
             else
             {
-                result = double.Parse(calcuOutput.Text);
+                result = float.Parse(calcuOutput.Text);
                 operation = "-";
                 calcuOutput.Text = "";
                 showOps.Text = $"{result} {operation}";
@@ -851,7 +851,7 @@ namespace Calculator
 
             else
             {
-                result = double.Parse(calcuOutput.Text);
+                result = float.Parse(calcuOutput.Text);
                 operation = "x";
                 calcuOutput.Text = "";
                 showOps.Text = $"{result} {operation}";
@@ -874,7 +874,7 @@ namespace Calculator
 
             else
             {
-                result = double.Parse(calcuOutput.Text);
+                result = float.Parse(calcuOutput.Text);
                 operation = "÷";
                 calcuOutput.Text = "";
                 showOps.Text = $"{result} {operation}";
@@ -884,7 +884,7 @@ namespace Calculator
         private void sqrtBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation as √, then displays to showOps label and calculator output text
-            double sqrtNum = double.Parse(calcuOutput.Text);
+            float sqrtNum = float.Parse(calcuOutput.Text);
             operation2 = "√";
 
             //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
@@ -928,7 +928,7 @@ namespace Calculator
         private void sqrBtn_Click(object sender, EventArgs e)
         {
             //Gets the value of the number, assigns the operation as sqr, then displays to showOps label and calculator output text
-            double sqrNum = double.Parse(calcuOutput.Text);
+            float sqrNum = float.Parse(calcuOutput.Text);
             operation2 = "sqr";
 
             //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
@@ -973,7 +973,7 @@ namespace Calculator
         {
             //Gets the value of the number, then places it on the denominator of 1/x, then displays to showOps label and Calculator output text
             
-            double fractNum = double.Parse(calcuOutput.Text);
+            float fractNum = float.Parse(calcuOutput.Text);
             operation2 = "1/";
 
             //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
@@ -1016,7 +1016,7 @@ namespace Calculator
         private void percentBtn_Click(object sender, EventArgs e)
         {
             //Gets value from calculator output display, assigns operation2 as %, then displays to showOps label and calculator output text
-            double percentNum = double.Parse(calcuOutput.Text);
+            float percentNum = float.Parse(calcuOutput.Text);
             operation2 = "%";
 
             //If user clicks any of the operators (+, -, x, ÷) beforehand, will multiply the first number to (second number/100), then assigns the new value as the 2nd number
@@ -1075,7 +1075,7 @@ namespace Calculator
             {
                 calcuOutput.Text = calcuOutput.Text.Substring(1);                                           //Strips negative sign (-) to make the number positive
             }
-            else if (!string.IsNullOrEmpty(calcuOutput.Text) && decimal.Parse(calcuOutput.Text) != 0)       //Checks if the string is not null or empty, and if the decimal value
+            else if (!string.IsNullOrEmpty(calcuOutput.Text) && calcuOutput.Text != "0")                    //Checks if the string is not null or empty, and if the value
             {                                                                                               //of the output display of the calculator is not equal to 0
                 calcuOutput.Text = "-" + calcuOutput.Text;                                                  //Adds negative sign (-) if conditions are met
             }
@@ -1178,7 +1178,7 @@ namespace Calculator
         private void btnMemSave_Click(object sender, EventArgs e)
         {
             //Memory Save
-            storedNum = double.Parse(calcuOutput.Text);
+            storedNum = float.Parse(calcuOutput.Text);
             btnMemClear.Enabled = true;
             btnMemRecall.Enabled = true;
 
@@ -1209,12 +1209,12 @@ namespace Calculator
             //Checks for decimal number, if decimal, rounds of to two decimal places & thousands separator
             if ((storedNum % 1) > 0)
             {
-                storedNum -= double.Parse(calcuOutput.Text);
+                storedNum -= float.Parse(calcuOutput.Text);
                 calcuOutput.Text = string.Format("{0:N}", storedNum);
             }
             else
             {
-                storedNum -= double.Parse(calcuOutput.Text);
+                storedNum -= float.Parse(calcuOutput.Text);
                 calcuOutput.Text = string.Format("{0:N0}", storedNum);
             }
         }
@@ -1225,12 +1225,12 @@ namespace Calculator
             //Checks for decimal number, if decimal, rounds of to two decimal places & thousands separator
             if ((storedNum % 1) > 0)
             {
-                storedNum += double.Parse(calcuOutput.Text);
+                storedNum += float.Parse(calcuOutput.Text);
                 calcuOutput.Text = string.Format("{0:N}", storedNum);
             }
             else
             {
-                storedNum += double.Parse(calcuOutput.Text);
+                storedNum += float.Parse(calcuOutput.Text);
                 calcuOutput.Text = string.Format("{0:N0}", storedNum);
             }
         }
