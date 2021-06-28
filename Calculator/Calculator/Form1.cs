@@ -22,8 +22,6 @@ namespace Calculator
             btnMemRecall.Enabled = false;
         }
 
-
-
         private void operationsChecker()
         {
             //Checks if no operation selected and current output is 0, appends "0 = 0" to history and appends "0 =" to operations display
@@ -792,7 +790,7 @@ namespace Calculator
                     num1 = showOps.Text;
                 }
 
-                
+
             }
 
             else if (operation2 == "%")
