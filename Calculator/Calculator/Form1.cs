@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -597,6 +589,12 @@ namespace Calculator
                 num1 = showOps.Text;
             }
 
+            else if (calcuOutput.Text == null || calcuOutput.Text == string.Empty)
+            {
+                //Prevents System.FormatException; second number is null/empty
+                return;
+            }
+
             else
             {
                 //Gets value from calculator output display, assigns operation as +, then displays to showOps label
@@ -738,7 +736,28 @@ namespace Calculator
             else if (operation2 == "1/")
             {
                 //If user clicks any of the operators (+, -, x, ÷) beforehand, will display the first number, operator used, and the second number to the showOps label
-                if (operation == "x")
+                if (operation == string.Empty && num == 0)
+                {
+                    showOps.Text = $"{operation2}({num})";
+                    divideZero.Visible = true;
+
+                    sqrtBtn.Enabled = false;
+                    sqrBtn.Enabled = false;
+                    percentBtn.Enabled = false;
+                    fractBtn.Enabled = false;
+                    plusBtn.Enabled = false;
+                    minusBtn.Enabled = false;
+                    multBtn.Enabled = false;
+                    divideBtn.Enabled = false;
+                    decBtn.Enabled = false;
+                    plusMinusBtn.Enabled = false;
+
+                    btnMemSave.Enabled = false;
+                    btnMemMinus.Enabled = false;
+                    btnMemPlus.Enabled = false;
+                }
+
+                else if (operation == "x")
                 {
                     calcuOutput.Text = (1 / num).ToString();
                     showOps.Text = $"{result} {operation} {operation2}({num})";
@@ -772,6 +791,8 @@ namespace Calculator
                     calcuOutput.Text = (1 / num).ToString();
                     num1 = showOps.Text;
                 }
+
+                
             }
 
             else if (operation2 == "%")
@@ -810,6 +831,12 @@ namespace Calculator
                     showOps.Text = "0";
                     num1 = showOps.Text;
                 }
+            }
+
+            else if (calcuOutput.Text == null || calcuOutput.Text == string.Empty)
+            {
+                //Prevents System.FormatException; second number is null/empty
+                return;
             }
         }
 
@@ -988,7 +1015,7 @@ namespace Calculator
         {
             if (calcuOutput.Text.Length > 0)                                                  //Checks for text length, if greater than 0, removes text by 1 per click
             {
-                calcuOutput.Text = calcuOutput.Text.Remove(calcuOutput.Text.Length -1, 1);
+                calcuOutput.Text = calcuOutput.Text.Remove(calcuOutput.Text.Length - 1, 1);
             }
 
             if (calcuOutput.Text == "")
@@ -1099,7 +1126,7 @@ namespace Calculator
                 memoryDisp.AppendText($"{string.Format("{0:N0}", storedNum)}\n\n");
             }
 
-            if (historyContLabel.Visible == true  && historyDisp.Visible == true)
+            if (historyContLabel.Visible == true && historyDisp.Visible == true)
             {
                 clearMemory.Visible = false;
             }
