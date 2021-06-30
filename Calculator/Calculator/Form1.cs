@@ -24,6 +24,7 @@ namespace Calculator
 
         private void operationsChecker()
         {
+
             //Checks if no operation selected and current output is 0, appends "0 = 0" to history and appends "0 =" to operations display
             if (operation == string.Empty && calcuOutput.Text == "0")
             {
@@ -566,6 +567,7 @@ namespace Calculator
             {
                 calcuOutput.Text = number;
                 enterNewValue = false;
+                divideZero.Visible = false;
             }
 
             else
@@ -590,15 +592,16 @@ namespace Calculator
             else if (calcuOutput.Text == null || calcuOutput.Text == string.Empty)
             {
                 //Prevents System.FormatException; second number is null/empty
+                enterNewValue = true;
                 return;
             }
 
             else
             {
                 //Gets value from calculator output display, assigns operation as +, then displays to showOps label
+                enterNewValue = true;
                 result = float.Parse(calcuOutput.Text);
                 operation = op;
-                calcuOutput.Text = "";
                 showOps.Text = $"{result} {operation}";
                 num1 = showOps.Text;
             }
