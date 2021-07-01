@@ -863,10 +863,10 @@ namespace Calculator
             this.histActiveColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(186)))), ((int)(((byte)(3)))));
             this.histActiveColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.histActiveColor.Font = new System.Drawing.Font("Segoe UI", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.histActiveColor.Location = new System.Drawing.Point(391, 47);
+            this.histActiveColor.Location = new System.Drawing.Point(393, 47);
             this.histActiveColor.Name = "histActiveColor";
             this.histActiveColor.ReadOnly = true;
-            this.histActiveColor.Size = new System.Drawing.Size(77, 3);
+            this.histActiveColor.Size = new System.Drawing.Size(73, 3);
             this.histActiveColor.TabIndex = 9;
             // 
             // memActiveColor
@@ -874,7 +874,7 @@ namespace Calculator
             this.memActiveColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(186)))), ((int)(((byte)(3)))));
             this.memActiveColor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.memActiveColor.Font = new System.Drawing.Font("Segoe UI", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memActiveColor.Location = new System.Drawing.Point(510, 47);
+            this.memActiveColor.Location = new System.Drawing.Point(509, 47);
             this.memActiveColor.Name = "memActiveColor";
             this.memActiveColor.ReadOnly = true;
             this.memActiveColor.Size = new System.Drawing.Size(89, 3);

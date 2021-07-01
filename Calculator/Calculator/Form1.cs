@@ -12,6 +12,7 @@ namespace Calculator
         string operation2 = "";
         string num1, num2;
         bool enterNewValue = false;
+        bool calcuModePress = false;
 
         public Form1()
         {
@@ -1261,7 +1262,18 @@ namespace Calculator
 
         private void menuBtn_Click(object sender, EventArgs e)
         {
-            calcuMenu.Visible = true;
+            //On-off switch for the calculator mode button
+            if (calcuModePress)
+            {
+                calcuMenu.Visible = false;
+                calcuModePress = !calcuModePress;
+            }
+
+            else
+            {
+                calcuMenu.Visible = true;
+                calcuModePress = !calcuModePress;
+            }
         }
 
         private void calcuMenu_AfterSelect(object sender, TreeViewEventArgs e)
