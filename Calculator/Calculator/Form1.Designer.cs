@@ -743,7 +743,7 @@ namespace Calculator
             // 
             this.calcuMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.calcuMenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.calcuMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.calcuMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.calcuMenu.ForeColor = System.Drawing.Color.White;
             this.calcuMenu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.calcuMenu.Location = new System.Drawing.Point(0, 35);
@@ -836,6 +836,7 @@ namespace Calculator
             treeNode27,
             treeNode28,
             treeNode29});
+            this.calcuMenu.ShowRootLines = false;
             this.calcuMenu.Size = new System.Drawing.Size(276, 647);
             this.calcuMenu.TabIndex = 8;
             this.calcuMenu.Visible = false;
