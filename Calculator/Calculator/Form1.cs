@@ -22,6 +22,8 @@ namespace Calculator
             btnMemRecall.Enabled = false;
         }
 
+
+        //---------------------------Start of Operations Checking using switch()---------------------------
         private void operationsChecker()
         {
 
@@ -540,37 +542,11 @@ namespace Calculator
             showOps.Text = $"{num1}   =   ";
         }
 
-        private void decimalChecker()
-        {
-            float num = float.Parse(calcuOutput.Text);
+        //---------------------------End of Operations Checking using swithc()---------------------------
 
-            //Checks if the output text contains a decimal, if it does, appends the decimal according to the string format specifier {0:N}
-            //e.g. output text length (with decimal point) is 5, subtract to index of "." then subtract the current value to 1 again, then insert into {0:N(insert value here)} format specifier
+        
 
-            int dotPos = 0;                                                                //Variable for the decimal position, initialized to 0
-
-            if (calcuOutput.Text.Contains("."))
-            {
-                dotPos = calcuOutput.Text.Length - calcuOutput.Text.IndexOf(".");         //Subtracts the text length of the output to the first position of the decimal
-
-                if (dotPos == 1)                                                          //Checks if, after subtraction from text length of output, dotPos is equal to 1
-                {                                                                         //This prevents dotPos from returning 0 which will affect the string format specifier
-                    return;
-                }
-
-                string formatDec = "{0:N" + (dotPos - 1) + "}";                           //{0:N0} = no decimal after number N, dotPos increments by 1 as long as text length increases
-                calcuOutput.Text = string.Format(formatDec, num);
-
-
-            }
-
-            //Otherwise, proceeds to thousands separator-formatted number
-            else
-            {
-                calcuOutput.Text = string.Format("{0:N0}", num);
-            }
-        }
-
+        //---------------------------Start of Button-press methods---------------------------
         private void numberButtonPress(string number)
         {
             //Checks if output text is equal to 0 or if the boolean to enter a new value is true
@@ -885,6 +861,42 @@ namespace Calculator
             }
         }
 
+        private void decimalChecker()
+        {
+            float num = float.Parse(calcuOutput.Text);
+
+            //Checks if the output text contains a decimal, if it does, appends the decimal according to the string format specifier {0:N}
+            //e.g. output text length (with decimal point) is 5, subtract to index of "." then subtract the current value to 1 again, then insert into {0:N(insert value here)} format specifier
+
+            int dotPos = 0;                                                                //Variable for the decimal position, initialized to 0
+
+            if (calcuOutput.Text.Contains("."))
+            {
+                dotPos = calcuOutput.Text.Length - calcuOutput.Text.IndexOf(".");         //Subtracts the text length of the output to the first position of the decimal
+
+                if (dotPos == 1)                                                          //Checks if, after subtraction from text length of output, dotPos is equal to 1
+                {                                                                         //This prevents dotPos from returning 0 which will affect the string format specifier
+                    return;
+                }
+
+                string formatDec = "{0:N" + (dotPos - 1) + "}";                           //{0:N0} = no decimal after number N, dotPos increments by 1 as long as text length increases
+                calcuOutput.Text = string.Format(formatDec, num);
+
+
+            }
+
+            //Otherwise, proceeds to thousands separator-formatted number
+            else
+            {
+                calcuOutput.Text = string.Format("{0:N0}", num);
+            }
+        }
+
+        //---------------------------End of Button-press methods---------------------------
+
+
+
+        //---------------------------------Main functions---------------------------------
         private void oneNumBtn_Click(object sender, EventArgs e)
         {
             numberButtonPress(oneNumBtn.Text);
@@ -1037,11 +1049,6 @@ namespace Calculator
             {                                                               //If not present, enters decimal point
                 calcuOutput.Text += decBtn.Text;
             }
-
-            else
-            {
-                return;
-            }
         }
 
         private void plusMinusBtn_Click(object sender, EventArgs e)
@@ -1085,16 +1092,19 @@ namespace Calculator
             historyDisp.Visible = true;
             histActiveColor.Visible = true;
 
+            //History delete button enable
             if (historyDisp.Text.Length > 0)
             {
                 clearHistory.Visible = true;
             }
 
+            //Memory delete button disable
             if (historyContLabel.Visible == true && historyDisp.Visible == true)
             {
                 clearMemory.Visible = false;
             }
 
+            //Memory delete button enable
             else if (memoryDisp.Text.Length > 0)
             {
                 clearMemory.Visible = true;
@@ -1109,6 +1119,8 @@ namespace Calculator
 
             historyDisp.Text = "";
             clearHistory.Visible = false;
+
+            //History label "There's no history yet."
             if (historyContLabel.Text == "")
             {
                 historyContLabel.Text = "There's no history yet";
@@ -1125,6 +1137,7 @@ namespace Calculator
             btnMemClear.Enabled = false;
             btnMemRecall.Enabled = false;
 
+            //Memory label "There's nothing saved in memory."
             if (memoryContLabel.Text == "")
             {
                 memoryContLabel.Text = "There's nothing saved in memory";
@@ -1143,11 +1156,13 @@ namespace Calculator
             memoryDisp.Visible = true;
             memActiveColor.Visible = true;
 
+            //Memory delete button disable
             if (historyContLabel.Visible == true && historyDisp.Visible == true)
             {
                 clearMemory.Visible = false;
             }
 
+            //Memory delete button enable
             if (memoryDisp.Text.Length > 0)
             {
                 clearMemory.Visible = true;
@@ -1162,10 +1177,13 @@ namespace Calculator
             btnMemRecall.Enabled = true;
 
             memoryContLabel.Text = "";
+
+            //Decimal checker for MS button
             if (storedNum % 1 > 0)
             {
                 memoryDisp.AppendText($"{string.Format("{0:N}", storedNum)}\n\n");
             }
+
             else
             {
                 memoryDisp.AppendText($"{string.Format("{0:N0}", storedNum)}\n\n");
@@ -1191,6 +1209,7 @@ namespace Calculator
                 storedNum -= float.Parse(calcuOutput.Text);
                 calcuOutput.Text = string.Format("{0:N}", storedNum);
             }
+
             else
             {
                 storedNum -= float.Parse(calcuOutput.Text);
@@ -1248,6 +1267,7 @@ namespace Calculator
         private void calcuMenu_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //Menu for Calculator Mode
+            //Does not have alternate modes, just replaces text on calculator mode
             if (e.Node.Name == "Node0")
             {
                 modeLabel.Text = "Standard";
