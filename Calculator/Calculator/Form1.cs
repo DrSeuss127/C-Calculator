@@ -222,9 +222,6 @@ namespace Calculator
 
                 //Operations display
                 showOps.Text = $"{num1} {num2}   =";
-
-                
-
             }
         }
 
@@ -1280,88 +1277,95 @@ namespace Calculator
         {
             //Menu for Calculator Mode
             //Does not have alternate modes, just replaces text on calculator mode
-            if (e.Node.Name == "Node0")
+            //Has on-off switch function
+            switch (e.Node.Name)
             {
-                modeLabel.Text = "Standard";
-                calcuMenu.Visible = false;
-            }
+                case "Node0":
+                    modeLabel.Text = "Standard";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node2")
-            {
-                modeLabel.Text = "Scientific";
-                calcuMenu.Visible = false;
-            }
+                case "Node2":
+                    modeLabel.Text = "Scientific";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node4")
-            {
-                modeLabel.Text = "Graphing";
-                calcuMenu.Visible = false;
-            }
+                case "Node4":
+                    modeLabel.Text = "Graphing";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node6")
-            {
-                modeLabel.Text = "Programmer";
-                calcuMenu.Visible = false;
-            }
+                case "Node6":
+                    modeLabel.Text = "Programmer";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node8")
-            {
-                modeLabel.Text = "Date Calculation";
-                calcuMenu.Visible = false;
-            }
+                case "Node8":
+                    modeLabel.Text = "Date Calculation";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node10")
-            {
-                modeLabel.Text = "Currency";
-                calcuMenu.Visible = false;
-            }
+                case "Node10":
+                    modeLabel.Text = "Currency";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node12")
-            {
-                modeLabel.Text = "Volume";
-                calcuMenu.Visible = false;
-            }
+                    case "Node12":
+                    modeLabel.Text = "Volume";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node14")
-            {
-                modeLabel.Text = "Length";
-                calcuMenu.Visible = false;
-            }
+                case "Node14":
+                    modeLabel.Text = "Length";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node16")
-            {
-                modeLabel.Text = "Weight and Mass";
-                calcuMenu.Visible = false;
-            }
+                case "Node16":
+                    modeLabel.Text = "Weight and Mass";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node18")
-            {
-                modeLabel.Text = "Temperature";
-                calcuMenu.Visible = false;
-            }
+                case "":
+                    modeLabel.Text = "Temperature";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node20")
-            {
-                modeLabel.Text = "Energy";
-                calcuMenu.Visible = false;
-            }
+                case "Node20":
+                    modeLabel.Text = "Energy";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node22")
-            {
-                modeLabel.Text = "Area";
-                calcuMenu.Visible = false;
-            }
+                case "Node22":
+                    modeLabel.Text = "Area";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node24")
-            {
-                modeLabel.Text = "Speed";
-                calcuMenu.Visible = false;
-            }
+                case "Node24":
+                    modeLabel.Text = "Speed";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
 
-            else if (e.Node.Name == "Node26")
-            {
-                modeLabel.Text = "Time";
-                calcuMenu.Visible = false;
+                case "Node26":
+                    modeLabel.Text = "Time";
+                    calcuMenu.Visible = false;
+                    calcuModePress = !calcuModePress;
+                    break;
+
+                default:
+                    break;
             }
         }
     }
