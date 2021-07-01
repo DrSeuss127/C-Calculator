@@ -137,7 +137,7 @@ namespace Calculator
 
             if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
             {
-
+                enterNewValue = true;
                 calcuOutput.Text = (result + result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -165,6 +165,7 @@ namespace Calculator
 
             else if (operation2 == "%")
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result + result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -192,6 +193,7 @@ namespace Calculator
 
             else
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result + result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -217,6 +219,9 @@ namespace Calculator
 
                 //Operations display
                 showOps.Text = $"{num1} {num2}   =";
+
+                
+
             }
         }
 
@@ -227,7 +232,7 @@ namespace Calculator
 
             if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
             {
-
+                enterNewValue = true;
                 calcuOutput.Text = (result - result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -255,6 +260,7 @@ namespace Calculator
 
             else if (operation2 == "%")
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result - result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -282,6 +288,7 @@ namespace Calculator
 
             else
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result - result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -317,7 +324,7 @@ namespace Calculator
 
             if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
             {
-
+                enterNewValue = true;
                 calcuOutput.Text = (result * result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -345,6 +352,7 @@ namespace Calculator
 
             else if (operation2 == "%")
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result * result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -372,6 +380,7 @@ namespace Calculator
 
             else
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result * result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -409,6 +418,9 @@ namespace Calculator
             //Checks if second number being divided to first number is 0, displays the message "Cannot divide by zero"
             if (result2 == 0)
             {
+                operation = "";
+                result = 0;
+
                 divideZero.Visible = true;
 
                 sqrtBtn.Enabled = false;
@@ -430,7 +442,7 @@ namespace Calculator
             //Checks if operations for square root, square, and 1/x buttons are present
             else if (showOps.Text.Contains("√") || showOps.Text.Contains("sqr") || showOps.Text.Contains("1/("))
             {
-
+                enterNewValue = true;
                 calcuOutput.Text = (result / result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -458,6 +470,7 @@ namespace Calculator
 
             else if (operation2 == "%")
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result / result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -485,6 +498,7 @@ namespace Calculator
 
             else
             {
+                enterNewValue = true;
                 calcuOutput.Text = (result / result2).ToString();
 
                 if (calcuOutput.Text.Contains("."))
@@ -567,12 +581,37 @@ namespace Calculator
             {
                 calcuOutput.Text = number;
                 enterNewValue = false;
-                divideZero.Visible = false;
             }
 
             else
             {
                 calcuOutput.Text += number;
+            }
+
+            if (operation == "" || divideZero.Visible == true)
+            {
+                //Clears operation and operation output text after entering a new number to prevent equalsBtn.PerformClick();
+                operation = "";
+                showOps.Text = "";
+                result = 0;
+
+                //If division by zero was attempted, clicking a number enables previously disabled buttons and removes the "Cannot divide by zero" message on the output
+                divideZero.Visible = false;
+
+                sqrtBtn.Enabled = true;
+                sqrBtn.Enabled = true;
+                percentBtn.Enabled = true;
+                fractBtn.Enabled = true;
+                plusBtn.Enabled = true;
+                minusBtn.Enabled = true;
+                multBtn.Enabled = true;
+                divideBtn.Enabled = true;
+                decBtn.Enabled = true;
+                plusMinusBtn.Enabled = true;
+
+                btnMemSave.Enabled = true;
+                btnMemMinus.Enabled = true;
+                btnMemPlus.Enabled = true;
             }
         }
 
@@ -580,7 +619,12 @@ namespace Calculator
         {
             //Gets value from calculator output display, assigns operation as +, then displays to showOps label
             //Allows addition of multiple values in succession
-            if (result != 0)
+            if (divideZero.Visible == true)
+            {
+                operation = "";
+            }
+
+            else if (result != 0)
             {
                 enterNewValue = true;
                 equalsBtn.PerformClick();
