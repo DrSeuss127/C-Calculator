@@ -21,6 +21,7 @@ namespace Calculator
             clearMemory.Visible = false;
             btnMemClear.Enabled = false;
             btnMemRecall.Enabled = false;
+            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
         }
 
 
@@ -33,7 +34,6 @@ namespace Calculator
             {
                 clearHistory.Visible = true;
                 historyContLabel.Text = "";
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText("0   =   0\n\n");
                 showOps.Text = "0 =";
             }
@@ -43,7 +43,6 @@ namespace Calculator
                 //Checks if no operation is selected, appends "num = num" to history and "num =" to operations display
                 clearHistory.Visible = true;
                 historyContLabel.Text = "";
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{calcuOutput.Text}   =   {calcuOutput.Text}\n\n");
                 showOps.Text = $"{calcuOutput.Text} =";
             }
@@ -82,7 +81,6 @@ namespace Calculator
                     result = float.Parse(calcuOutput.Text);
                     operation = "";
                     operation2 = "";
-
                 }
                 catch (Exception)
                 {
@@ -92,7 +90,6 @@ namespace Calculator
                     result = 0;
                     operation = "";
                     operation2 = "";
-
                 }
             }
 
@@ -121,13 +118,11 @@ namespace Calculator
                         default:
                             break;
                     }
-
                     result = float.Parse(calcuOutput.Text);
                     operation2 = "";
                 }
                 catch (Exception)
                 {
-
                     throw;
                 }
             }
@@ -159,7 +154,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;                                    //Makes the button for clearing the history visible
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");     //Appends the text from the showOps label to the history display
                 historyContLabel.Text = "";
 
@@ -187,7 +181,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -215,7 +208,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} {num2} = ");
                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                 historyContLabel.Text = "";
@@ -251,7 +243,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -279,7 +270,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -307,7 +297,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} {num2} = ");
                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                 historyContLabel.Text = "";
@@ -343,7 +332,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -371,7 +359,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -399,7 +386,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} {num2} = ");
                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                 historyContLabel.Text = "";
@@ -461,7 +447,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -489,7 +474,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} = {calcuOutput.Text}\n\n");
                 historyContLabel.Text = "";
 
@@ -517,7 +501,6 @@ namespace Calculator
 
                 //History display
                 clearHistory.Visible = true;
-                historyDisp.SelectionAlignment = HorizontalAlignment.Right;
                 historyDisp.AppendText($"{num1} {num2} = ");
                 historyDisp.AppendText(calcuOutput.Text + "\n\n");
                 historyContLabel.Text = "";
@@ -531,7 +514,6 @@ namespace Calculator
         {
             //History display
             clearHistory.Visible = true;                                    //Makes the button for clearing the history visible
-            historyDisp.SelectionAlignment = HorizontalAlignment.Right;
             historyDisp.AppendText(num1 + "   =   ");                       //Appends the text from the showOps label to the history display
             historyDisp.AppendText(calcuOutput.Text + "\n\n");
             historyContLabel.Text = "";                                     //Removes the text "There's no history yet"
